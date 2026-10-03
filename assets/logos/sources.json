@@ -1,0 +1,512 @@
+[
+  {
+    "tool": "linux",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/linux.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "cf50ae4a263c6142963fad3561f7cb0311d0d41cc6189eadfb34f81a8a36acb0"
+  },
+  {
+    "tool": "bash",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/bash.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "8e9b1f859331c8d11571e77b1371c5d7ac7e380abfcd2f31160ed81dc37de403"
+  },
+  {
+    "tool": "git",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/git.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "717a57ea97bf7e86de721dab3e68afac66332a10676d5c9abce4ae6a5a9c9983"
+  },
+  {
+    "tool": "github",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/github.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "45262793de6292206a895ed63593cdb1eaed82074173f7f4b5bdb3e427ca805a"
+  },
+  {
+    "tool": "python",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/python.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "71493b4a732f0532b3a03a7a95da3ee11a65766367c8303b901ffbe7bf91a3a2"
+  },
+  {
+    "tool": "go",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/go.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "2d4558b96d3ec71d0d922a62668cb2ea5a5d83ed7d4caf6b0479b3266f795a2f"
+  },
+  {
+    "tool": "nginx",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/nginx.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "a28c7002fda6748bb018fa5f89ba3d38c622db720d65aa88668208a3cc839900"
+  },
+  {
+    "tool": "docker",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/docker.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "3fd830ea69431ed7a0b8d068cd5b34ad3f00a1a78195d50f13ff56713f2462e1"
+  },
+  {
+    "tool": "podman",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/podman/podman-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/podman.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "d5405e720d60316462b27597ff396bf138286b39cda4fa7095bcc450c96819b7"
+  },
+  {
+    "tool": "containerd",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/containerd.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/containerd.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "657fd2310063e583e23ff05646f023a1bedc0c638e8bd8c356980cb10caf659b"
+  },
+  {
+    "tool": "crio",
+    "status": "downloaded",
+    "source": "https://raw.githubusercontent.com/cri-o/cri-o/main/logo/crio-logo.svg",
+    "provider": "CRI-O project",
+    "related_platform_logo": false,
+    "file": "assets/logos/crio.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "b15250099ef4cde786f442946ea7d93518e65c55338b2662afba0f4af199feea"
+  },
+  {
+    "tool": "kubernetes",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/kubernetes.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "fb31e4163238978201cfde0601728ee5168b74e476c32c37739bed626fa281ae"
+  },
+  {
+    "tool": "helm",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/helm.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "83efc74139c06f09c29cab6592fdad80c8ce9e5090fc1da3ba39d40686fb511b"
+  },
+  {
+    "tool": "terraform",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/terraform.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "0be6427291ae47f057b75f9010dffd6f58a40f0c83c43606ff68851cef1621dc"
+  },
+  {
+    "tool": "opentofu",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/opentofu.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/opentofu.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "c706d33b7cbd4183105edac0f63a45932dce3b9b6aeaff53b90cd90d4f84bd92"
+  },
+  {
+    "tool": "ansible",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/ansible.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "6e318caf2d49685f921a72231816106859e0bf93e440a70d0445a3f7f030fc9f"
+  },
+  {
+    "tool": "jenkins",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/jenkins.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "917c7525a9d6c544f4b5d1d4318778e2dee5ef2d47be075ee494613cb10d2a4e"
+  },
+  {
+    "tool": "githubactions",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/githubactions.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "3a2524052ccf301d1a239f20cfef98d655e060c51cc29c5e94c867913899a47e"
+  },
+  {
+    "tool": "gitlab",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/gitlab.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "d057a46d414f4edcb7edf96976ef7b91c2b347a990e99685e48d38de737967b0"
+  },
+  {
+    "tool": "azuredevops",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/azuredevops.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "49122a38457209cda2d22a1e3af1b4ff159b67714d4e7b43899544555ee2823c"
+  },
+  {
+    "tool": "argocd",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/argocd.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "946ce9ce2e6a2513846c2ec90095fd1938ee079d8aa0f5ac2039db7cb37532bb"
+  },
+  {
+    "tool": "flux",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flux.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/flux.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "7a2f30a7c7638f48f62a6410051680ad64b0e9d9ce41b0fb5ccad4f8821d77dc"
+  },
+  {
+    "tool": "amazonwebservices",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/amazonwebservices.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "5b4d8371d79a5c0d3a27ea4e929f772e68d47f7d267496bf9211d5f60fcf8084"
+  },
+  {
+    "tool": "azure",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/azure.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "7923db83e3f9755bd412241a683fa996fb7a9d0259b5084de449e6be92f7ca20"
+  },
+  {
+    "tool": "googlecloud",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/googlecloud.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "1615b3e53228faa14378f1abb2b78e5f6c3f0ec562bc37db3efde885714e6c2f"
+  },
+  {
+    "tool": "prometheus",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/prometheus.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "cae70cfcf9a8b88de32ab1035819d0c7c9a2b278048112f8c9f99dae42b5b657"
+  },
+  {
+    "tool": "grafana",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/grafana.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "2dec200d4e56521bec8dd463173c623b33b8c97e6159cac9b3ed00b6bff0f6ad"
+  },
+  {
+    "tool": "fluentbit",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fluentbit.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/fluentbit.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "abe055f0a3b1812062ec568bb0fe8764ea001c11fdb95380753457908389daa4"
+  },
+  {
+    "tool": "fluentd",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fluentd.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/fluentd.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "f37050e9aa78e9782f444bf5f65dbf5feffb7d98b351b6fbe873c0edea2cab1c"
+  },
+  {
+    "tool": "elasticsearch",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/elasticsearch.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "7efc44ea67eac2a877248c0502e498bca8f61de490852c1a5c572db0b5d3f84d"
+  },
+  {
+    "tool": "logstash",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/logstash/logstash-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/logstash.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "01fe7b38a1a5c40c789f6ed15e43049556569be1cc48330d20c11d3d6ff71ae7"
+  },
+  {
+    "tool": "kibana",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kibana/kibana-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/kibana.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "836bb17d110cf81c4081f33a666f2cd035908546a4bd4eea7f627b16f2def5f9"
+  },
+  {
+    "tool": "opensearch",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/opensearch.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/opensearch.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "592db3a9af1d67d31831a9973ad311ef6e958071084cf2134cc2703db1750ecb"
+  },
+  {
+    "tool": "splunk",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/splunk/splunk-original-wordmark.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/splunk.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "cbdfff2a34884de76fd5fa2d1cb341e6fa28160bf29b8c58af6c636cd2b3083a"
+  },
+  {
+    "tool": "opentelemetry",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opentelemetry/opentelemetry-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/opentelemetry.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "4a610f674b648395f6460d3648d995e114cf34ad58004c01b9380c1deb7a19cd"
+  },
+  {
+    "tool": "jaeger",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jaeger.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/jaeger.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "1bc03584440ea837c6ed8208ab85b132c9b325e0cfb60e9dfa1b4fb051b228c3"
+  },
+  {
+    "tool": "datadog",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datadog/datadog-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/datadog.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "37536bdc59abe690f2f7b8b7913b9d761dfd70d9b8fda19e3faf0b3924b29496"
+  },
+  {
+    "tool": "newrelic",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/newrelic/newrelic-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/newrelic.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "c5aa6bf54be1e98987cde7ca64b96697f4e1c6cb476042e2f4af17a2520b2637"
+  },
+  {
+    "tool": "vault",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vault/vault-original.svg",
+    "provider": "Devicon",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/vault.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "7ba6a343ddad8558691960d4649e337ac30e4182adb91702980c4cc06f0c8ef3"
+  },
+  {
+    "tool": "trivy",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/trivy.svg",
+    "provider": "Simple Icons",
+    "related_platform_logo": false,
+    "status": "downloaded",
+    "file": "assets/logos/trivy.svg",
+    "copied_from": "DevOps-Interview-World",
+    "sha256": "bef45d7760bb16e6d3379921220cd31753e8e3fbb6523066b166fcc9c8c8456d"
+  },
+  {
+    "tool": "wireshark",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wireshark.svg",
+    "status": "downloaded",
+    "file": "assets/logos/wireshark.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "9e8004c9afb3b98f8b4ecd4ad69d19b9af62258b496c262fafb36a51e7c5bd81"
+  },
+  {
+    "tool": "cisco",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cisco.svg",
+    "status": "downloaded",
+    "file": "assets/logos/cisco.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "005c240c62355768860ad0bb19820033bc840ee390192c7139f8777d78291391"
+  },
+  {
+    "tool": "junipernetworks",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/junipernetworks.svg",
+    "status": "downloaded",
+    "file": "assets/logos/junipernetworks.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "c2a373671adf7f9e610113d0ac7850dcdb280d36960c92094aa64b0567e4050a"
+  },
+  {
+    "tool": "fortinet",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fortinet.svg",
+    "status": "downloaded",
+    "file": "assets/logos/fortinet.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "5feafff8531436630ccd7d5c2e80819ee74c1820fdba23d98057eebe02553b86"
+  },
+  {
+    "tool": "cloudflare",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cloudflare.svg",
+    "status": "downloaded",
+    "file": "assets/logos/cloudflare.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "408096d99907fd99e0863cb5d73f77a72537c6a85fd8d5e2704178a83a891f08"
+  },
+  {
+    "tool": "pfsense",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pfsense.svg",
+    "status": "downloaded",
+    "file": "assets/logos/pfsense.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "d27a1c178dfa7f8d1d10a092fb1977396d1ffc219af1f8c82c23a2bdcf28b358"
+  },
+  {
+    "tool": "opnsense",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/opnsense.svg",
+    "status": "downloaded",
+    "file": "assets/logos/opnsense.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "b10d2bdc336f1b66d1bc5db4073904f9aea498a574aef546d4b53b08f3bcb01f"
+  },
+  {
+    "tool": "ubiquiti",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ubiquiti.svg",
+    "status": "downloaded",
+    "file": "assets/logos/ubiquiti.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "7082e9be5c0b167c30c3de6903ec7e497574b845a33415a572d4d1468f40e810"
+  },
+  {
+    "tool": "mikrotik",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mikrotik.svg",
+    "status": "downloaded",
+    "file": "assets/logos/mikrotik.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "67231d35b2c75d757ae5795da88e632c5bfebd6037ae78d745c05e55f2f1d59d"
+  },
+  {
+    "tool": "traefikproxy",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/traefikproxy.svg",
+    "status": "downloaded",
+    "file": "assets/logos/traefikproxy.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "fd1d5e98ac50b22efb35ba9955f81c2f7c202cf977e8335d92a7b13f3bb4fd8a"
+  },
+  {
+    "tool": "openvpn",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openvpn.svg",
+    "status": "downloaded",
+    "file": "assets/logos/openvpn.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "c886ea057184fafe08342bbc18b10006f403ad21d5665a2c9f97f94df941eb30"
+  },
+  {
+    "tool": "wireguard",
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wireguard.svg",
+    "status": "downloaded",
+    "file": "assets/logos/wireguard.svg",
+    "copied_from": "NETWORKING-WORLD",
+    "sha256": "687151a9d0fc75f0fbc214f73a2edc96d89ff5df7a6c3451127ab386b9c941e0"
+  },
+  {
+    "tool": "postgresql",
+    "file": "assets/logos/postgresql.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    "provider": "Devicon",
+    "sha256": "f220a436258ed014c512ba4f9c0de6b9e5c2c4b55331a0a29f8c7a1a12c36443"
+  },
+  {
+    "tool": "redis",
+    "file": "assets/logos/redis.svg",
+    "source": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    "provider": "Devicon",
+    "sha256": "4707378b190878f36f7e6e1c01fa3ee7e7884c76101809d191dddd943a2e6bdb"
+  }
+]
