@@ -1,0 +1,1 @@
+# veriqta-engineering-resource-directory
