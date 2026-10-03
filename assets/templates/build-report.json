@@ -19,5 +19,6 @@
   "png_decode_validation": "passed",
   "missing_paths": [],
   "literal_brace_paths": [],
-  "empty_content_validation": "passed"
+  "empty_content_validation": "passed",
+  "presentation": "public-facing"
 }
