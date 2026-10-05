@@ -1,38 +1,31 @@
 # VERIQTA Engineering Resource Directory
 
-**Learn the systems. Understand the tools. Build the judgement to work in production.**
+Engineering careers, tools, systems, and production practice in one connected reference.
 
 <p align="center">
-  <img src="assets/banners/directory-cover.png" alt="VERIQTA Engineering Resource Directory, careers, technology, and production engineering" width="620">
+<img src="assets/banners/directory-cover.png" alt="VERIQTA Engineering Resource Directory. Learn systems, build understanding, operate with evidence." width="540">
 </p>
 
-[Start here](00-start-here/) | [Careers](01-career-paths/) | [Tools](02-tools/) | [Domains](03-technical-domains/) | [Cloud](04-cloud-providers/) | [Production problems](06-production-problems/)
+[Start here](00-start-here/) · [Career paths](01-career-paths/) · [Tools](02-tools/) · [Technical domains](03-technical-domains/) · [Cloud](04-cloud-providers/) · [Production problems](06-production-problems/)
 
-VERIQTA Engineering Resource Directory brings together the knowledge behind modern engineering work. Explore career paths, connect tools to their technical purpose, study architecture, and approach production problems with evidence.
+Explore the technologies behind modern engineering, understand how they fit together, and connect your learning to the work engineers perform. VERIQTA brings careers, technical disciplines, cloud platforms, architecture, and operational investigation into a single directory.
 
-Use it as a reference while learning a discipline, choosing a technology, designing a system, or investigating a failure.
+## Choose your route
 
-## Find your starting point
-
-| Your goal | Explore |
+| What you want to do | Where to begin |
 | :--- | :--- |
-| Understand a role, its skills, and its responsibilities | [Career paths](01-career-paths/) |
-| Find tools for a specific engineering task | [Engineering tools](02-tools/) |
-| Develop a deeper understanding of a technical discipline | [Technical domains](03-technical-domains/) |
-| Connect cloud services to architecture and operations | [Cloud providers](04-cloud-providers/) |
-| Understand projects, extensions, and integrations | [Technology ecosystems](05-technology-ecosystems/) |
-| Investigate a symptom and work toward recovery | [Production problems](06-production-problems/) |
+| Understand an engineering role and its responsibilities | [Career paths](01-career-paths/) |
+| Explore tools by the work they support | [Tools](02-tools/) |
+| Study how a system or discipline works | [Technical domains](03-technical-domains/) |
+| Compare cloud platforms and operating contexts | [Cloud providers](04-cloud-providers/) |
+| Connect projects, integrations, and extensions | [Technology ecosystems](05-technology-ecosystems/) |
+| Investigate an operational symptom | [Production problems](06-production-problems/) |
 
-<details>
-<summary>Explore the navigation map</summary>
+## Explore the catalogue
 
-<img src="assets/diagrams/browse-directory.png" alt="Browse by career, tool, domain, cloud, ecosystem, or production problem" width="560">
+Linux and systems administration. Networking and packet analysis. Containers and Kubernetes. Infrastructure as code and automation. CI/CD and release engineering. Cloud and platform engineering. Security and DevSecOps. Metrics, logs, traces, and observability. Databases, messaging, storage, and recovery. Distributed systems, GPU infrastructure, MLOps, and AI operations.
 
-</details>
-
-## Explore engineering disciplines
-
-From Linux and networking to cloud, containers, Kubernetes, delivery pipelines, security, observability, databases, distributed systems, and GPU infrastructure. Follow a career path or move directly to the subject you need.
+Expand a subject below to browse its linked categories.
 
 <details>
 <summary>Career families</summary>
@@ -283,60 +276,62 @@ From Linux and networking to cloud, containers, Kubernetes, delivery pipelines, 
 
 </details>
 
-## Learn, design, and investigate
+## Technology in context
 
-| Reference | What to explore |
+Tools belong to systems. Explore the connections between source control, infrastructure, containers, delivery, observability, security, networking, and data services.
+
+<p align="center">
+<img src="assets/banners/ecosystem-atlas-01.png" alt="Systems, development, containers, infrastructure automation, and delivery technologies" width="360">
+<img src="assets/banners/ecosystem-atlas-02.png" alt="Cloud platforms, observability, and security technologies" width="360">
+<img src="assets/banners/ecosystem-atlas-03.png" alt="Networking, traffic, databases, and infrastructure technologies" width="360">
+</p>
+
+## Build your understanding
+
+| Reference collection | Engineering purpose |
 | :--- | :--- |
-| [Documentation](07-documentation/) | Product behaviour, APIs, configuration, and operating guidance. |
-| [Learning resources](08-learning-resources/) | Tutorials, labs, books, courses, projects, and communities. |
-| [Standards and RFCs](09-standards-and-rfcs/) | Protocols, interfaces, conformance, and security requirements. |
-| [Reference architectures](10-reference-architectures/) | System boundaries, dependencies, resilience, and tradeoffs. |
-| [Postmortems](11-postmortems/) | Incident timelines, contributing factors, and corrective actions. |
-| [Engineering templates](14-templates/) | Structured approaches to resources, reviews, architectures, and incidents. |
+| [Documentation](07-documentation/) | Understand product behaviour, interfaces, configuration, and operating constraints. |
+| [Learning resources](08-learning-resources/) | Explore books, courses, tutorials, labs, projects, and communities. |
+| [Standards and RFCs](09-standards-and-rfcs/) | Study protocols, specifications, interoperability, and conformance. |
+| [Reference architectures](10-reference-architectures/) | Examine dependencies, design choices, resilience, and trade-offs. |
+| [Postmortems](11-postmortems/) | Follow incident evidence, contributing factors, and corrective actions. |
+| [Indexes](12-indexes/) | Browse the directory through its reference indexes. |
+| [Resource catalogue](13-resource-catalog/) | Explore resource categories and their engineering context. |
+| [Templates](14-templates/) | Structure technical notes, architecture reviews, and incident analysis. |
 
-## Engineering ecosystems
+## Work through a production problem
 
-Understand tools in context. A container runtime, infrastructure tool, cloud service, or monitoring platform becomes more useful when you understand the systems around it.
+Begin with the symptom and user impact. Establish the system boundary, collect evidence, identify recent changes, and test a specific hypothesis. Compare possible actions, account for their impact, and verify recovery after the change.
 
-<img src="assets/banners/ecosystem-atlas-01.png" alt="Linux, source control, programming, containers, infrastructure, and delivery tools" width="460">
+<img src="assets/diagrams/canonical-record.png" alt="How an engineering tool connects to careers, disciplines, ecosystems, and production investigation" width="500">
 
-<img src="assets/banners/ecosystem-atlas-02.png" alt="Cloud, observability, security, and operations tools" width="460">
+Use controlled environments for practice. For production changes, establish authorization, assess the blast radius, define a rollback, and specify the evidence that will confirm success.
 
-<img src="assets/banners/ecosystem-atlas-03.png" alt="Networking, traffic, data, and infrastructure tools" width="460">
+## Use the directory
 
-## Use the directory in your work
+1. Choose a career, subject, tool, or operational problem.
+2. Follow the linked categories to narrow your focus.
+3. Connect the technology to its dependencies and engineering purpose.
+4. Check authoritative documentation and applicable standards.
+5. Record your reasoning, test your understanding, and verify the result.
 
-1. Start with a role, a technical subject, or the problem you need to solve.
-2. Connect the tools to their purpose, dependencies, and operating context.
-3. Compare documentation, standards, and architectural approaches.
-4. Test your understanding in a controlled environment.
-5. Verify the result and record what you learned.
+<img src="assets/diagrams/browse-directory.png" alt="Six ways to explore engineering knowledge, through careers, tools, domains, clouds, ecosystems, and production problems" width="500">
 
-For production work, consider access, impact, rollback, and verification before making a change.
+## Contribute
 
-## Follow the connections
+Suggest resources with a clear engineering purpose and supporting sources. Explain the intended audience, relevant technology, practical value, and relationship to existing entries.
 
-The same technology can support several careers and solve several kinds of problems. Explore those connections to understand where a tool belongs and why you would use it.
+[Contribution guide](CONTRIBUTING.md) · [Contributor guides](16-contributor-guides/) · [Resource standard](RESOURCE-STANDARD.md) · [Editorial standard](EDITORIAL-STANDARD.md) · [Quality assurance](15-quality-assurance/)
 
-<img src="assets/diagrams/canonical-record.png" alt="Connections between a tool, engineering careers, technical domains, ecosystems, and production problems" width="560">
+## Repository information
 
-[Browse indexes](12-indexes/) | [Explore the resource catalog](13-resource-catalog/)
-
-## Contribute to VERIQTA
-
-Share resources with a clear engineering purpose, useful context, and supporting sources. Explain where the resource fits and how it connects to related subjects.
-
-[Contribution guide](CONTRIBUTING.md) | [Contributor guides](16-contributor-guides/) | [Resource standard](RESOURCE-STANDARD.md) | [Editorial standard](EDITORIAL-STANDARD.md) | [Quality assurance](15-quality-assurance/)
+[Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Security](SECURITY.md) · [Support](SUPPORT.md) · [License](LICENSE)
 
 <details>
-<summary>Directory operations</summary>
+<summary>Directory maintenance</summary>
 
-[Link verification policy](LINK-VERIFICATION-POLICY.md) | [Automation](17-automation-scripts/) | [Site and search](18-site-and-search/) | [Maintenance](19-maintenance/)
+[Link verification policy](LINK-VERIFICATION-POLICY.md) · [Automation](17-automation-scripts/) · [Site and search](18-site-and-search/) · [Maintenance](19-maintenance/)
 
 </details>
 
-## Project information
-
-[Roadmap](ROADMAP.md) | [Changelog](CHANGELOG.md) | [Code of conduct](CODE_OF_CONDUCT.md) | [Security](SECURITY.md) | [Support](SUPPORT.md) | [License](LICENSE)
-
-Project and vendor names and logos belong to their respective owners. Their inclusion does not imply endorsement. See [asset sources](assets/logos/sources.json).
+Technology names and logos belong to their respective owners. Their inclusion does not imply endorsement. [Technology logo sources](assets/logos/sources.json).
