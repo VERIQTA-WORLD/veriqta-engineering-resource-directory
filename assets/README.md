@@ -40,6 +40,6 @@ Portrait illustrations for the VERIQTA Engineering Resource Directory. Repositor
 
 ## Technology logos
 
-Vendor and project marks are retained in their original SVG format. See the [source register](logos/sources.json). The VERIQTA text wordmark is a text asset, separate from the official intertwined emblem.
+Vendor and project marks are available as original SVGs and transparent PNGs. See the [source register](logos/sources.json). The VERIQTA text wordmark is a text asset, separate from the official intertwined emblem.
 
 [Return to the directory](../README.md)
