@@ -1,75 +1,53 @@
-# DevOps architect
+# DevOps architect resource directory
 
-A DevOps architect helps an organization design and improve the system through which software changes reach users. That system includes application boundaries, source control, builds, testing, artifacts, environments, deployment, identity, observability, recovery, and the people who own each part.
+Resources for designing how software is built, verified, released, operated, and recovered. A DevOps architect connects delivery workflows, infrastructure, platform capabilities, security controls, and operational ownership into a coherent system.
 
-The role connects technical decisions to delivery outcomes. A pipeline can execute successfully while users receive a broken service. A platform can offer many capabilities while requiring teams to wait for every routine change. The architect examines those gaps and works with the responsible teams to make delivery understandable, safe, and maintainable.
+This directory helps you find references and compare options. It does not prescribe one toolchain or a training sequence. Use the collection that matches your current decision or problem.
 
-“DevOps architect” is not a standardized job title. Organizations distribute these responsibilities differently, sometimes among senior DevOps engineers, platform architects, release engineers, application architects, or reliability engineers. This folder describes a responsibility profile, not a universal job specification.
+## Browse the collection
 
-## Who this path is for
-
-This path is intended for engineers who already understand basic application delivery and want to develop architectural judgment. It is useful to DevOps, infrastructure, cloud, platform, software, security, and reliability engineers whose work crosses team or system boundaries.
-
-You should be able to explain a basic request path, make a version-controlled change, interpret logs, understand a build and deployment, and discuss permissions and environment configuration. You do not need expertise in every product. If these foundations are unfamiliar, use the [curriculum](curriculum.md) to identify prerequisite work before tackling the architecture exercises.
-
-Completing the path does not establish readiness to own a complex production environment independently. That requires evidence from implementation, review, operation, and collaboration in the relevant context.
-
-## The problem the role addresses
-
-Delivery failures often occur between individually reasonable components. A build has an unclear relationship to the deployed artifact. A security control exists but can be bypassed through another deployment route. A release mechanism can replace application code but cannot recover an incompatible data change. A shared pipeline improves consistency but concentrates too much privilege.
-
-The architect helps teams understand these relationships. The work begins with requirements and evidence: what needs to change, who depends on it, which constraints matter, and how the result will be demonstrated.
-
-DORA's continuous-delivery guidance emphasizes changes to practices, processes, architecture, and skills alongside tooling. That supports assessing the whole delivery system rather than assuming a new automation product will resolve the underlying problem. See [DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/).
-
-## Typical responsibilities
-
-| Responsibility | Questions the architect helps answer | Useful deliverables |
-| --- | --- | --- |
-| Delivery assessment | Where do changes wait, fail, or require repeated manual work? | Current-state map, evidence baseline, prioritized constraints |
-| Architecture and boundaries | Which components and teams must coordinate for a change? | Context diagrams, dependency map, interface decisions |
-| Build and artifact design | What identifies the release, and what evidence follows it? | Artifact flow, provenance requirements, retention policy |
-| Environment design | How are environments created, isolated, configured, and recovered? | Environment lifecycle and ownership model |
-| Release safety | How does exposure increase, and how can harm be limited? | Promotion criteria, rollout and recovery design |
-| Identity and trust | Which actor can perform each privileged action? | Trust boundaries, access model, exception process |
-| Operational readiness | How will teams detect, diagnose, and recover failures? | Readiness criteria, telemetry requirements, exercises |
-| Adoption and evolution | How do teams use the design and improve it? | Pilot plan, migration sequence, decision records |
-
-These outputs need implementation evidence. A diagram or policy alone cannot prove a control is effective.
-
-## Scope and boundaries
-
-The architect should understand enough application behavior to reason about testability, deployability, dependencies, and data compatibility. Application teams retain responsibility for domain behavior unless the organization explicitly assigns it elsewhere.
-
-Security specialists help define threats and validate sensitive controls. Operations and reliability teams help define service expectations and recovery behavior. Platform teams help turn shared patterns into supported capabilities. Product and business stakeholders establish constraints and acceptable tradeoffs.
-
-An architect may implement prototypes or production changes, but should not become the only person who can deploy, interpret the design, or authorize every routine decision. Clarify authority, ownership, support, and escalation rather than relying on informal influence.
-
-## What strong judgment looks like
-
-A strong decision explains the constraint it addresses, compares credible alternatives, acknowledges new risks, and defines validation. It also identifies when the decision should be revisited.
-
-For example, a shared pipeline template can reduce duplicated maintenance. It can also spread a defective template across many teams. A thoughtful design considers versioning, pilot adoption, compatibility, rollback, and the limits of centralized privileges.
-
-Similarly, choosing microservices is not a prerequisite for good delivery. Evaluate whether the application's boundaries allow the required testing and deployment independence, and whether the organization can operate the resulting complexity. DORA's [loosely coupled teams guidance](https://dora.dev/capabilities/loosely-coupled-teams/) discusses independence and architectural context.
-
-## Read this folder in order
-
-| File | Purpose |
+| Collection | What you will find |
 | --- | --- |
-| [Curriculum](curriculum.md) | Dependency-ordered learning, exercises, evidence, and completion criteria |
-| [Production responsibilities](production-responsibilities.md) | Operational ownership, review questions, scenarios, and handover |
-| [Toolkit](toolkit.md) | Capability-based selection and evaluation of engineering tools |
-| [Learning resources](learning-resources.md) | Annotated reading routes and ways to apply them |
-| [Official documentation](official-documentation.md) | Primary references with scope and version notes |
-| [Related careers](related-careers.md) | Responsibility overlap, collaboration, and transition skills |
+| [Toolkit](toolkit.md) | Tools grouped by capability, with official destinations and practical selection notes. |
+| [Official documentation](official-documentation.md) | Focused delivery, infrastructure, Kubernetes, identity, and cloud references. |
+| [Reference architectures](reference-architectures.md) | Cloud and platform designs, distributed-system patterns, and architecture-recording resources. |
+| [Learning resources](learning-resources.md) | Books, research, tutorials, training catalogs, talks, and discovery collections. |
+| [Labs and projects](labs-and-projects.md) | Workshops, local environments, demonstrations, and implementation repositories. |
+| [Production responsibilities](production-responsibilities.md) | Operational references for release safety, service objectives, incidents, failure containment, recovery, security, and cost. |
+| [Standards and frameworks](standards-and-frameworks.md) | Delivery principles, supply-chain requirements, security frameworks, and protocol specifications. |
+| [Related careers](related-careers.md) | Adjacent roles, their overlap with architectural work, and relevant collections. |
 
-Start with the curriculum, then use the other files when a stage calls for deeper context. These pages define a learning and responsibility framework. They do not supply a tested deployment platform or product-specific executable labs.
+## Find resources by the decision you need to make
 
-## Assess your progress
+| Your question | Start here | Continue with |
+| --- | --- | --- |
+| How should builds and releases execute? | [Pipeline tools](toolkit.md#source-control-and-delivery-pipelines) | [Delivery controls](official-documentation.md#delivery-systems-and-infrastructure-controls) |
+| How should infrastructure changes be managed? | [Infrastructure automation](toolkit.md#infrastructure-and-configuration-automation) | [State and testing references](official-documentation.md#delivery-systems-and-infrastructure-controls) |
+| Which platform and tenancy model fits? | [Architecture references](reference-architectures.md#cloud-and-platform-reference-architectures) | [Kubernetes tenancy and security](official-documentation.md#kubernetes-tenancy-workloads-and-security) |
+| How should deployments be promoted and evaluated? | [GitOps and rollout tools](toolkit.md#gitops-and-progressive-delivery) | [Release-safety references](production-responsibilities.md#delivery-safety-and-control-plane-ownership) |
+| How do we protect artifacts and delivery credentials? | [Supply-chain tools](toolkit.md#artifacts-and-software-supply-chain-tooling) | [Supply-chain references](standards-and-frameworks.md#delivery-and-software-supply-chain-references) |
+| How do we observe and contain failures? | [Observability tools](toolkit.md#observability-and-diagnostics) | [Reliability and dependency references](production-responsibilities.md) |
+| How do we demonstrate recovery and control cost? | [Recovery and economic references](production-responsibilities.md#recovery-security-cost-and-evidence) | [Resilience tools](toolkit.md#resilience-performance-and-recovery) |
+| How can we explore an option safely? | [Labs and projects](labs-and-projects.md) | [Documentation](official-documentation.md) for the exact components involved |
 
-You should increasingly be able to trace a change from intent to deployment, identify trust and failure boundaries, defend a design against alternatives, verify assumptions in a controlled environment, and explain operational ownership. Keep evidence of revisions after feedback, not only polished final diagrams.
+## How to use an entry
 
-Related repository sections include [CI/CD](../../../03-technical-domains/08-cicd/), [architecture and system design](../../../03-technical-domains/41-architecture-system-design/), [reliability](../../../03-technical-domains/21-sre-reliability/), and [reference architectures](../../../10-reference-architectures/). Some destinations remain under development.
+The descriptions explain what a resource is useful for and the knowledge it assumes. Selection notes identify boundaries such as provider dependence, account requirements, operating burden, and historical context.
 
-Continue with the [curriculum](curriculum.md), or return to [DevOps delivery careers](../).
+Start with official documentation when checking product behavior. Use architecture guidance and original engineering accounts to compare trade-offs. Use a sandbox implementation to investigate the chosen design; an example working once does not prove production readiness.
+
+Public documentation is generally readable at its destination. Deploying the software or following an exercise may require paid services, accounts, permissions, and substantial machine resources. Course and book access conditions are called out separately.
+
+Tool links go directly to official resources while the repository's canonical catalog is being developed. These career annotations describe architectural relevance; they are not competing canonical tool records.
+
+## Repository navigation
+
+- [Start here](../../../00-start-here/README.md)
+- [All career paths](../../README.md)
+- [Tools](../../../02-tools/README.md)
+- [Technical domains](../../../03-technical-domains/README.md)
+- [Cloud providers](../../../04-cloud-providers/README.md)
+- [Technology ecosystems](../../../05-technology-ecosystems/README.md)
+- [Production problems](../../../06-production-problems/README.md)
+
+Some neighboring collections are still being developed. Their presence in the repository does not establish that their content has been reviewed.

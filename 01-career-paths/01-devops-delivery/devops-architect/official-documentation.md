@@ -1,98 +1,66 @@
-# Official documentation
+# Official documentation for DevOps architects
 
-Use these primary references to support delivery architecture decisions. They provide research, engineering guidance, a supply-chain specification, and platform-specific security information. Their authority and scope differ; none defines a universal DevOps architect job description.
+Focused official references for infrastructure, delivery, platform, identity, and reliability decisions. Use this page when you need to check behavior or a design assumption. The [toolkit](toolkit.md) provides the broader product-manual directory.
 
-Source pages were checked on 5 October 2026. This record does not certify that their examples were executed. Living documentation can change, so revisit it when a decision depends on current behavior.
+Documentation links may follow a current or stable version. Confirm the version of the component you operate before applying its instructions.
 
-## Reference catalogue
+[Folder overview](README.md) · [Tools](toolkit.md) · [Documentation](official-documentation.md) · [Architecture](reference-architectures.md) · [Learning](learning-resources.md) · [Practice](labs-and-projects.md) · [Operations](production-responsibilities.md) · [Standards](standards-and-frameworks.md) · [Related careers](related-careers.md)
 
-### DORA Continuous delivery
+## Delivery systems and infrastructure controls
 
-- **Publisher:** DORA.
-- **Type:** research-informed capability guidance; living page.
-- **Source:** [Continuous delivery](https://dora.dev/capabilities/continuous-delivery/).
-- **Use:** assess the relationship between delivery practices, organizational change, architecture, and automation.
-- **Prerequisites:** understanding of a basic software change workflow.
-- **Limit:** guidance for improvement, not a vendor implementation or a guaranteed result for an individual team.
+Use these focused references when defining delivery-system boundaries and change controls. Tool-level manuals are also linked throughout the [toolkit](toolkit.md).
 
-Use this page during the current-state assessment. Translate its ideas into questions about your process and evidence rather than adopting unsupported targets.
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [GitHub Actions security guidance](https://docs.github.com/en/actions/security-for-github-actions) | Review workflow, dependency, runner, and credential security considerations. | Intermediate; apply the guidance to the repository trust model and runner arrangement. |
+| [GitLab Runner documentation](https://docs.gitlab.com/runner/) | Design and operate execution infrastructure for GitLab pipelines. | Advanced; executor choice changes isolation and maintenance responsibilities. |
+| [Jenkins security guidance](https://www.jenkins.io/doc/book/security/) | Review controller access, authorization, and security configuration. | Advanced; plugin and agent boundaries also need review. |
+| [Terraform state](https://developer.hashicorp.com/terraform/language/state) | Understand infrastructure mappings and state behavior before designing shared automation. | Intermediate; state may contain sensitive data. Protect storage and recovery procedures. |
+| [Terraform backends](https://developer.hashicorp.com/terraform/language/backend) | Compare state-backend configuration and documented backend capabilities. | Intermediate; locking and authentication differ by backend. Do not assume all backends behave alike. |
+| [Terraform testing](https://developer.hashicorp.com/terraform/language/tests) | Review native test structures for modules and infrastructure workflows. | Intermediate; some test arrangements create resources. Read execution and cleanup behavior first. |
+| [Ansible Vault](https://docs.ansible.com/ansible/latest/vault_guide/index.html) | Review encrypted-data handling in configuration automation. | Intermediate; encryption at rest does not prevent exposure after decryption. |
 
-### DORA Loosely coupled teams
+## Kubernetes tenancy, workloads, and security
 
-- **Publisher:** DORA.
-- **Type:** research-informed organizational and architecture guidance; living page.
-- **Source:** [Loosely coupled teams](https://dora.dev/capabilities/loosely-coupled-teams/).
-- **Use:** examine testing and deployment independence, coordination, and interface boundaries.
-- **Prerequisites:** familiarity with services, dependencies, and release processes.
-- **Limit:** does not prescribe one topology or require microservices for every organization.
+Use version-appropriate documentation. Cluster behavior depends on configuration, providers, controllers, and workload design.
 
-Use it to challenge whether component and team boundaries support the needed delivery outcomes.
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [Production Kubernetes environments](https://kubernetes.io/docs/setup/production-environment/) | Compare production setup considerations and operating models. | Advanced; managed services retain workload and configuration responsibilities. |
+| [Kubernetes multi-tenancy](https://kubernetes.io/docs/concepts/security/multi-tenancy/) | Review isolation choices and their limitations. | Advanced; namespaces alone do not provide every required isolation boundary. |
+| [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) | Design role-based access control for users, workloads, and controllers. | Intermediate; assess escalation paths, broad grants, and service-account use. |
+| [Kubernetes security checklist](https://kubernetes.io/docs/concepts/security/security-checklist/) | Structure cluster and workload security review. | Intermediate; a checklist is a starting point, not proof of compliance. |
+| [Liveness, readiness, and startup probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) | Review health-check semantics and configuration. | Intermediate; unsuitable checks can cause restart loops or hide unavailable dependencies. |
+| [Container resource management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) | Review requests, limits, scheduling, and resource constraints. | Intermediate; workload measurements and node capacity are needed for useful settings. |
+| [Kubernetes disruptions](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/) | Understand availability during voluntary and involuntary disruptions. | Intermediate; a disruption budget is not a universal guarantee against outages. |
+| [Kubernetes NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/) | Review traffic-control semantics and policy examples. | Intermediate; enforcement depends on the network implementation and its supported behavior. |
 
-### DORA Test automation
+## Cloud architecture and landing zones
 
-- **Publisher:** DORA.
-- **Type:** technical-practice guidance; living page.
-- **Source:** [Test automation](https://dora.dev/capabilities/test-automation/).
-- **Use:** examine verification feedback and responsibility for maintaining useful tests.
-- **Prerequisites:** familiarity with automated testing and builds.
-- **Limit:** a practical design still needs workload-specific test coverage and failure interpretation.
+Use provider guidance for the environment you actually operate. A landing zone provides foundations; it does not remove workload-level design obligations.
 
-Use it when deciding what evidence belongs in a candidate's delivery path.
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) | Review workload decisions across operational, reliability, security, performance, cost, and sustainability concerns. | Intermediate to advanced; AWS-specific guidance. Adapt recommendations to requirements. |
+| [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/) | Review Azure workload architecture and quality trade-offs. | Intermediate to advanced; assess workload context rather than treating guidance as a universal checklist. |
+| [Google Cloud Well-Architected Framework](https://cloud.google.com/architecture/framework) | Review Google Cloud architecture guidance across its documented pillars. | Intermediate to advanced; provider-specific capabilities and assumptions need review. |
+| [AWS Control Tower documentation](https://docs.aws.amazon.com/controltower/) | Explore governed multi-account foundations and service operations. | Advanced; organizational decisions, identity, networking, and account policies remain essential. |
+| [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/) | Review enterprise-scale platform foundations and design areas. | Advanced; tailoring and operating ownership are required before deployment. |
+| [Google Cloud enterprise foundations blueprint](https://docs.cloud.google.com/architecture/blueprints/security-foundations) | Review an opinionated approach to organizational cloud foundations. | Advanced; blueprint choices are assumptions to evaluate, not mandatory design decisions. |
 
-### Google SRE Release Engineering
+## Reliability, identity, telemetry, and cost
 
-- **Publisher:** Google SRE, Site Reliability Engineering book.
-- **Type:** engineering book chapter.
-- **Source:** [Release Engineering](https://sre.google/sre-book/release-engineering/).
-- **Use:** study release-system design and collaboration between release and reliability responsibilities.
-- **Prerequisites:** basic knowledge of builds, deployments, and service operation.
-- **Limit:** examples come from Google's context; their tools and scale are not requirements for your system.
+Pair architecture-level guidance with the exact product documentation relevant to the chosen stack.
 
-Focus on the reasoning and adapt it to your organization rather than reproducing a large-company arrangement without need.
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [Google SRE books](https://sre.google/books/) | Locate original reliability, operational, and secure-system engineering references. | Intermediate to advanced; examples reflect their authors' environments and publication periods. |
+| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) | Review telemetry reception, processing, export, and deployment concerns. | Intermediate; size for throughput and failure conditions and evaluate sensitive-data handling. |
+| [AWS IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) | Review identity, permissions, credentials, and access-management guidance. | Intermediate; combine with service-specific permissions and organization policies. |
+| [Microsoft identity platform documentation](https://learn.microsoft.com/en-us/entra/identity-platform/) | Review application identity, authentication, and integration concepts. | Intermediate to advanced; application identity and infrastructure authorization are separate concerns. |
+| [Google Cloud IAM overview](https://cloud.google.com/iam/docs/overview) | Review Google Cloud access-control concepts and resource relationships. | Intermediate; validate actual permissions at the required resource scope. |
+| [FinOps Framework](https://www.finops.org/framework/) | Organize cost accountability, allocation, forecasting, and optimization work. | Intermediate; a practice framework, not a tool or a guarantee of savings. |
 
-### Google SRE Canarying Releases
+---
 
-- **Publisher:** Google SRE, The Site Reliability Workbook.
-- **Type:** engineering book chapter with examples.
-- **Source:** [Canarying Releases](https://sre.google/workbook/canarying-releases/).
-- **Use:** examine staged exposure and the evidence needed to evaluate a candidate.
-- **Prerequisites:** understanding of request traffic, measurement, and release candidates.
-- **Limit:** sample workloads, platform details, and thresholds are not universal defaults.
-
-Use it while designing release evaluation and tests for harmful candidates or misleading signals.
-
-### SLSA Provenance and Build track
-
-- **Publisher:** SLSA collaboration, published through the Linux Foundation.
-- **Type:** approved specification pages, explicitly versioned at 1.2.
-- **Sources:** [Provenance](https://slsa.dev/spec/v1.2/provenance) and [Build: Track Basics](https://slsa.dev/spec/v1.2/build-track-basics).
-- **Use:** understand artifact origin evidence and the build track's assurance model.
-- **Prerequisites:** familiarity with build inputs, outputs, identities, and verification.
-- **Limit:** this folder does not perform a compliance assessment. Read full applicable requirements before claiming a level.
-
-Use the versioned approved material for a decision tied to that specification. Do not silently replace it with a draft or a similarly named release candidate.
-
-### GitHub Actions Secure use reference
-
-- **Publisher:** GitHub Docs.
-- **Type:** platform security reference; living documentation.
-- **Source:** [Secure use reference](https://docs.github.com/en/actions/reference/security/secure-use).
-- **Use:** investigate privileged execution, untrusted content, workflow dependencies, and token-related security considerations on GitHub Actions.
-- **Prerequisites:** familiarity with workflows, event triggers, workers, and permissions.
-- **Limit:** platform-specific guidance; it does not establish behavior for other systems or verify your configuration.
-
-Check the exact relevant section again before implementing a security-sensitive workflow.
-
-## Add implementation documentation deliberately
-
-The role does not require one cloud, runtime, or pipeline product. Once a design selects an implementation, add its exact official references for versions, authentication, configuration, compatibility, limits, upgrade behavior, recovery, and commercial terms where relevant.
-
-Record source title, exact URL, relevant section, version, checked date, and the claim it supports. A homepage may identify a publisher but is insufficient support for a detailed behavior claim.
-
-## Resolve disagreements and missing evidence
-
-Compare version, deployment mode, and context before treating two statements as contradictory. Prefer applicable primary evidence. Record unresolved questions and do not turn an assumption into a verified fact.
-
-Source checking and execution checking are separate. Keep runtime observations with their environment and distinguish them from documentation-backed expectations.
-
-Use [learning resources](learning-resources.md) for a reading route, or return to the [overview](README.md).
+[Folder overview](README.md) · [Tools](toolkit.md) · [Documentation](official-documentation.md) · [Architecture](reference-architectures.md) · [Learning](learning-resources.md) · [Practice](labs-and-projects.md) · [Operations](production-responsibilities.md) · [Standards](standards-and-frameworks.md) · [Related careers](related-careers.md)

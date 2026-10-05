@@ -1,89 +1,68 @@
-# Production responsibilities
+# Production responsibilities and operational resources
 
-A DevOps architect helps teams make delivery decisions that remain workable under change and failure. Production responsibility includes validating assumptions, coordinating ownership, and ensuring that the delivery system itself can be operated and recovered.
+Resources for connecting architecture decisions to delivery safety, reliability, security, recovery, and cost. The architect works with service owners and operators to define boundaries and evidence; responsibilities depend on the organization.
 
-This guide is for experienced engineers and reviewers. It describes responsibilities and review questions, not a system-specific incident runbook. The organization must assign actual authority, operational ownership, and escalation.
+Use the links to review a concrete system. Record the decision, accountable owner, relevant service objective, failure behavior, and verification evidence. Tools used to investigate these concerns are grouped in the [toolkit](toolkit.md).
 
-## Establish requirements and a baseline
+[Folder overview](README.md) · [Tools](toolkit.md) · [Documentation](official-documentation.md) · [Architecture](reference-architectures.md) · [Learning](learning-resources.md) · [Practice](labs-and-projects.md) · [Operations](production-responsibilities.md) · [Standards](standards-and-frameworks.md) · [Related careers](related-careers.md)
 
-Begin with the service outcome and constraints. Identify which users depend on the service, the effects of interruption or incorrect data, required access boundaries, workload assumptions, and the team's operating capacity.
+## Delivery safety and control-plane ownership
 
-Map the current change process. Capture where work waits, where failures occur, and which steps depend on undocumented knowledge. Measure what is relevant to the problem before proposing targets. A faster pipeline is not necessarily an improvement if it promotes incorrect artifacts or makes recovery harder.
+The architect defines how changes move, who can authorize them, what evidence is required, and how the delivery system itself is recovered. Use these resources to review that design with its operators.
 
-The architect should help define the improvement hypothesis, evidence, and decision owner. Product and service owners establish acceptable outcomes; specialists validate relevant technical or organizational constraints.
-
-## Trace the release through the system
-
-A production design should explain how an approved source change becomes a build, an identifiable artifact, a candidate evaluated in context, and a deployment. Include runtime configuration and data changes in that account.
-
-Choose how evidence is retained and verified. A release record should make it possible to identify what ran, where it ran, which configuration it used, and what verification supported the decision. Consider emergency and alternate deployment routes as well as the normal path.
-
-[SLSA's provenance guidance](https://slsa.dev/spec/v1.2/provenance) describes origin information for artifacts. Whether that information is trusted depends on its production and verification model; a file labeled provenance is not sufficient assurance by itself.
-
-## Design access around responsibilities
-
-Identify human and machine actors separately. A build actor may need to fetch dependencies and publish outputs without needing production deployment authority. An application runtime may need access to service data without needing the ability to edit pipelines.
-
-Review how untrusted contributions, scripts, actions, dependencies, and artifacts are processed. Determine which execution contexts can reach sensitive credentials or networks. Use product-specific guidance for the selected platform rather than assuming all runners and triggers behave alike.
-
-The [GitHub Actions secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) discusses risks involving untrusted input and privileged workflows. Use it when assessing GitHub Actions; other platforms need their own documentation.
-
-## Make environment ownership explicit
-
-Define who owns infrastructure state, configuration, networking, secrets, data, and shared services. Clarify which resources are disposable and which need retention, backup, or coordinated changes.
-
-Ask how changes are reviewed, how drift is detected and investigated, and how access is removed. A declaration of intended state does not prove the running system matches it. Avoid correcting every difference automatically when the difference may represent an emergency intervention that still needs assessment.
-
-## Treat deployment and data changes together
-
-Plan the sequence in which schema, data, application behavior, and configuration change. Identify compatible combinations of versions and the point at which a migration becomes difficult or impossible to reverse.
-
-**Illustrative scenario:** a release changes how records are stored. The previous application can no longer interpret newly written records. Reverting the application image may leave the service unable to process those records. The recovery plan must account for data compatibility, not only artifact retention.
-
-Review staged compatibility approaches, migration checkpoints, backups, restore implications, and roll-forward options with the application and database owners. A backup's existence does not prove the service can meet its recovery needs; restore evidence and validation matter.
-
-## Define meaningful rollout evaluation
-
-Select the rollout pattern against workload, risk, observability, and capacity constraints. Determine what candidate population is representative and which measurements distinguish release harm from unrelated variation.
-
-Google's [canarying guidance](https://sre.google/workbook/canarying-releases/) explains the need to evaluate a candidate and connect that evaluation to the release process. A traffic split alone does not establish a sound decision.
-
-Document who can pause exposure, which observations stop promotion, and how the system behaves if evidence is absent. Include low-traffic cases and changes whose effects appear later than the rollout window.
-
-## Design for failure of delivery infrastructure
-
-The pipeline, artifact store, identity service, deployment controller, and telemetry path are dependencies. Their failures can prevent urgent releases or recovery even when the application is still operating.
-
-Separate continuity of the running service from the ability to deliver changes. Identify recovery priorities, retained artifacts, configuration backups, access dependencies, and support ownership. An emergency path must have bounded authority and a reviewable record rather than becoming an undocumented permanent bypass.
-
-## Review production readiness
-
-| Area | Review question | Evidence to request |
+| Resource | What it helps you do | Level and selection notes |
 | --- | --- | --- |
-| Artifact identity | Can the deployment be traced to the intended candidate? | Release record and mismatch rejection test |
-| Access | Can an actor exceed its required responsibility? | Permission review and relevant negative tests |
-| Configuration | Are required values and secrets supplied through controlled routes? | Configuration inventory and validation evidence |
-| Compatibility | Can supported versions coexist during the change? | Contract and migration test results |
-| Release evaluation | Can a harmful candidate be distinguished from expected variation? | Signal design and controlled failure evaluation |
-| Recovery | Can user-visible service be restored under stated conditions? | Recovery exercise with data checks |
-| Delivery dependencies | Can the release system itself be restored? | Dependency map, backups, and recovery evidence |
-| Ownership | Does every critical component have support and escalation? | Named responsibilities and handover review |
-| Cost and capacity | Are operating and failure-mode requirements affordable? | Dated assumptions and workload evidence |
+| [GitHub Actions security guidance](https://docs.github.com/en/actions/security-for-github-actions) | Review runner trust, workflow access, and delivery credential exposure. | Intermediate; public contributions and privileged jobs need distinct trust treatment. |
+| [Release engineering](https://sre.google/sre-book/release-engineering/) | Study an original account of build, release, and deployment engineering. | Intermediate to advanced; Google-specific practices require adaptation. |
+| [Canarying releases](https://sre.google/workbook/canarying-releases/) | Review candidate evaluation, rollout design, and the limits of release signals. | Advanced; comparison quality and observation design determine whether a canary is informative. |
+| [Ensuring rollback safety during deployments](https://d1.awsstatic.com/builderslibrary/pdfs/ensuring-rollback-safety-during-deployments.pdf) | Review compatibility and recovery concerns when versions coexist or change. | Advanced; official PDF. Application and schema compatibility must be tested in your own system. |
+| [SLSA specification](https://slsa.dev/spec/) | Review supply-chain assurance requirements and provenance concepts. | Advanced; select the relevant published specification. Do not confuse a working draft with a stable requirement. |
 
-This table defines review expectations. It does not report that the tests have been performed for a particular system.
+## Reliability targets, alerting, and incident learning
 
-## Work during an incident
+Connect architecture to measurable service behavior. Define who responds, which dependencies matter, and how recovery is verified.
 
-Support the incident lead and responsible teams with knowledge of delivery history, component boundaries, and recovery options. Preserve evidence, state uncertainty, and avoid making concurrent changes outside the response plan.
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [Implementing SLOs](https://sre.google/workbook/implementing-slos/) | Review practical service-level objective design and adoption. | Intermediate; useful measures depend on service behavior and user expectations. |
+| [Alerting on SLOs](https://sre.google/workbook/alerting-on-slos/) | Compare alerting approaches based on reliability objectives and budget consumption. | Advanced; validate alert behavior against real traffic and responder capacity. |
+| [Managing incidents](https://sre.google/sre-book/managing-incidents/) | Review incident roles, coordination, communication, and operational response. | Intermediate; adapt role separation to team size and actual on-call arrangements. |
+| [Postmortem culture](https://sre.google/sre-book/postmortem-culture/) | Review incident learning, documentation, and follow-up practices. | Intermediate; focus on evidenced contributing factors and actionable improvement. |
 
-Distinguish immediate mitigation from confirmed cause. A failure following a release makes the release relevant but does not by itself prove causation. Compare actual service behavior, deployment evidence, dependencies, and recent changes before recommending a durable correction.
+## Failure containment and dependency behavior
 
-After recovery, examine whether the design made detection, diagnosis, or intervention unnecessarily difficult. Convert lessons into specific controls, tests, or clearer ownership, with acceptance criteria.
+Use these references when reviewing retries, overload, deployment boundaries, and cascades. Document how the application behaves when dependencies are slow or unavailable.
 
-## Handover and continuing improvement
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [Timeouts, retries, and backoff with jitter](https://d1.awsstatic.com/builderslibrary/pdfs/timeouts-retries-and-backoff-with-jitter.pdf) | Review dependency-call behavior and retry amplification risks. | Advanced; official PDF. Values require latency and failure evidence from your own system. |
+| [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) | Study duplicate-request handling and API design trade-offs. | Advanced; operation semantics determine which retry behavior is safe. |
+| [Addressing cascading failures](https://sre.google/sre-book/addressing-cascading-failures/) | Review overload, feedback loops, and failure propagation. | Advanced; validate containment strategies with bounded tests and measurements. |
+| [Kubernetes application troubleshooting](https://kubernetes.io/docs/tasks/debug/debug-application/) | Locate workload debugging references for deployment and runtime failures. | Intermediate; establish scope before applying changes. Read permissions and command effects. |
 
-Handover includes supported workflows, known limitations, decision records, implementation evidence, operational documentation, support routes, and migration or deprecation rules. The receiving teams should be able to explain the design and demonstrate relevant actions without depending on the architect's memory.
+## Recovery, security, cost, and evidence
 
-Review shared patterns through controlled adoption. Changes to templates, credentials, runners, and controllers can affect many teams. Pilot them, assess compatibility, and provide a recovery path before broad rollout.
+Agree recovery objectives and required evidence before an outage. Track ownership of restored data, identities, artifacts, configuration, and supporting services.
 
-Continue with the [toolkit](toolkit.md), assess the [curriculum capstone](curriculum.md), or return to the [overview](README.md).
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [AWS disaster recovery guidance](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html) | Compare recovery strategies and resilience considerations for AWS workloads. | Advanced; define recovery time and recovery point objectives and test the complete workload. |
+| [Velero documentation](https://velero.io/docs/) | Review Kubernetes backup and restore mechanisms and provider requirements. | Advanced; rehearse restore and verify application data consistency, not only object recreation. |
+| [Kubernetes security checklist](https://kubernetes.io/docs/concepts/security/security-checklist/) | Review controls for cluster and workload operation. | Intermediate; assign each control an owner and evidence source. |
+| [FinOps Framework](https://www.finops.org/framework/) | Organize allocation, cost accountability, forecasting, and optimization responsibilities. | Intermediate; cost work requires billing and usage data, not estimates alone. |
+| [Cloudflare outage report, July 2019](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/) | Study an original account of a software change, resource exhaustion, and recovery. | Advanced; historical incident, not a description of the company's current architecture. |
+| [GitLab database outage report, January 2017](https://about.gitlab.com/blog/2017/02/01/gitlab-dot-com-database-incident/) | Study an original recovery incident and the importance of tested backup procedures. | Advanced; historical incident. Distinguish recorded facts from assumptions about present systems. |
+
+## Provider-specific recovery planning
+
+Use recovery guidance for the selected environment and prove the end-to-end outcome with its service owners. Replication, backup, failover, and restore are different mechanisms.
+
+| Resource | What it helps you do | Level and selection notes |
+| --- | --- | --- |
+| [Azure reliability disaster-recovery guidance](https://learn.microsoft.com/en-us/azure/reliability/disaster-recovery-overview) | Locate Azure disaster-recovery concepts and planning guidance. | Advanced; service support and workload dependencies determine feasible recovery objectives. |
+| [Google Cloud disaster recovery planning guide](https://cloud.google.com/architecture/dr-scenarios-planning-guide) | Review recovery planning, objectives, and scenario selection. | Advanced; test identity, configuration, data, and traffic restoration together. |
+| [PostgreSQL backup and restore](https://www.postgresql.org/docs/current/backup.html) | Review database backup approaches and their operational implications. | Advanced; use documentation matching the deployed database version and test restored data. |
+
+---
+
+[Folder overview](README.md) · [Tools](toolkit.md) · [Documentation](official-documentation.md) · [Architecture](reference-architectures.md) · [Learning](learning-resources.md) · [Practice](labs-and-projects.md) · [Operations](production-responsibilities.md) · [Standards](standards-and-frameworks.md) · [Related careers](related-careers.md)
