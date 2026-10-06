@@ -1,19 +1,15 @@
-# Developer infrastructure career resources
+# Developer infrastructure
 
-Development tools, developer platforms, engineering productivity, software infrastructure, and developer experience.
+Explore related engineering roles and their resource collections.
 
-[All career categories](../README.md) · [Repository home](../../README.md)
+## Explore
 
-**Content status:** these career resource collections are being developed. Their required files and paths are registered, but their resource pages have not yet been populated. This page provides navigation across the intended category scope.
+- [Developer experience engineer](developer-experience-engineer)
+- [Developer infrastructure engineer](developer-infrastructure-engineer)
+- [Developer platform engineer](developer-platform-engineer)
+- [Developer productivity engineer](developer-productivity-engineer)
+- [Engineering productivity engineer](engineering-productivity-engineer)
+- [Software infrastructure engineer](software-infrastructure-engineer)
+- [Tooling engineer](tooling-engineer)
 
-| Career collection | Status |
-| --- | --- |
-| [Developer experience engineer](developer-experience-engineer/README.md) | Resource research and writing pending. |
-| [Developer infrastructure engineer](developer-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Developer platform engineer](developer-platform-engineer/README.md) | Resource research and writing pending. |
-| [Developer productivity engineer](developer-productivity-engineer/README.md) | Resource research and writing pending. |
-| [Engineering productivity engineer](engineering-productivity-engineer/README.md) | Resource research and writing pending. |
-| [Software infrastructure engineer](software-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Tooling engineer](tooling-engineer/README.md) | Resource research and writing pending. |
-
-Each populated career collection uses nine public files: overview, toolkit, official documentation, reference architectures, learning resources, labs and projects, production responsibilities, standards and frameworks, and related careers. Browse by engineering task; the directory does not impose a curriculum.
+[Return to the engineering directory](../../README.md)

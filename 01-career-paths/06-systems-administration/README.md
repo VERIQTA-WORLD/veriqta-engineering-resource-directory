@@ -1,22 +1,18 @@
-# Systems administration career resources
+# Systems administration
 
-Linux, Unix, Windows, endpoints, host services, system automation, and operating-system architecture.
+Explore related engineering roles and their resource collections.
 
-[All career categories](../README.md) · [Repository home](../../README.md)
+## Explore
 
-**Content status:** these career resource collections are being developed. Their required files and paths are registered, but their resource pages have not yet been populated. This page provides navigation across the intended category scope.
+- [Endpoint engineer](endpoint-engineer)
+- [Linux administrator](linux-administrator)
+- [Linux engineer](linux-engineer)
+- [Systems administrator](systems-administrator)
+- [Systems architect](systems-architect)
+- [Systems automation engineer](systems-automation-engineer)
+- [Systems engineer](systems-engineer)
+- [Unix administrator](unix-administrator)
+- [Windows administrator](windows-administrator)
+- [Windows server engineer](windows-server-engineer)
 
-| Career collection | Status |
-| --- | --- |
-| [Endpoint engineer](endpoint-engineer/README.md) | Resource research and writing pending. |
-| [Linux administrator](linux-administrator/README.md) | Resource research and writing pending. |
-| [Linux engineer](linux-engineer/README.md) | Resource research and writing pending. |
-| [Systems administrator](systems-administrator/README.md) | Resource research and writing pending. |
-| [Systems architect](systems-architect/README.md) | Resource research and writing pending. |
-| [Systems automation engineer](systems-automation-engineer/README.md) | Resource research and writing pending. |
-| [Systems engineer](systems-engineer/README.md) | Resource research and writing pending. |
-| [Unix administrator](unix-administrator/README.md) | Resource research and writing pending. |
-| [Windows administrator](windows-administrator/README.md) | Resource research and writing pending. |
-| [Windows server engineer](windows-server-engineer/README.md) | Resource research and writing pending. |
-
-Each populated career collection uses nine public files: overview, toolkit, official documentation, reference architectures, learning resources, labs and projects, production responsibilities, standards and frameworks, and related careers. Browse by engineering task; the directory does not impose a curriculum.
+[Return to the engineering directory](../../README.md)

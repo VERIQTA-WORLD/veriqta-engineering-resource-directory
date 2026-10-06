@@ -1,25 +1,21 @@
-# Data, databases, and messaging career resources
+# Data database messaging
 
-Database operation, data platforms, caches, search, streaming, messaging, middleware, API infrastructure, and integration.
+Explore related engineering roles and their resource collections.
 
-[All career categories](../README.md) · [Repository home](../../README.md)
+## Explore
 
-**Content status:** these career resource collections are being developed. Their required files and paths are registered, but their resource pages have not yet been populated. This page provides navigation across the intended category scope.
+- [Api infrastructure engineer](api-infrastructure-engineer)
+- [Cache infrastructure engineer](cache-infrastructure-engineer)
+- [Data infrastructure engineer](data-infrastructure-engineer)
+- [Data platform engineer](data-platform-engineer)
+- [Database administrator](database-administrator)
+- [Database engineer](database-engineer)
+- [Database platform engineer](database-platform-engineer)
+- [Database reliability engineer](database-reliability-engineer)
+- [Integration engineer](integration-engineer)
+- [Messaging infrastructure engineer](messaging-infrastructure-engineer)
+- [Middleware engineer](middleware-engineer)
+- [Search infrastructure engineer](search-infrastructure-engineer)
+- [Streaming infrastructure engineer](streaming-infrastructure-engineer)
 
-| Career collection | Status |
-| --- | --- |
-| [API infrastructure engineer](api-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Cache infrastructure engineer](cache-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Data infrastructure engineer](data-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Data platform engineer](data-platform-engineer/README.md) | Resource research and writing pending. |
-| [Database administrator](database-administrator/README.md) | Resource research and writing pending. |
-| [Database engineer](database-engineer/README.md) | Resource research and writing pending. |
-| [Database platform engineer](database-platform-engineer/README.md) | Resource research and writing pending. |
-| [Database reliability engineer](database-reliability-engineer/README.md) | Resource research and writing pending. |
-| [Integration engineer](integration-engineer/README.md) | Resource research and writing pending. |
-| [Messaging infrastructure engineer](messaging-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Middleware engineer](middleware-engineer/README.md) | Resource research and writing pending. |
-| [Search infrastructure engineer](search-infrastructure-engineer/README.md) | Resource research and writing pending. |
-| [Streaming infrastructure engineer](streaming-infrastructure-engineer/README.md) | Resource research and writing pending. |
-
-Each populated career collection uses nine public files: overview, toolkit, official documentation, reference architectures, learning resources, labs and projects, production responsibilities, standards and frameworks, and related careers. Browse by engineering task; the directory does not impose a curriculum.
+[Return to the engineering directory](../../README.md)
