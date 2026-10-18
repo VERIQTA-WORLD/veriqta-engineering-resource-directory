@@ -1,262 +1,172 @@
-# DevOps architect: labs and portfolio projects
+# DevOps Architect: Labs and Portfolio Projects
 
-Use these practical resources to test a design assumption and produce evidence you can explain. They range from local introductory exercises to advanced cloud reference implementations. Choose a resource for its engineering question, not for the number of products you can put in a diagram.
+Use these projects to produce evidence relevant to designing a coherent delivery and operating system across applications, infrastructure, identity, observability, and ownership. Each is an original project brief assembled around maintained source instructions. It is not a claim that a complete ready-made tutorial exists for every extension below.
 
-The descriptions identify prerequisites, portfolio evidence, and cleanup concerns. The sources were inspected; these exercises were not executed for this directory. Check the current instructions before running them. No cloud budget or production permission is assumed.
+## Before you start
 
-## Find a practical resource
+Choose one project and read its full source prerequisites, permissions, access requirements, and cleanup instructions. Record versions and dedicated resource names. Use synthetic data and owned lab resources. A design-only project is valid when deployment is impractical; retain assumptions and validation plans instead of invented runtime results.
 
-- [Local Kubernetes with kind](#local-kubernetes-with-kind)
-- [Local Kubernetes with minikube](#local-kubernetes-with-minikube)
-- [Build and share a containerized application](#build-and-share-a-containerized-application)
-- [Infrastructure lifecycle with local Docker](#infrastructure-lifecycle-with-local-docker)
-- [Desired-state application delivery with Argo CD](#desired-state-application-delivery-with-argo-cd)
-- [Bootstrap a Flux-managed environment](#bootstrap-a-flux-managed-environment)
-- [Cloud Kubernetes with the EKS Workshop](#cloud-kubernetes-with-the-eks-workshop)
-- [Azure AKS baseline reference implementation](#azure-aks-baseline-reference-implementation)
-- [Google Cloud enterprise foundation example](#google-cloud-enterprise-foundation-example)
-- [Focused cloud-control experiments](#focused-cloud-control-experiments)
-- [Distributed tracing with the OpenTelemetry Demo](#distributed-tracing-with-the-opentelemetry-demo)
-- [Metrics collection with Prometheus](#metrics-collection-with-prometheus)
-- [Performance checks with k6](#performance-checks-with-k6)
-- [Backstage portal foundations](#backstage-portal-foundations)
-- [Reusable project scaffolding](#reusable-project-scaffolding)
-- [Admission-policy examples with Kyverno](#admission-policy-examples-with-kyverno)
-- [Rego policy experiments](#rego-policy-experiments)
-- [Artifact signing and verification](#artifact-signing-and-verification)
+## Project 1: Compare two delivery architectures
 
-## Local Kubernetes with kind
+**Problem:** A fictional company needs a delivery path for three services with different release schedules. Compare independent repository workflows with a shared delivery service.
 
-**Source:** [kind quick start](https://kind.sigs.k8s.io/docs/user/quick-start/).
+**Deliverable:** Produce context and execution views, a trust-boundary table, and two decision records. Choose a preferred option using operator capacity, recovery, and compatibility requirements.
 
-**You need:** Foundation to intermediate; container engine, command-line familiarity, and enough local memory.
+**Prerequisites and access:** A design-only exercise needs a document editor and no cloud account. If you build a prototype, use only synthetic repositories and a dedicated lab environment.
 
-**Use it to:** Inspect a local cluster and a small application so you can reason about scheduling, services, and application changes without starting with cloud accounts.
+### Build and investigate
 
-**Evidence to keep:** Keep the cluster configuration, workload manifests, observation notes, and the result of an application update. Local success does not establish a highly available production control plane.
+1. State the acceptance condition and record the starting state.
+2. Follow the applicable upstream instructions below for the component setup.
+3. Complete the project extension and preserve observations separately from interpretation.
+4. Investigate the bounded scenario below and verify recovery where implemented.
+5. Complete cleanup and record resources intentionally retained.
 
-**Cleanup and limits:** Use the guide's cluster-deletion instructions. Check for locally retained images and containers; do not delete a cluster you use for other work.
+**Failure or review scenario:** Review an unavailable registry, an expired executor credential, and a data-incompatible rollback. State the evidence you need before committing to the design.
 
-## Local Kubernetes with minikube
+**Cleanup:** Retain the design and assumptions. Remove only prototype resources you actually created and revoke any disposable tokens.
 
-**Source:** [minikube start guide](https://minikube.sigs.k8s.io/docs/start/).
+**Scope limit:** A comparison can establish reasoning quality; it does not demonstrate runtime availability.
 
-**You need:** Foundation to intermediate; use a supported local driver and the guide's system requirements.
+### Implementation resources
 
-**Use it to:** Compare a local cluster workflow with kind, especially host integration, drivers, and optional addons. Choose one for the first experiment rather than installing both without a reason.
+### [C4 model](https://c4model.com/)
 
-**Evidence to keep:** Document the driver, exposed endpoints, addon choices, and the difference between a stopped and removed environment.
+**Use it to answer:** Which people, systems, and execution boundaries must the audience understand before reviewing the design?
 
-**Cleanup and limits:** Use the source's stop/delete guidance for the intended profile. Inspect retained volumes or driver resources before assuming cleanup is complete.
+- **Start with:** System context, then container diagrams when more detail is needed.
+- **Prerequisites:** Knowledge of the system and its dependencies.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-c4) for publisher context, access conditions, and the key limitation.
 
-## Build and share a containerized application
+### [Architecture Decision Records](https://adr.github.io/)
 
-**Source:** [Docker workshop](https://docs.docker.com/get-started/workshop/).
+**Use it to answer:** What alternatives did you consider, why did you choose this one, and when should the decision be revisited?
 
-**You need:** Foundation; a suitable Docker environment and basic shell familiarity. Registry publication requires an appropriate account.
+- **Start with:** The introductory explanation and a suitable template.
+- **Prerequisites:** A decision with real alternatives and consequences.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-adr) for publisher context, access conditions, and the key limitation.
 
-**Use it to:** Follow the official application exercise and inspect image, runtime, networking, and storage choices. Keep the application isolated from sensitive local files.
+### [GitHub Actions documentation](https://docs.github.com/en/actions)
 
-**Evidence to keep:** Retain the Dockerfile, image identifier, service explanation, and observations about persistent data. Publishing an image makes it available according to registry permissions.
+**Use it to answer:** What triggers the workflow, where does it execute, and which result does it actually establish?
 
-**Cleanup and limits:** Review the cleanup commands included by the workshop. Remove only the exercise's containers, networks, and volumes; review pushed registry artifacts separately.
+- **Start with:** The relevant concepts, how-to guide, and reference for your task.
+- **Prerequisites:** Git and repository workflow familiarity.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-actions) for publisher context, access conditions, and the key limitation.
 
-## Infrastructure lifecycle with local Docker
+## Project 2: Validate a local delivery boundary
 
-**Source:** [Terraform Docker tutorial collection](https://developer.hashicorp.com/terraform/tutorials/docker-get-started).
+**Problem:** Build a disposable Kubernetes learning environment and examine how Git-controlled application configuration reaches it. Use the upstream quick starts for implementation.
 
-**You need:** Foundation; Terraform CLI and a working Docker environment.
+**Deliverable:** Record repository identity, reconciler authority, target scope, application verification, and an intentional configuration difference.
 
-**Use it to:** Use the tutorial collection to inspect configuration, plan, apply, state, change, and destroy with local resources. This is a guided workflow, not a cloud landing-zone design.
+**Prerequisites and access:** You need a supported runtime, adequate local capacity, Kubernetes tools, and compatible Argo CD instructions. Git hosting or registry actions may require accounts.
 
-**Evidence to keep:** Capture a sanitized plan and explain which resource changes after a configuration edit. Keep state free of unrelated resources.
+### Build and investigate
 
-**Cleanup and limits:** Follow the collection's destroy tutorial, then check its managed containers and state. Never apply destroy to a shared or unrelated state file.
+1. State the acceptance condition and record the starting state.
+2. Follow the applicable upstream instructions below for the component setup.
+3. Complete the project extension and preserve observations separately from interpretation.
+4. Investigate the bounded scenario below and verify recovery where implemented.
+5. Complete cleanup and record resources intentionally retained.
 
-## Desired-state application delivery with Argo CD
+**Failure or review scenario:** In the dedicated lab, compare configuration drift with an intentionally invalid desired configuration. Explain how each appears to the controller and to the application user.
 
-**Source:** [Argo CD example applications](https://github.com/argoproj/argocd-example-apps).
+**Cleanup:** Remove the application and dedicated controller or cluster using the applicable upstream instructions. Remove exercise integrations and credentials separately.
 
-**You need:** Intermediate; disposable Kubernetes cluster, Argo CD installation, and familiarity with repository-backed manifests.
+**Scope limit:** A local cluster does not reproduce production control-plane availability or cloud network behavior.
 
-**Use it to:** Choose one example application and study the relationship between repository state, application configuration, live resources, and synchronization. The repository supplies examples, not a complete production deployment.
+### Implementation resources
 
-**Evidence to keep:** Keep an application manifest, a drift observation, and an explanation of the chosen synchronization policy and permissions.
+### [kind quick start](https://kind.sigs.k8s.io/docs/user/quick-start/)
 
-**Cleanup and limits:** No single teardown covers every example. Remove the application and exercise resources according to ownership, revoke disposable credentials, and delete the dedicated cluster if used.
+**Use it to answer:** Which local cluster setup can reproduce the behavior of interest, and which production assumptions remain absent?
 
-## Bootstrap a Flux-managed environment
+- **Start with:** Installation, creating a cluster, interacting with it, and deletion.
+- **Prerequisites:** A supported container runtime, local capacity, and compatible tools.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-kind) for publisher context, access conditions, and the key limitation.
 
-**Source:** [Flux getting started](https://fluxcd.io/flux/get-started/).
+### [Argo CD documentation](https://argo-cd.readthedocs.io/en/stable/)
 
-**You need:** Intermediate; disposable cluster, Git access, required CLI, and permissions for the selected bootstrap provider.
+**Use it to answer:** Which desired state is authoritative, what can the reconciler change, and how is disagreement exposed?
 
-**Use it to:** Follow the official bootstrap route and track which repository objects and cluster controllers it creates. Explain how subsequent changes reach the cluster.
+- **Start with:** Core concepts, then the relevant user guide.
+- **Prerequisites:** Kubernetes resources, Git, and application deployment knowledge.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-argo) for publisher context, access conditions, and the key limitation.
 
-**Evidence to keep:** Retain sanitized bootstrap configuration, reconciliation status, and a documented update. Explain the effect of pausing or removing reconciliation.
+### [GitHub Actions: Secure use reference](https://docs.github.com/en/actions/reference/security/secure-use)
 
-**Cleanup and limits:** Read the [Flux uninstall reference](https://fluxcd.io/flux/cmd/flux_uninstall/) and inspect repository resources and credentials separately. Cluster deletion alone does not revoke a repository token.
+**Use it to answer:** Can untrusted input or a dependency influence a job that holds consequential authority?
 
-## Cloud Kubernetes with the EKS Workshop
+- **Start with:** Untrusted input, credentials, and third-party actions.
+- **Prerequisites:** Understanding of triggers, jobs, and runner access.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-secure) for publisher context, access conditions, and the key limitation.
 
-**Source:** [Amazon EKS Workshop](https://www.eksworkshop.com/).
+## Project 3: Review recovery dependencies
 
-**You need:** Intermediate to advanced; AWS account, required permissions, budget, CLI setup, and the chosen module prerequisites.
+**Problem:** Create a design review for a service whose deployment runner depends on the same environment it must recover.
 
-**Use it to:** Choose a module that tests one design question, such as workload access, networking, observability, or scaling. The workshop is a collection; not every module is necessary for your portfolio.
+**Deliverable:** Produce a dependency map, recovery access plan, data-recovery assumptions, and an acceptance checklist for a future restore test.
 
-**Evidence to keep:** Record the module, architecture assumption, actual result, and AWS resources created. Managed clusters and auxiliary services can incur charges.
+**Prerequisites and access:** Design-only work is suitable; use synthetic identities and architecture. Deploying a cloud test requires a dedicated account, explicit permissions, and cost controls.
 
-**Cleanup and limits:** Follow the workshop's cleanup section and the selected module's additional teardown. Check retained volumes, load balancers, roles, and other resources in the account.
+### Build and investigate
 
-## Azure AKS baseline reference implementation
+1. State the acceptance condition and record the starting state.
+2. Follow the applicable upstream instructions below for the component setup.
+3. Complete the project extension and preserve observations separately from interpretation.
+4. Investigate the bounded scenario below and verify recovery where implemented.
+5. Complete cleanup and record resources intentionally retained.
 
-**Source:** [AKS baseline implementation](https://github.com/mspnp/aks-baseline).
+**Failure or review scenario:** Walk through runner loss, inaccessible infrastructure state, and unavailable normal identity. Identify which recovery step cannot currently be performed.
 
-**You need:** Advanced; Azure subscription, required deployment permissions, infrastructure-tool familiarity, and budget.
+**Cleanup:** Remove any optional lab infrastructure and revoke temporary access. Record unresolved dependencies instead of inventing restore results.
 
-**Use it to:** Inspect the repository's deployment model and prerequisites before running it. Use it to evaluate the documented AKS baseline rather than to claim you designed a production platform from scratch.
+**Scope limit:** A tabletop review identifies gaps but does not measure actual recovery time.
 
-**Evidence to keep:** Compare the reference architecture with the deployed resources; explain network, identity, operational, and cost decisions you would change for another workload.
+### Implementation resources
 
-**Cleanup and limits:** Use the implementation's removal instructions and verify dependent or retained resources. Deployment creates billable Azure infrastructure; confirm deletion in the subscription.
+### [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
 
-## Google Cloud enterprise foundation example
+**Use it to answer:** Which workload assumption needs review across reliability, security, operations, performance, cost, or sustainability?
 
-**Source:** [Google Cloud example foundation](https://github.com/terraform-google-modules/terraform-example-foundation).
+- **Start with:** The framework overview and the pillar relevant to your review.
+- **Prerequisites:** A defined workload and stakeholder requirements.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-aws) for publisher context, access conditions, and the key limitation.
 
-**You need:** Advanced; appropriate organization and project authority, Terraform knowledge, billing setup, and familiarity with the blueprint.
+### [The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)
 
-**Use it to:** Review a selected stage and its account, identity, network, and policy assumptions. This multi-stage foundation is not a safe first Terraform exercise.
+**Use it to answer:** Which reliability responsibility needs better evidence, ownership, or an operating procedure?
 
-**Evidence to keep:** Produce a stage/dependency map and an ownership review before deployment. If you deploy, retain sanitized evidence of controls and the resources actually created.
+- **Start with:** The chapter corresponding to your current service concern.
+- **Prerequisites:** Experience operating a service.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-sre) for publisher context, access conditions, and the key limitation.
 
-**Cleanup and limits:** Teardown depends on the stages and their dependencies; follow repository instructions and plan deletion explicitly. Do not assume one destroy command safely removes an organization foundation.
+### [AWS IAM policies and permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 
-## Focused cloud-control experiments
+**Use it to answer:** Which policy layers determine whether the execution identity can perform the requested action?
 
-**Source:** [AWS Well-Architected Labs](https://www.wellarchitectedlabs.com/).
+- **Start with:** Policy types and the linked evaluation guidance.
+- **Prerequisites:** AWS identities, resources, and basic JSON familiarity.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-iam) for publisher context, access conditions, and the key limitation.
 
-**You need:** Intermediate to advanced; selected AWS lab prerequisites, account authority, and budget.
+## Portfolio evidence and acceptance
 
-**Use it to:** Select a named lab that supports your design question. The landing page is a discovery collection; inspect the actual lab before allocating permissions or infrastructure.
+| Item | What to include |
+| --- | --- |
+| Goal | The engineering problem and the user or operator it affects |
+| Architecture | Components, dependencies, trust boundaries, and ownership |
+| Reproduction | Source instructions, your additions, versions, and access needs |
+| Observation | Expected and actual results with relevant context |
+| Failure | The bounded fault or design challenge and your reasoning |
+| Verification | Evidence that the stated outcome was achieved, or a clear untested status |
+| Cleanup | Removed resources, retained resources, credentials, and outstanding costs |
+| Attribution | Which implementation material came from external sources |
 
-**Evidence to keep:** Record the selected lab, the control tested, its result, and the charges or resources it could leave behind.
+A passing demonstration supports the stated exercise outcome. Broader security, performance, resilience, and production-readiness claims need their own defined criteria and evidence. If a second person cannot reproduce the result, identify missing prerequisites before expanding scope.
 
-**Cleanup and limits:** Use the selected lab's cleanup instructions. This directory does not certify every lab in the collection or guarantee that teardown is complete.
+## Sources and review scope
 
-## Distributed tracing with the OpenTelemetry Demo
+Prepared for VERIQTA on 18 October 2026. The linked primary-source entry pages were opened and reviewed for identity, scope, and the navigation supporting this selection. Full manuals, linked courses, and downstream examples were not reviewed in their entirety. No exercises or production changes were executed for this collection. Examples, project briefs, and decision aids are original VERIQTA editorial guidance. Use the applicable product version; access and hosted-service conditions can change.
 
-**Source:** [OpenTelemetry Demo](https://opentelemetry.io/docs/demo/).
-
-**You need:** Intermediate; supported local or Kubernetes deployment environment and enough memory for the selected setup.
-
-**Use it to:** Trace requests across the demonstration services and observe how telemetry reaches the configured backends. Use synthetic traffic rather than real customer payloads.
-
-**Evidence to keep:** Keep a request trace, a component map, and an explanation of where instrumentation, collection, and query access are configured.
-
-**Cleanup and limits:** Follow the chosen deployment method's teardown; inspect volumes and external integrations. The full demo can be resource-intensive.
-
-## Metrics collection with Prometheus
-
-**Source:** [Prometheus getting started](https://prometheus.io/docs/prometheus/latest/getting_started/).
-
-**You need:** Foundation to intermediate; local process or container execution and familiarity with metrics endpoints.
-
-**Use it to:** Follow the official getting-started route and inspect targets, metric labels, querying, and basic rule configuration.
-
-**Evidence to keep:** Keep a successful target observation, a query explanation, and an example of a missing or invalid target. Do not expose an unauthenticated demo to the internet.
-
-**Cleanup and limits:** Stop and remove only the exercise process/container and its local data as appropriate. The introduction is not a full production storage or retention design.
-
-## Performance checks with k6
-
-**Source:** [Running k6](https://grafana.com/docs/k6/latest/get-started/running-k6/).
-
-**You need:** Intermediate; k6 installation, basic scripting knowledge, and a target you own or are authorized to test.
-
-**Use it to:** Write a small test against a local sample application and distinguish request failures, checks, and thresholds. Avoid public services and uncontrolled load.
-
-**Evidence to keep:** Retain the test, workload assumptions, result summary, and an explanation of the threshold decision. More virtual users do not automatically model real usage.
-
-**Cleanup and limits:** Stop local test services and remove exercise artifacts as desired. If a hosted testing service is used, inspect its account and retention settings separately.
-
-## Backstage portal foundations
-
-**Source:** [Backstage getting started](https://backstage.io/docs/getting-started/).
-
-**You need:** Intermediate; the currently documented Node.js/toolchain prerequisites and application-development familiarity.
-
-**Use it to:** Create a local portal and inspect its catalog and configuration. Keep initial experiments local rather than exposing an unfinished authentication setup.
-
-**Evidence to keep:** Explain the boundary between portal UI, catalog metadata, backend integrations, and the systems those integrations can change.
-
-**Cleanup and limits:** Stop the development services and remove only the exercise directory and dedicated resources. Revoke any test integration credentials you configured.
-
-## Reusable project scaffolding
-
-**Source:** [Backstage Software Templates](https://backstage.io/docs/features/software-templates/).
-
-**You need:** Intermediate; a running Backstage environment and understanding of its scaffolder actions.
-
-**Use it to:** Design a template for a small sample service, then inspect how inputs become files and repository actions. Review action permissions and untrusted input handling.
-
-**Evidence to keep:** Keep the template, generated project, permissions explanation, and a record of validation failures. Scaffolding does not certify the generated service's operating readiness.
-
-**Cleanup and limits:** Remove generated test repositories and revoke disposable tokens where used. The feature documentation is an implementation reference; teardown depends on the integrations you choose.
-
-## Admission-policy examples with Kyverno
-
-**Source:** [Kyverno policy library](https://kyverno.io/policies/).
-
-**You need:** Intermediate; disposable Kubernetes environment, compatible Kyverno release, and admission-policy knowledge.
-
-**Use it to:** Choose a policy relevant to a real requirement and test both an accepted and rejected synthetic workload. Inspect enforcement mode and exceptions before applying it.
-
-**Evidence to keep:** Keep the policy, test inputs, expected and actual results, and an exception/ownership explanation. A library example is not an organization-approved control.
-
-**Cleanup and limits:** Remove the test policy and workloads using their known names. The library has no universal cleanup path; cluster removal is an option only for a dedicated lab cluster.
-
-## Rego policy experiments
-
-**Source:** [OPA Rego learning examples](https://www.openpolicyagent.org/docs/policy-language).
-
-**You need:** Foundation to intermediate; browser and basic structured-data knowledge. The guide links the official playground.
-
-**Use it to:** Use the source examples to evaluate a small authorization rule against synthetic allow and deny inputs. Inspect policy semantics before embedding a policy engine.
-
-**Evidence to keep:** Retain the policy and test cases, including an unexpected or missing input. Explain what the policy evaluates and what enforcement component would consume the result.
-
-**Cleanup and limits:** No cloud infrastructure is needed for the browser exercise. The guide was reviewed; the interactive application was not executed. Do not submit secrets or private records; consider what is saved or shared before publishing a playground link.
-
-## Artifact signing and verification
-
-**Source:** [Cosign signing quickstart](https://docs.sigstore.dev/quickstart/quickstart-cosign/).
-
-**You need:** Intermediate; Cosign installation and the quickstart's identity, registry, and artifact prerequisites.
-
-**Use it to:** Follow the source's signing and verification workflow for an exercise artifact and examine the identity and trust conditions.
-
-**Evidence to keep:** Retain the artifact digest, verification policy, and a failed verification case without exposing credentials. Signature presence alone does not establish artifact safety.
-
-**Cleanup and limits:** Remove disposable registry artifacts and credentials where appropriate. Public transparency-log records may remain after local or registry cleanup; use synthetic names and content.
-
-## Portfolio combinations you can adapt
-
-These are original project briefs assembled around the linked references above. They are not claims that a complete ready-made tutorial exists for each combination. Use the source instructions for implementation, and keep the environment disposable.
-
-| Project brief | Starting resources above | What makes the result useful |
-| --- | --- | --- |
-| A local application delivery path | Docker, Terraform Docker, kind or minikube, then Argo CD or Flux | Trace source/configuration to a deployed application; show drift, controlled update, and teardown |
-| A service with diagnostic evidence | OpenTelemetry Demo, Prometheus, and a small authorized k6 test | Show a request path, useful signals, a bounded failure, and the evidence you used to distinguish hypotheses |
-| A guarded deployment interface | Kyverno examples, Rego experiments, and the signing quickstart | Show accepted and rejected cases, identity assumptions, exceptions, and the control's limits |
-| A platform workflow with clear ownership | Backstage installation and Software Templates | Demonstrate a user task, generated artifacts, action authority, and the operating boundary behind the portal |
-| A cloud baseline design review | One provider implementation and its architecture reference | Explain required authority, workload assumptions, operating responsibilities, cost, and a realistic teardown plan |
-
-## Present the work honestly
-
-Include your goal, environment, architecture decision, source attribution, changes you made, observations, failures, and cleanup evidence. State which components came from a reference. Use sanitized logs and diagrams; exclude secrets, customer data, and unauthorized screenshots. A runnable demo is useful evidence of a workflow, not proof of production readiness.
-
-You can also produce a design-only portfolio item when deployment would be too costly. Label it clearly and include the assumptions, validation plan, and unresolved questions instead of invented runtime results.
-
-[Architecture references](devops-architect-architecture-resources.md) · [Production-practice resources](devops-architect-production-practices.md) · [Discuss and assess your evidence](devops-architect-interview-and-assessment-resources.md)
+[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)

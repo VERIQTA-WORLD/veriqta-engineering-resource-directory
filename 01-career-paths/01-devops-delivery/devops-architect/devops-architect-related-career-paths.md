@@ -1,63 +1,65 @@
-# DevOps architect: related career paths
+# DevOps Architect: Related Career Paths
 
-Use these neighboring roles to find the part of engineering work you want to investigate more closely. Responsibilities overlap, and organizations divide ownership differently. The distinctions below describe useful discovery routes rather than rigid job-title boundaries.
+Use neighboring roles to find the resource collection that matches your next engineering question. Your current focus is designing a coherent delivery and operating system across applications, infrastructure, identity, observability, and ownership. Titles vary between organizations; the distinctions below describe responsibilities rather than mandatory career progression.
 
-The linked career landing pages exist in the inspected repository. At the time of this batch, they are navigation scaffolds; their linked subject files are not certified as populated resource collections by this delivery. You can use the direct resources in this DevOps architect collection while neighboring collections are developed.
+## Choose by the work in front of you
 
-## DevOps engineer
+### [DevOps Engineer](../devops-engineer/README.md)
 
-[DevOps engineer career navigation](../devops-engineer/README.md). Day-to-day delivery automation and operating work. Choose this route when you need implementation and operation across pipelines, infrastructure, deployments, and service support.
+Follow implementation and operating evidence through one service. Choose this route when your design question becomes a concrete workflow or diagnostic task.
 
-## DevOps automation engineer
+**Start with:** [DevOps Engineer role and responsibilities](../devops-engineer/devops-engineer-role-and-responsibilities.md), then [architecture resources](../devops-engineer/devops-engineer-architecture-resources.md) for design questions or [labs and portfolio projects](../devops-engineer/devops-engineer-labs-and-portfolio-projects.md) for practical evidence.
 
-[DevOps automation engineer career navigation](../devops-automation-engineer/README.md). Reusable automation, workflow implementation, and execution correctness. Explore this role when you want to turn architecture decisions into repeatable workflows with clear inputs, failure handling, and permissions.
+### [DevOps Automation Engineer](../devops-automation-engineer/README.md)
 
-## DevOps infrastructure engineer
+Explore execution contracts, retry, concurrency, and reconciliation. Choose this route when an architectural capability needs predictable operation semantics.
 
-[DevOps infrastructure engineer career navigation](../devops-infrastructure-engineer/README.md). The infrastructure foundations and lifecycle behind delivery. Use it for provisioning, configuration, capacity, identity, network, and recovery responsibilities beneath application releases.
+**Start with:** [DevOps Automation Engineer role and responsibilities](../devops-automation-engineer/devops-automation-engineer-role-and-responsibilities.md), then [architecture resources](../devops-automation-engineer/devops-automation-engineer-architecture-resources.md) for design questions or [labs and portfolio projects](../devops-automation-engineer/devops-automation-engineer-labs-and-portfolio-projects.md) for practical evidence.
 
-## DevOps platform engineer
+### [DevOps Consultant](../devops-consultant/README.md)
 
-[DevOps platform engineer career navigation](../devops-platform-engineer/README.md). Delivery and operating capabilities exposed through a shared platform. Follow it when the design must become a supported service other engineers can use.
+Study discovery, improvement hypotheses, and adoption. Choose this route when the main uncertainty is what an organization should change and how to validate the benefit.
 
-## DevOps consultant
+**Start with:** [DevOps Consultant role and responsibilities](../devops-consultant/devops-consultant-role-and-responsibilities.md), then [architecture resources](../devops-consultant/devops-consultant-architecture-resources.md) for design questions or [labs and portfolio projects](../devops-consultant/devops-consultant-labs-and-portfolio-projects.md) for practical evidence.
 
-[DevOps consultant career navigation](../devops-consultant/README.md). Assessments and improvements across an organization or customer engagement. Explore it for discovery, stakeholder communication, recommendations, adoption, and implementation boundaries.
+### [DevOps Infrastructure Engineer](../devops-infrastructure-engineer/README.md)
 
-## Site reliability engineer
+Examine state, configuration, identity, and rebuild dependencies. Choose this route when control-plane or resource lifecycle constraints dominate the design.
 
-[Site reliability engineer career navigation](../../02-sre-reliability/site-reliability-engineer/README.md). User-facing reliability and evidence-based operation. Use it to connect release decisions to service objectives, error budgets, incidents, capacity, and recovery.
+**Start with:** [DevOps Infrastructure Engineer role and responsibilities](../devops-infrastructure-engineer/devops-infrastructure-engineer-role-and-responsibilities.md), then [architecture resources](../devops-infrastructure-engineer/devops-infrastructure-engineer-architecture-resources.md) for design questions or [labs and portfolio projects](../devops-infrastructure-engineer/devops-infrastructure-engineer-labs-and-portfolio-projects.md) for practical evidence.
 
-## Platform architect
+### [DevOps Platform Engineer](../devops-platform-engineer/README.md)
 
-[Platform architect career navigation](../../03-platform-engineering/platform-architect/README.md). Shared-platform boundaries, user interfaces, tenant needs, and supported capabilities. Choose it when your main design problem is the internal platform rather than the delivery path of one application.
+Study shared capabilities and consumer contracts. Choose this route when multiple teams will use the capability as a supported service.
 
-## Cloud architect
+**Start with:** [DevOps Platform Engineer role and responsibilities](../devops-platform-engineer/devops-platform-engineer-role-and-responsibilities.md), then [architecture resources](../devops-platform-engineer/devops-platform-engineer-architecture-resources.md) for design questions or [labs and portfolio projects](../devops-platform-engineer/devops-platform-engineer-labs-and-portfolio-projects.md) for practical evidence.
 
-[Cloud architect career navigation](../../04-cloud-engineering/cloud-architect/README.md). Provider foundations, workload design, account structure, networking, and managed services. Use it when cloud constraints and provider choices dominate the design.
+## Compare the boundary before changing direction
 
-## Release engineer
+Architecture work defines and validates decisions with implementers and service owners. The title does not imply sole ownership of every pipeline, application, security control, or business requirement.
 
-[Release engineer career navigation](../../10-cicd-release/release-engineer/README.md). Build, artifact, release, and deployment coordination. Follow it when reproducible builds, promotion, release metadata, or release execution are your main concern.
+| Question | What to clarify |
+| --- | --- |
+| What needs to improve? | A service outcome, a workflow, a shared capability, or an organizational constraint |
+| Who consumes the result? | An application team, operator, platform user, or client stakeholder |
+| What authority is needed? | Read-only assessment, bounded implementation, or ownership of a supported service |
+| What evidence establishes progress? | An explanation, controlled test, verified change, or sustained adoption |
+| Who maintains it afterward? | A named owner with the relevant access and operating capacity |
 
-## DevSecOps engineer
+## Apply the distinction
 
-[DevSecOps engineer career navigation](../../12-security-devsecops/devsecops-engineer/README.md). Security controls and evidence integrated into delivery workflows. Explore it for pipeline identity, secrets, artifact trust, vulnerability handling, and policy enforcement.
+**Illustrative scenario:** A growing company has eight services, separate deployment scripts, a shared production account, and no agreed recovery evidence. You must propose an achievable delivery architecture without assuming a new platform team exists.
 
-## Solutions architect
+Choose two neighboring roles from the routes above. Write the question each would help answer, the handoff between them, and the evidence both need. The roles may belong to the same person in a small team; keep the responsibilities explicit even when the job titles overlap.
 
-[Solutions architect career navigation](../../24-architecture/solutions-architect/README.md). Broader solution requirements, application/infrastructure integration, and stakeholder constraints. Use it when the delivery system is one part of a larger customer or business solution.
+## Explore the wider directory
 
-## Choose a route by the question you are asking
+[All career paths](../../README.md) provides additional categories such as SRE, cloud engineering, security, and release engineering. Those wider collections are still being populated; navigation availability does not establish that their linked subject files contain complete guides. Use the populated sibling collections above for the specific routes described here.
 
-- **[CNCF Platforms White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/)** — Review platform capabilities, organizational context, and platform thinking. Intermediate; platform design must start with developer and operator needs. For platform boundaries, compare the shared service and its user workflows with the needs of delivery teams.
+For your current role, return to [skills and prerequisites](devops-architect-skills-and-prerequisites.md), [production practices](devops-architect-production-practices.md), or [interview and assessment](devops-architect-interview-and-assessment-resources.md).
 
-- **[DORA: Loosely coupled teams](https://dora.dev/capabilities/loosely-coupled-teams/)** — Connects independent delivery to team boundaries and software architecture. Useful when release coordination is a bottleneck; an organization chart alone cannot establish independent deployability. For delivery dependencies, examine both software boundaries and cross-team coordination.
+## Sources and review scope
 
-- **[The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)** — Study implementation-oriented reliability practices and case studies. Intermediate to advanced; openly readable. Requires familiarity with service operation. For reliability, connect a delivery choice to measurable service outcomes and recovery.
+Prepared for VERIQTA on 18 October 2026. The linked primary-source entry pages were opened and reviewed for identity, scope, and the navigation supporting this selection. Full manuals, linked courses, and downstream examples were not reviewed in their entirety. No exercises or production changes were executed for this collection. Examples, project briefs, and decision aids are original VERIQTA editorial guidance. Use the applicable product version; access and hosted-service conditions can change.
 
-- **[NIST Secure Software Development Framework, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final)** — Review secure development practices and their organizational integration. Intermediate to advanced; use the publication's stated scope and any applicable local requirements. For secure delivery, identify responsibilities and evidence across the software lifecycle.
-
-- **[FinOps Framework](https://www.finops.org/framework/)** — Connect technology cost decisions with accountability and business value. Intermediate; apply using actual operating and billing evidence. For economics, include the operating responsibilities and costs introduced by a design.
-
-[Explore architecture responsibilities](devops-architect-role-and-responsibilities.md) · [Find prerequisite resources](devops-architect-skills-and-prerequisites.md)
+[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)

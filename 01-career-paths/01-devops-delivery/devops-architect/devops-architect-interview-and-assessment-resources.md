@@ -1,127 +1,99 @@
-# DevOps architect: interview and assessment resources
+# DevOps Architect: Interview and Assessment Resources
 
-[DevOps architect resource directory](README.md)
+Use original design prompts and primary references to practise architecture reasoning. Evaluate how you discover constraints, compare options, and revise an answer when evidence changes.
 
-Use these references to prepare evidence-based architecture discussions or design a fair technical assessment. You should be able to explain constraints, compare options, identify failure paths, and defend the evidence behind your decisions. Memorizing commands or product names does not demonstrate those abilities.
+This page focuses on designing a coherent delivery and operating system across applications, infrastructure, identity, observability, and ownership. **Question to keep in view:** Which boundaries and controls let teams release independently without losing operating accountability?
 
-This page links public review methods, technical references, and official certification information. The practice prompts are original discussion exercises, not claimed employer questions, leaked examination content, or a universal hiring rubric.
+## On this page
 
-## Find resources by topic
+- [Prompt: shared delivery capability](#prompt-shared-delivery-capability)
+- [Prompt: a misleadingly successful rollout](#prompt-a-misleadingly-successful-rollout)
+- [Prompt: a smaller operating team](#prompt-a-smaller-operating-team)
+- [Selected resources](#selected-resources)
+- [Apply the reading](#apply-the-reading)
 
-- [Architecture review methods and communication](#architecture-review-methods-and-communication)
-- [Delivery design and organizational tradeoffs](#delivery-design-and-organizational-tradeoffs)
-- [Deployment safety and runtime failure reasoning](#deployment-safety-and-runtime-failure-reasoning)
-- [Identity policy and supply-chain assessment](#identity-policy-and-supply-chain-assessment)
-- [Incident recovery and cost discussions](#incident-recovery-and-cost-discussions)
-- [Official certification objectives and preparation discovery](#official-certification-objectives-and-preparation-discovery)
+## Prompt: shared delivery capability
 
-## Architecture review methods and communication
+Eight services use separate deployment scripts and a shared account. Ask about team ownership, release coupling, access, workload state, recovery needs, and current pain before proposing components. Explain what you would standardize first and what should remain application-specific.
 
-Prepare to turn an ambiguous requirement into a system boundary, quality scenarios, options, and a reasoned decision. Show what additional information could change your answer.
+## Prompt: a misleadingly successful rollout
 
-- **[SEI: Architecture Tradeoff Analysis Method](https://www.sei.cmu.edu/library/the-architecture-tradeoff-analysis-method/)** — Introduces a structured method for evaluating architectural choices against quality attributes and stakeholder scenarios. Public SEI paper description and download route for the foundational method; detailed application requires preparation and stakeholder participation.
+A release passes pipeline checks and its infrastructure rollout completes, but a subset of users sees errors. Explain the missing acceptance evidence. Compare pausing, reducing exposure, reverting an artifact, and repairing forward in light of data compatibility.
 
-- **[arc42 architecture documentation template](https://arc42.org/)** — Provides a structure for documenting goals, constraints, building blocks, quality requirements, decisions, and risks. Public template and examples; use the relevant sections instead of filling every heading mechanically.
+## Prompt: a smaller operating team
 
-- **[C4 model](https://c4model.com/)** — Use the diagramming model to practice showing scope and dependencies without relying on a wall of vendor icons. Foundation onward; diagrams communicate structure but do not establish operational correctness.
+Your preferred design requires a controller and a portal, but only one engineer can operate shared services. Reassess scope and managed alternatives. State what capability you would defer and which risk remains acceptable only with explicit stakeholder agreement.
 
-- **[Architecture Decision Records](https://adr.github.io/)** — Use decision-record examples to prepare a concise defense of a choice and the assumptions that could change it. Foundation onward; keep decisions connected to evidence and later changes.
+## Assess reasoning with evidence
 
-- **[Fundamentals of Software Architecture](https://www.thoughtworks.com/en-us/insights/books/fundamentals-of-software-architecture)** — Introduces Mark Richards and Neal Ford's book about architecture characteristics, styles, and the architect's work. Public book description and related discussion; the book itself is commercial. Broader software architecture, not a DevOps implementation manual.
+Explain what you know, what remains uncertain, and which observation you need next. Compare plausible alternatives before selecting an action. Make permission, user impact, and recovery conditions explicit. These are original practice prompts; they are not leaked employer questions, certification items, or claims about a universal hiring process.
 
-## Delivery design and organizational tradeoffs
+## Selected resources
 
-Use these resources when discussing slow releases, integration risk, cross-team dependencies, and improvement measures. Explain the measurement boundary and what evidence would support a proposed change.
+The order below is a task-based selection, not a requirement to complete every source. Detailed publisher, access, and limitation notes have one maintained home in the category reference directory.
 
-- **[DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/)** — Explains the practices and organizational conditions behind releasing software safely on demand. Public research-backed capability guide; use it to identify improvement hypotheses, not to choose a pipeline product.
+### [C4 model](https://c4model.com/)
 
-- **[DORA: Loosely coupled teams](https://dora.dev/capabilities/loosely-coupled-teams/)** — Connects independent delivery to team boundaries and software architecture. Useful when release coordination is a bottleneck; an organization chart alone cannot establish independent deployability.
+**Use it to answer:** Which people, systems, and execution boundaries must the audience understand before reviewing the design?
 
-- **[DORA: Software delivery performance metrics](https://dora.dev/guides/dora-metrics/)** — Explains delivery-performance measures and how to use them for improvement. Read definitions and measurement boundaries before comparing services; do not turn team measures into individual productivity scores.
+- **Start with:** System context, then container diagrams when more detail is needed.
+- **Prerequisites:** Knowledge of the system and its dependencies.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-c4) for publisher context, access conditions, and the key limitation.
 
-- **[Martin Fowler: Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)** — Explains continuous integration practices, integration frequency, build feedback, and common misunderstandings. Public author article; use it to distinguish CI as a working practice from a server that happens to run builds.
+### [Architecture Decision Records](https://adr.github.io/)
 
-- **[Team Topologies resources](https://teamtopologies.com/)** — Explore the authors' model for team boundaries and interaction modes. Intermediate; organizational guidance requires local adaptation. Books and training have separate access conditions.
+**Use it to answer:** What alternatives did you consider, why did you choose this one, and when should the decision be revisited?
 
-## Deployment safety and runtime failure reasoning
+- **Start with:** The introductory explanation and a suitable template.
+- **Prerequisites:** A decision with real alternatives and consequences.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-adr) for publisher context, access conditions, and the key limitation.
 
-Practice describing rollout success, rollback conditions, incompatible state changes, dependency failures, and overload. The references give you mechanisms and failure cases to reason about.
+### [Canarying Releases](https://sre.google/workbook/canarying-releases/)
 
-- **[Canarying releases](https://sre.google/workbook/canarying-releases/)** — Review candidate evaluation, rollout design, and the limits of release signals. Advanced; comparison quality and observation design determine whether a canary is informative.
+**Use it to answer:** Does the release comparison have enough relevant exposure and signal to support continuing?
 
-- **[Ensuring rollback safety during deployments](https://d1.awsstatic.com/builderslibrary/pdfs/ensuring-rollback-safety-during-deployments.pdf)** — Review compatibility and recovery concerns when versions coexist or change. Advanced; official PDF. Application and schema compatibility must be tested in your own system.
+- **Start with:** Canary design, comparison signals, and decision criteria.
+- **Prerequisites:** Deployment and service-observability familiarity.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-canary) for publisher context, access conditions, and the key limitation.
 
-- **[Timeouts, retries, and backoff with jitter](https://d1.awsstatic.com/builderslibrary/pdfs/timeouts-retries-and-backoff-with-jitter.pdf)** — Review dependency-call behavior and retry amplification risks. Advanced; official PDF. Values require latency and failure evidence from your own system.
+### [Implementing SLOs](https://sre.google/workbook/implementing-slos/)
 
-- **[Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/)** — Study duplicate-request handling and API design trade-offs. Advanced; operation semantics determine which retry behavior is safe.
+**Use it to answer:** Which user behavior should be measured, what target matters, and how will the result inform a decision?
 
-- **[Addressing cascading failures](https://sre.google/sre-book/addressing-cascading-failures/)** — Review overload, feedback loops, and failure propagation. Advanced; validate containment strategies with bounded tests and measurements.
+- **Start with:** Selecting indicators, targets, and the improvement process.
+- **Prerequisites:** Understanding of user-visible service behavior.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-slo) for publisher context, access conditions, and the key limitation.
 
-- **[Implementing SLOs](https://sre.google/workbook/implementing-slos/)** — Review practical service-level objective design and adoption. Intermediate; useful measures depend on service behavior and user expectations.
+### [DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/)
 
-## Identity policy and supply-chain assessment
+**Use it to answer:** Which technical practice or organizational dependency prevents a change from being released safely on demand?
 
-Be ready to identify the principal, resource, trust boundary, and permitted action in a deployment path. Explain what a signature, provenance record, scan result, or approval does and does not prove.
+- **Start with:** Implementing continuous delivery and common pitfalls.
+- **Prerequisites:** Familiarity with a software change moving through a team.
+- **Access and limits:** See the [maintained source annotation](../README.md#source-dora) for publisher context, access conditions, and the key limitation.
 
-- **[GitHub Actions: OpenID Connect](https://docs.github.com/en/actions/concepts/security/openid-connect)** — Explains federated workflow identity for obtaining short-lived credentials from supporting cloud providers. Public official concept guide; trust conditions still need to constrain repository, workflow, environment, and audience.
+## Apply the reading
 
-- **[GitHub Actions security guidance](https://docs.github.com/en/actions/security-for-github-actions)** — Review runner trust, workflow access, and delivery credential exposure. Intermediate; public contributions and privileged jobs need distinct trust treatment.
+Answer one prompt with a requirements note, two options, a preferred decision, and a validation plan. Have another person change one constraint and assess whether your recommendation changes for a clear reason.
 
-- **[SLSA specification](https://slsa.dev/spec/)** — Use the specification to check whether you can explain the difference between artifact metadata and a verified build guarantee. Advanced; consult the relevant stable version and track specification changes.
+### Evidence to keep
 
-- **[NIST Secure Software Development Framework, SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final)** — Review secure development practices and their organizational integration. Intermediate to advanced; use the publication's stated scope and any applicable local requirements.
+Record the question, environment or design assumptions, selected reference sections, your observations, and the reasoning behind the result. Label simulated examples and design-only work. Keep uncertainty separate from verified behavior, and remove private data from any evidence you publish.
 
-- **[OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling)** — Explains threat-modeling activities and questions for identifying design risks and mitigations. Public community guidance; review actual assets, trust boundaries, attack paths, and assumptions for your system.
+### Review your answer
 
-## Incident recovery and cost discussions
-
-Explain how you would assess a backup, diagnose a failed restoration, or choose resilience within a budget. Separate evidence from guesses about a historical incident.
-
-- **[PostgreSQL backup and restore](https://www.postgresql.org/docs/current/backup.html)** — Review database backup approaches and their operational implications. Advanced; use documentation matching the deployed database version and test restored data.
-
-- **[AWS disaster recovery guidance](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html)** — Compare recovery strategies and resilience considerations for AWS workloads. Advanced; define recovery time and recovery point objectives and test the complete workload.
-
-- **[FinOps Framework](https://www.finops.org/framework/)** — Use the FinOps Foundation framework to structure a discussion of cost ownership, value, and operating tradeoffs. Intermediate; apply using actual operating and billing evidence.
-
-- **[Cloudflare outage report, July 2019](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/)** — Study an original account of a software change, resource exhaustion, and recovery. Advanced; historical incident, not a description of the company's current architecture.
-
-- **[GitLab database outage report, January 2017](https://about.gitlab.com/blog/2017/02/01/gitlab-dot-com-database-incident/)** — Study an original recovery incident and the importance of tested backup procedures. Advanced; historical incident. Distinguish recorded facts from assumptions about present systems.
-
-## Official certification objectives and preparation discovery
-
-Use exam objectives to locate knowledge gaps if the credential is relevant to your work. Certification requirements are provider-specific, change over time, and do not assess every DevOps architecture responsibility.
-
-- **[AWS Certified Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** — Describes an AWS architecture certification and official preparation entry points. Provider-specific certification information, not proof of DevOps architecture competence; exam registration and training may incur separate costs.
-
-- **[Microsoft Certified DevOps Engineer Expert](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/)** — Describes Microsoft's DevOps certification requirements and official preparation routes. Certification discovery; check current prerequisites and exam requirements. A credential does not replace design or production evidence.
-
-- **[Google Cloud Professional Cloud DevOps Engineer](https://cloud.google.com/learn/certification/cloud-devops-engineer)** — Describes the provider's DevOps certification focus and preparation resources. Provider-specific exam information; review current objectives and exam terms, not generic interview-question claims.
-
-- **[CNCF Training and Certification](https://www.cncf.io/training/certification/)** — Lists cloud-native certifications and provider training routes. Certification discovery; exams are separate from free documentation and scope varies by credential.
-
-## Practice architecture discussions
-
-Use a disposable sample system or a sanitized diagram from your own work. The prompts below are practice suggestions, not procedures to run against production.
-
-| Situation | Discuss | Bring evidence |
+| Dimension | A useful answer shows | A gap to investigate |
 | --- | --- | --- |
-| A pipeline succeeds while users receive errors | Distinguish build, deployment, release, and user outcomes; choose acceptance signals and abort conditions | A delivery-path diagram and a canary decision with measurable criteria |
-| Every team must release together | Identify application, data, infrastructure, and organizational coupling; compare incremental changes | A dependency map and a decision record showing a small first improvement |
-| A build runner is compromised | Trace credentials, artifacts, signing authority, network reach, and promotion rights | A trust-boundary model and a containment/recovery proposal |
-| An infrastructure plan would replace a shared service | Explain state ownership, lifecycle effects, permissions, review, and recovery | A sanitized plan review and the assumptions needed before approval |
-| A release changes both code and database structure | Compare compatibility windows and forward recovery with rollback | An old/new compatibility matrix and a release decision record |
-| A dependency becomes slow and retries increase | Explain deadlines, retry amplification, idempotency, and load shedding | A request-path model and a bounded test proposal |
-| A restore cannot meet the stated recovery objective | Consider data loss, dependency order, privileges, capacity, and integrity | A recovery design and a record of what has and has not been tested |
-| Several teams want a shared platform | Compare supported user workflows, ownership, isolation, product needs, and operating cost | A platform boundary and evidence needed to test its usefulness |
+| Scope | A clear affected system and constraints | A product choice before requirements |
+| Evidence | Observations that separate explanations | A guessed cause presented as fact |
+| Trade-offs | Alternatives and consequences | One unconditional best practice |
+| Authority | Appropriate ownership and access | Unreviewed changes to shared systems |
+| Recovery | Verification and persistent side effects | A retry or rollback with no conditions |
 
-## Assess reasoning consistently
+Attempt the reasoning before consulting the sources. If another person reviews your answer, ask which unsupported assumption most affects the recommendation.
 
-Use the same constraints and follow-up opportunities for everyone being assessed. Let people name assumptions and ask questions before judging a design. Tools may differ while the underlying reasoning remains sound.
+## Sources and review scope
 
-For each discussion, evaluate problem framing, technical correctness, alternatives and tradeoffs, failure and recovery reasoning, security boundaries, verification evidence, and clarity. A response that names an option is weaker than one that explains its fit and failure conditions. A strong response makes uncertainty visible and proposes a realistic way to reduce it.
+Prepared for VERIQTA on 18 October 2026. The linked primary-source entry pages were opened and reviewed for identity, scope, and the navigation supporting this selection. Full manuals, linked courses, and downstream examples were not reviewed in their entirety. No exercises or production changes were executed for this collection. Examples, project briefs, and decision aids are original VERIQTA editorial guidance. Use the applicable product version; access and hosted-service conditions can change.
 
-If you use a score, define the scale before the session. For example: 0 means no usable reasoning; 1 identifies the concern; 2 explains a plausible mechanism; 3 connects the mechanism to constraints and alternatives; 4 adds meaningful verification and recovery evidence. This is an editorial suggestion, not a validated hiring instrument. Avoid inferring personal experience from confidence, accent, or familiarity with one vendor.
-
-## Continue exploring
-
-[Compare tools](devops-architect-tools-and-technologies.md) · [Find official references](devops-architect-official-documentation.md) · [Explore architecture resources](devops-architect-architecture-resources.md) · [Find practical projects](devops-architect-labs-and-portfolio-projects.md)
+[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)

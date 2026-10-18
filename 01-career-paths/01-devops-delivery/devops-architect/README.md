@@ -1,55 +1,56 @@
-# DevOps architect resource directory
+# DevOps Architect Resource Directory
 
-Find resources for designing the system through which software changes reach users and continue to operate reliably. This collection connects delivery workflows, infrastructure, runtime platforms, identity, artifact trust, observability, recovery, and the teams that own them.
+Find resources for designing a coherent delivery and operating system across applications, infrastructure, identity, observability, and ownership. Use this collection to choose references for a specific knowledge gap, implementation task, operating concern, or design decision.
 
-Use it when you need to compare an implementation, review a delivery design, investigate an operating concern, fill a knowledge gap, or prepare evidence for an architecture discussion. “DevOps architect” is not a standardized title; start with your actual responsibilities and constraints.
+**The central question:** Which boundaries and controls let teams release independently without losing operating accountability?
 
-## Find the right resource collection
+## Find the right collection
 
-- **[Tools and technologies](devops-architect-tools-and-technologies.md)** — Compare task-based implementation choices, their role in the system, and their operating tradeoffs.
+- **[Role and Responsibility Resources](devops-architect-role-and-responsibilities.md):** Clarify the decisions, boundaries, and evidence behind the work.
+- **[Skills and Prerequisite Resources](devops-architect-skills-and-prerequisites.md):** Find foundations for assumptions you cannot yet explain.
+- **[Tools and Technology Resources](devops-architect-tools-and-technologies.md):** Compare implementation responsibilities and operating costs.
+- **[Official Documentation](devops-architect-official-documentation.md):** Validate behavior against primary references.
+- **[Learning Resources](devops-architect-learning-resources.md):** Build a focused reading and practice plan.
+- **[Architecture Resources](devops-architect-architecture-resources.md):** Compare options using requirements and failure assumptions.
+- **[Production Practice Resources](devops-architect-production-practices.md):** Connect changes to operating evidence and recovery.
+- **[Labs and Portfolio Projects](devops-architect-labs-and-portfolio-projects.md):** Choose original project briefs with prerequisites, evidence, and cleanup.
+- **[Interview and Assessment Resources](devops-architect-interview-and-assessment-resources.md):** Practise original scenarios and assess the reasoning in your answers.
+- **[Related Career Paths](devops-architect-related-career-paths.md):** Move to a neighboring responsibility when the question changes.
 
-- **[Official documentation](devops-architect-official-documentation.md)** — Find authoritative references for permissions, state, runtimes, deployment, identity, telemetry, and recovery.
+## Start from your current task
 
-- **[Architecture resources](devops-architect-architecture-resources.md)** — Explore design methods, provider blueprints, platform boundaries, trust, reliability, and cost.
+| Situation | First page | What to produce |
+| --- | --- | --- |
+| You are exploring the responsibility | [Role and responsibilities](devops-architect-role-and-responsibilities.md) | A clear scope and responsibility boundary |
+| You need a foundation | [Skills and prerequisites](devops-architect-skills-and-prerequisites.md) | An explanation of the relevant mechanism |
+| You need exact implementation behavior | [Official documentation](devops-architect-official-documentation.md) | A claim supported by a version-matched reference |
+| You need to choose an approach | [Architecture resources](devops-architect-architecture-resources.md) | Alternatives compared against explicit constraints |
+| You need practical evidence | [Labs and portfolio projects](devops-architect-labs-and-portfolio-projects.md) | An observed result or an honest validation plan |
 
-- **[Production practices](devops-architect-production-practices.md)** — Connect operating tasks to rollout, diagnostic, alerting, incident, and recovery resources.
+## A realistic question to work through
 
-- **[Learning resources](devops-architect-learning-resources.md)** — Choose books, articles, courses, tutorials, and discovery collections for a specific knowledge gap.
+A growing company has eight services, separate deployment scripts, a shared production account, and no agreed recovery evidence. You must propose an achievable delivery architecture without assuming a new platform team exists.
 
-- **[Labs and portfolio projects](devops-architect-labs-and-portfolio-projects.md)** — Find practical environments and reference implementations with prerequisites, evidence, and cleanup context.
+Start by separating observations, requirements, and assumptions. Choose one of the linked collections to resolve the most consequential uncertainty. Keep a record of the evidence behind your decision and what would change it. The scenario is illustrative and does not describe a claimed client engagement or executed incident.
 
-- **[Role and responsibilities](devops-architect-role-and-responsibilities.md)** — Connect architecture responsibility areas to research, design methods, and implementation references.
+## Responsibility boundary
 
-- **[Skills and prerequisites](devops-architect-skills-and-prerequisites.md)** — Locate resources for operating-system, networking, development, infrastructure, security, and design foundations.
+Architecture work defines and validates decisions with implementers and service owners. The title does not imply sole ownership of every pipeline, application, security control, or business requirement.
 
-- **[Interview and assessment](devops-architect-interview-and-assessment-resources.md)** — Prepare architecture discussions using review methods, technical references, and original practice prompts.
+## Read according to your experience
 
-- **[Related career paths](devops-architect-related-career-paths.md)** — Compare adjacent responsibilities and open existing career navigation with its current status explained.
+If the mechanisms are unfamiliar, use the skills and learning pages before attempting the projects. If you already implement the systems, begin with the design or operating question you need to answer. Advanced work requires defensible reasoning about authority, state, data, and recovery; it does not require adopting every tool in the directory.
 
-## Useful starting points
+Choose a small result you can explain. Keep external implementation material attributed and distinguish source guidance from your own observations. The project pages identify prerequisites and cleanup concerns; they do not claim the exercises were executed by VERIQTA.
 
-- **[DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/)** — Explains the practices and organizational conditions behind releasing software safely on demand. Public research-backed capability guide; use it to identify improvement hypotheses, not to choose a pipeline product.
+## Resource access and selection
 
-- **[C4 model](https://c4model.com/)** — Describe software systems at useful levels of architectural abstraction. Foundation onward; diagrams communicate structure but do not establish operational correctness.
+This collection prioritizes primary references and freely readable material. Tool execution, hosted services, registries, cloud accounts, and some software usage have separate conditions. Review the [maintained source annotations](../README.md#primary-reference-directory) for publisher context and important limits, then inspect current upstream prerequisites before implementation.
 
-- **[Architecture Decision Records](https://adr.github.io/)** — Find guidance and resources for recording architectural decisions. Foundation onward; keep decisions connected to evidence and later changes.
+Documentation paths using latest or stable can change. Select the release matching your environment and record the version used for practical work. A public page is not a promise of free infrastructure or a complete production implementation.
 
-- **[CNCF Platforms White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/)** — Review platform capabilities, organizational context, and platform thinking. Intermediate; platform design must start with developer and operator needs.
+## Sources and review scope
 
-- **[The Site Reliability Workbook](https://sre.google/workbook/table-of-contents/)** — Study implementation-oriented reliability practices and case studies. Intermediate to advanced; openly readable. Requires familiarity with service operation.
+Prepared for VERIQTA on 18 October 2026. The linked primary-source entry pages were opened and reviewed for identity, scope, and the navigation supporting this selection. Full manuals, linked courses, and downstream examples were not reviewed in their entirety. No exercises or production changes were executed for this collection. Examples, project briefs, and decision aids are original VERIQTA editorial guidance. Use the applicable product version; access and hosted-service conditions can change.
 
-- **[SLSA specification](https://slsa.dev/spec/)** — Review software supply-chain assurance and provenance requirements. Advanced; consult the relevant stable version and track specification changes.
-
-## Choose by the work in front of you
-
-For a tool decision, open **tools and technologies**, then confirm behavior in **official documentation**. For a system review, open **architecture resources** and compare the design's assumptions with your own. For hands-on evidence, use **labs and portfolio projects** and inspect the actual source instructions before running an exercise. For operating concerns, use **production practices** to find relevant diagnostic, rollout, or recovery references.
-
-There is no required course sequence. You can enter through any page and follow the resources appropriate to your task. Foundation material introduces a topic; intermediate material generally assumes implementation familiarity; advanced resources often assume systems or operating experience. Each entry narrows those expectations.
-
-## Access and review scope
-
-Public documentation, public book text, commercial book descriptions, course catalogs, hosted tools, and cloud workshops have different access conditions. Entry notes identify material prerequisites and limitations; account access and infrastructure charges remain separate from reading a public page.
-
-These files were prepared on **7 October 2026**. Source review covers relevant content or navigation and the descriptions supplied here; it does not claim that every upstream manual, course, or downstream link was evaluated in full. Linked labs were not executed. The inspected repository does not establish a usable canonical resource registry for this collection, so entries use official or original-source destinations without invented IDs.
-
-[DevOps delivery category](../README.md) · [All career categories](../../README.md)
+[DevOps delivery collection](../README.md) · [All career paths](../../README.md)
