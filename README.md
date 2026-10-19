@@ -1,113 +1,109 @@
-<p align="center">
-  <img src="assets/navigation/directory-header.svg" alt="VERIQTA — Find what you need. Build what comes next." width="100%"/>
-</p>
+<p align="center"><img src="assets/discovery-header.svg" alt="VERIQTA Discovery — find engineering videos, books, labs, and websites" width="100%"/></p>
 
-# VERIQTA Engineering Resource Directory
+# VERIQTA Discovery
 
-Find your next useful resource in DevOps, cloud, SRE, platform engineering, Linux, and infrastructure. Start with what you want to learn, the technology you use, or the problem you need to solve.
+Discover places to learn DevOps, cloud, SRE, networking, systems administration, and platform engineering. Find teaching websites, YouTube channels, individual talks, books, labs, and explanations worth keeping.
+
+[Start here](01-start-here/) · [Browse by career](02-career-paths/) · [Explore topics](03-engineering-topics/) · [Find practice](06-hands-on-practice/) · [Discover learning libraries](08-learning-libraries/)
+
+## Choose how you want to explore
+
+| Collection | What you can discover |
+| --- | --- |
+| [**01 · Start here**](01-start-here/) | Choose a route from your interests and experience |
+| [**02 · Career paths**](02-career-paths/) | Find resource directions for the work you want to do |
+| [**03 · Engineering topics**](03-engineering-topics/) | Follow Linux, networking, reliability, security, and other subjects |
+| [**04 · Tools and technologies**](04-tools-and-technologies/) | Browse tools across delivery, cloud, SRE, networks, systems, and platforms |
+| [**05 · Cloud platforms**](05-cloud-platforms/) | Find provider learning and service-specific directions |
+| [**06 · Hands-on practice**](06-hands-on-practice/) | Explore browser environments, troubleshooting challenges, and exercises |
+| [**07 · Engineering in the wild**](07-engineering-in-the-wild/) | Find incidents, technical talks, architecture stories, and engineering blogs |
+| [**08 · Learning libraries**](08-learning-libraries/) | Discover teachers, books, course websites, and learning platforms |
+
+## Tools and technologies
+
+Choose a logo or name to open the publisher’s documentation, learning page, or project reference. These source links work independently of the discovery collections being assembled. Documentation access does not include a product subscription, hosted lab, or infrastructure.
+
+**Looking for more than documentation? [Explore Wireshark discoveries →](04-tools-and-technologies/wireshark.md)** Browse teaching resources, packet captures, a book, and specific conference sessions together.
 
 <table>
-<tr>
-<td width="33%"><a href="careers/"><img src="assets/navigation/choose-a-career.svg" alt="Choose a career — find resources for your direction" width="100%"/></a></td>
-<td width="33%"><a href="tools/"><img src="assets/navigation/find-a-tool.svg" alt="Find a tool — documentation, tutorials, and practice" width="100%"/></a></td>
-<td width="33%"><a href="troubleshooting/"><img src="assets/navigation/solve-a-problem.svg" alt="Solve a problem — explore troubleshooting resources" width="100%"/></a></td>
-</tr>
+<caption>Tools and technologies: select a logo or name to open its source</caption>
+<tr><th colspan="4" align="left">Source and delivery</th></tr>
+<tr><td align="center" width="25%"><a href="https://git-scm.com/book/en/v2"><img src="assets/tool-git.svg" alt="Git" width="40" height="40"/><br/><strong>Git</strong></a></td><td align="center" width="25%"><a href="https://docs.github.com/en/actions"><img src="assets/tool-github-actions.svg" alt="GitHub Actions" width="40" height="40"/><br/><strong>GitHub Actions</strong></a></td><td align="center" width="25%"><a href="https://docs.gitlab.com/ci/"><img src="assets/tool-gitlab-ci.svg" alt="GitLab CI/CD" width="40" height="40"/><br/><strong>GitLab CI/CD</strong></a></td><td align="center" width="25%"><a href="https://www.jenkins.io/doc/"><img src="assets/tool-jenkins.svg" alt="Jenkins" width="40" height="40"/><br/><strong>Jenkins</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://tekton.dev/docs/"><img src="assets/tool-tekton.svg" alt="Tekton" width="40" height="40"/><br/><strong>Tekton</strong></a></td><td align="center" width="25%"><a href="https://circleci.com/docs/"><img src="assets/tool-circleci.svg" alt="CircleCI" width="40" height="40"/><br/><strong>CircleCI</strong></a></td><td align="center" width="25%"><a href="https://buildkite.com/docs"><img src="assets/tool-buildkite.svg" alt="Buildkite" width="40" height="40"/><br/><strong>Buildkite</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Containers</th></tr>
+<tr><td align="center" width="25%"><a href="https://docs.docker.com/get-started/"><img src="assets/tool-docker.svg" alt="Docker" width="40" height="40"/><br/><strong>Docker</strong></a></td><td align="center" width="25%"><a href="https://podman.io/docs"><img src="assets/tool-podman.svg" alt="Podman" width="40" height="40"/><br/><strong>Podman</strong></a></td><td align="center" width="25%"><a href="https://containerd.io/docs/"><img src="assets/tool-containerd.svg" alt="containerd" width="40" height="40"/><br/><strong>containerd</strong></a></td><td align="center" width="25%"><a href="https://buildah.io/"><img src="assets/tool-buildah.svg" alt="Buildah" width="100" height="40"/><br/><strong>Buildah</strong></a></td></tr>
+<tr><th colspan="4" align="left">Orchestration and GitOps</th></tr>
+<tr><td align="center" width="25%"><a href="https://kubernetes.io/docs/home/"><img src="assets/tool-kubernetes.svg" alt="Kubernetes" width="40" height="40"/><br/><strong>Kubernetes</strong></a></td><td align="center" width="25%"><a href="https://helm.sh/docs/"><img src="assets/tool-helm.svg" alt="Helm" width="40" height="40"/><br/><strong>Helm</strong></a></td><td align="center" width="25%"><a href="https://argo-cd.readthedocs.io/en/stable/"><img src="assets/tool-argo-cd.svg" alt="Argo CD" width="40" height="40"/><br/><strong>Argo CD</strong></a></td><td align="center" width="25%"><a href="https://fluxcd.io/flux/"><img src="assets/tool-flux.svg" alt="Flux" width="40" height="40"/><br/><strong>Flux</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://kubectl.docs.kubernetes.io/references/kustomize/"><img src="assets/tool-kustomize.svg" alt="Kustomize" width="100" height="40"/><br/><strong>Kustomize</strong></a></td><td align="center" width="25%"><a href="https://kind.sigs.k8s.io/docs/user/quick-start/"><img src="assets/tool-kind.svg" alt="kind" width="100" height="40"/><br/><strong>kind</strong></a></td><td align="center" width="25%"><a href="https://minikube.sigs.k8s.io/docs/"><img src="assets/tool-minikube.svg" alt="minikube" width="100" height="40"/><br/><strong>minikube</strong></a></td><td align="center" width="25%"><a href="https://k9scli.io/"><img src="assets/tool-k9s.svg" alt="K9s" width="100" height="40"/><br/><strong>K9s</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.redhat.com/en/products/openshift_container_platform"><img src="assets/tool-openshift.svg" alt="OpenShift" width="40" height="40"/><br/><strong>OpenShift</strong></a></td><td align="center" width="25%"><a href="https://developer.hashicorp.com/nomad/docs"><img src="assets/tool-nomad.svg" alt="Nomad" width="40" height="40"/><br/><strong>Nomad</strong></a></td><td align="center" width="25%"><a href="https://ranchermanager.docs.rancher.com/"><img src="assets/tool-rancher.svg" alt="Rancher" width="40" height="40"/><br/><strong>Rancher</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Infrastructure and configuration</th></tr>
+<tr><td align="center" width="25%"><a href="https://developer.hashicorp.com/terraform/tutorials"><img src="assets/tool-terraform.svg" alt="Terraform" width="40" height="40"/><br/><strong>Terraform</strong></a></td><td align="center" width="25%"><a href="https://opentofu.org/docs/"><img src="assets/tool-opentofu.svg" alt="OpenTofu" width="40" height="40"/><br/><strong>OpenTofu</strong></a></td><td align="center" width="25%"><a href="https://www.pulumi.com/docs/"><img src="assets/tool-pulumi.svg" alt="Pulumi" width="40" height="40"/><br/><strong>Pulumi</strong></a></td><td align="center" width="25%"><a href="https://docs.ansible.com/projects/ansible/latest/getting_started/index.html"><img src="assets/tool-ansible.svg" alt="Ansible" width="40" height="40"/><br/><strong>Ansible</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.chef.io/"><img src="assets/tool-chef.svg" alt="Chef" width="40" height="40"/><br/><strong>Chef</strong></a></td><td align="center" width="25%"><a href="https://help.puppet.com/"><img src="assets/tool-puppet.svg" alt="Puppet" width="40" height="40"/><br/><strong>Puppet</strong></a></td><td align="center" width="25%"><a href="https://docs.saltproject.io/en/latest/"><img src="assets/tool-salt.svg" alt="Salt" width="40" height="40"/><br/><strong>Salt</strong></a></td><td align="center" width="25%"><a href="https://developer.hashicorp.com/packer/docs"><img src="assets/tool-packer.svg" alt="Packer" width="40" height="40"/><br/><strong>Packer</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://developer.hashicorp.com/vagrant/docs"><img src="assets/tool-vagrant.svg" alt="Vagrant" width="40" height="40"/><br/><strong>Vagrant</strong></a></td><td align="center" width="25%"><a href="https://docs.crossplane.io/"><img src="assets/tool-crossplane.svg" alt="Crossplane" width="100" height="40"/><br/><strong>Crossplane</strong></a></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Systems and scripting</th></tr>
+<tr><td align="center" width="25%"><a href="https://docs.kernel.org/"><img src="assets/tool-linux.svg" alt="Linux" width="40" height="40"/><br/><strong>Linux</strong></a></td><td align="center" width="25%"><a href="https://documentation.ubuntu.com/"><img src="assets/tool-ubuntu.svg" alt="Ubuntu" width="40" height="40"/><br/><strong>Ubuntu</strong></a></td><td align="center" width="25%"><a href="https://www.debian.org/doc/"><img src="assets/tool-debian.svg" alt="Debian" width="40" height="40"/><br/><strong>Debian</strong></a></td><td align="center" width="25%"><a href="https://docs.rockylinux.org/"><img src="assets/tool-rocky-linux.svg" alt="Rocky Linux" width="40" height="40"/><br/><strong>Rocky Linux</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://wiki.almalinux.org/"><img src="assets/tool-almalinux.svg" alt="AlmaLinux" width="40" height="40"/><br/><strong>AlmaLinux</strong></a></td><td align="center" width="25%"><a href="https://docs.alpinelinux.org/user-handbook/0.1a/index.html"><img src="assets/tool-alpine-linux.svg" alt="Alpine Linux" width="40" height="40"/><br/><strong>Alpine Linux</strong></a></td><td align="center" width="25%"><a href="https://docs.freebsd.org/en/books/handbook/"><img src="assets/tool-freebsd.svg" alt="FreeBSD" width="40" height="40"/><br/><strong>FreeBSD</strong></a></td><td align="center" width="25%"><a href="https://systemd.io/"><img src="assets/tool-systemd.svg" alt="systemd" width="100" height="40"/><br/><strong>systemd</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://www.gnu.org/software/bash/manual/"><img src="assets/tool-bash.svg" alt="Bash" width="40" height="40"/><br/><strong>Bash</strong></a></td><td align="center" width="25%"><a href="https://learn.microsoft.com/en-us/powershell/"><img src="assets/tool-powershell.svg" alt="PowerShell" width="100" height="40"/><br/><strong>PowerShell</strong></a></td><td align="center" width="25%"><a href="https://docs.python.org/3/tutorial/"><img src="assets/tool-python.svg" alt="Python" width="40" height="40"/><br/><strong>Python</strong></a></td><td align="center" width="25%"><a href="https://go.dev/learn/"><img src="assets/tool-go.svg" alt="Go" width="40" height="40"/><br/><strong>Go</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://www.openssh.com/manual.html"><img src="assets/tool-openssh.svg" alt="OpenSSH" width="100" height="40"/><br/><strong>OpenSSH</strong></a></td><td align="center" width="25%"><a href="https://github.com/tmux/tmux/wiki"><img src="assets/tool-tmux.svg" alt="tmux" width="40" height="40"/><br/><strong>tmux</strong></a></td><td align="center" width="25%"><a href="https://neovim.io/doc/"><img src="assets/tool-neovim.svg" alt="Neovim" width="40" height="40"/><br/><strong>Neovim</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Metrics and monitoring</th></tr>
+<tr><td align="center" width="25%"><a href="https://prometheus.io/docs/introduction/overview/"><img src="assets/tool-prometheus.svg" alt="Prometheus" width="40" height="40"/><br/><strong>Prometheus</strong></a></td><td align="center" width="25%"><a href="https://grafana.com/docs/grafana/latest/"><img src="assets/tool-grafana.svg" alt="Grafana" width="40" height="40"/><br/><strong>Grafana</strong></a></td><td align="center" width="25%"><a href="https://thanos.io/tip/thanos/getting-started.md/"><img src="assets/tool-thanos.svg" alt="Thanos" width="40" height="40"/><br/><strong>Thanos</strong></a></td><td align="center" width="25%"><a href="https://docs.victoriametrics.com/"><img src="assets/tool-victoriametrics.svg" alt="VictoriaMetrics" width="40" height="40"/><br/><strong>VictoriaMetrics</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://www.zabbix.com/documentation/current/en/manual"><img src="assets/tool-zabbix.svg" alt="Zabbix" width="100" height="40"/><br/><strong>Zabbix</strong></a></td><td align="center" width="25%"><a href="https://www.nagios.org/documentation/"><img src="assets/tool-nagios.svg" alt="Nagios" width="100" height="40"/><br/><strong>Nagios</strong></a></td><td align="center" width="25%"><a href="https://icinga.com/docs/"><img src="assets/tool-icinga.svg" alt="Icinga" width="40" height="40"/><br/><strong>Icinga</strong></a></td><td align="center" width="25%"><a href="https://learn.netdata.cloud/"><img src="assets/tool-netdata.svg" alt="Netdata" width="40" height="40"/><br/><strong>Netdata</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.datadoghq.com/"><img src="assets/tool-datadog.svg" alt="Datadog" width="40" height="40"/><br/><strong>Datadog</strong></a></td><td align="center" width="25%"><a href="https://docs.newrelic.com/"><img src="assets/tool-new-relic.svg" alt="New Relic" width="40" height="40"/><br/><strong>New Relic</strong></a></td><td align="center" width="25%"><a href="https://prometheus.io/docs/alerting/latest/alertmanager/"><img src="assets/tool-alertmanager.svg" alt="Alertmanager" width="40" height="40"/><br/><strong>Alertmanager</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Logs and tracing</th></tr>
+<tr><td align="center" width="25%"><a href="https://opentelemetry.io/docs/"><img src="assets/tool-opentelemetry.svg" alt="OpenTelemetry" width="40" height="40"/><br/><strong>OpenTelemetry</strong></a></td><td align="center" width="25%"><a href="https://www.jaegertracing.io/docs/"><img src="assets/tool-jaeger.svg" alt="Jaeger" width="40" height="40"/><br/><strong>Jaeger</strong></a></td><td align="center" width="25%"><a href="https://zipkin.io/"><img src="assets/tool-zipkin.svg" alt="Zipkin" width="100" height="40"/><br/><strong>Zipkin</strong></a></td><td align="center" width="25%"><a href="https://grafana.com/docs/loki/latest/"><img src="assets/tool-loki.svg" alt="Grafana Loki" width="100" height="40"/><br/><strong>Grafana Loki</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://grafana.com/docs/tempo/latest/"><img src="assets/tool-tempo.svg" alt="Grafana Tempo" width="40" height="40"/><br/><strong>Grafana Tempo</strong></a></td><td align="center" width="25%"><a href="https://www.elastic.co/docs/reference/elasticsearch"><img src="assets/tool-elasticsearch.svg" alt="Elasticsearch" width="40" height="40"/><br/><strong>Elasticsearch</strong></a></td><td align="center" width="25%"><a href="https://www.elastic.co/docs/explore-analyze"><img src="assets/tool-kibana.svg" alt="Kibana" width="40" height="40"/><br/><strong>Kibana</strong></a></td><td align="center" width="25%"><a href="https://docs.fluentbit.io/manual"><img src="assets/tool-fluent-bit.svg" alt="Fluent Bit" width="40" height="40"/><br/><strong>Fluent Bit</strong></a></td></tr>
+<tr><th colspan="4" align="left">Packet analysis and diagnostics</th></tr>
+<tr><td align="center" width="25%"><a href="https://www.wireshark.org/learn.html"><img src="assets/tool-wireshark.svg" alt="Wireshark" width="40" height="40"/><br/><strong>Wireshark</strong></a></td><td align="center" width="25%"><a href="https://www.tcpdump.org/manpages/tcpdump.1.html"><img src="assets/tool-tcpdump.svg" alt="tcpdump" width="100" height="40"/><br/><strong>tcpdump</strong></a></td><td align="center" width="25%"><a href="https://github.com/nmap/nmap"><img src="assets/tool-nmap.svg" alt="Nmap" width="100" height="40"/><br/><strong>Nmap</strong></a></td><td align="center" width="25%"><a href="https://everything.curl.dev/"><img src="assets/tool-curl.svg" alt="curl" width="40" height="40"/><br/><strong>curl</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://man7.org/linux/man-pages/man8/ip.8.html"><img src="assets/tool-iproute2.svg" alt="iproute2" width="100" height="40"/><br/><strong>iproute2</strong></a></td><td></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">DNS and traffic</th></tr>
+<tr><td align="center" width="25%"><a href="https://bind9.readthedocs.io/en/latest/"><img src="assets/tool-bind.svg" alt="BIND 9" width="100" height="40"/><br/><strong>BIND 9</strong></a></td><td align="center" width="25%"><a href="https://coredns.io/manual/toc/"><img src="assets/tool-coredns.svg" alt="CoreDNS" width="100" height="40"/><br/><strong>CoreDNS</strong></a></td><td align="center" width="25%"><a href="https://nginx.org/en/docs/"><img src="assets/tool-nginx.svg" alt="NGINX" width="40" height="40"/><br/><strong>NGINX</strong></a></td><td align="center" width="25%"><a href="https://www.haproxy.org/#docs"><img src="assets/tool-haproxy.svg" alt="HAProxy" width="100" height="40"/><br/><strong>HAProxy</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://www.envoyproxy.io/docs/envoy/latest/"><img src="assets/tool-envoy.svg" alt="Envoy" width="40" height="40"/><br/><strong>Envoy</strong></a></td><td align="center" width="25%"><a href="https://doc.traefik.io/traefik/"><img src="assets/tool-traefik.svg" alt="Traefik" width="40" height="40"/><br/><strong>Traefik</strong></a></td><td align="center" width="25%"><a href="https://caddyserver.com/docs/"><img src="assets/tool-caddy.svg" alt="Caddy" width="40" height="40"/><br/><strong>Caddy</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Networking and connectivity</th></tr>
+<tr><td align="center" width="25%"><a href="https://docs.cilium.io/en/stable/"><img src="assets/tool-cilium.svg" alt="Cilium" width="40" height="40"/><br/><strong>Cilium</strong></a></td><td align="center" width="25%"><a href="https://docs.tigera.io/calico/latest/about/"><img src="assets/tool-calico.svg" alt="Calico" width="100" height="40"/><br/><strong>Calico</strong></a></td><td align="center" width="25%"><a href="https://docs.frrouting.org/en/latest/"><img src="assets/tool-frrouting.svg" alt="FRRouting" width="100" height="40"/><br/><strong>FRRouting</strong></a></td><td align="center" width="25%"><a href="https://www.wireguard.com/quickstart/"><img src="assets/tool-wireguard.svg" alt="WireGuard" width="40" height="40"/><br/><strong>WireGuard</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://openvpn.net/community-docs/"><img src="assets/tool-openvpn.svg" alt="OpenVPN" width="40" height="40"/><br/><strong>OpenVPN</strong></a></td><td></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Secrets and policy</th></tr>
+<tr><td align="center" width="25%"><a href="https://developer.hashicorp.com/vault/docs"><img src="assets/tool-vault.svg" alt="Vault" width="40" height="40"/><br/><strong>Vault</strong></a></td><td align="center" width="25%"><a href="https://openbao.org/docs/"><img src="assets/tool-openbao.svg" alt="OpenBao" width="40" height="40"/><br/><strong>OpenBao</strong></a></td><td align="center" width="25%"><a href="https://www.openpolicyagent.org/docs"><img src="assets/tool-open-policy-agent.svg" alt="Open Policy Agent" width="100" height="40"/><br/><strong>Open Policy Agent</strong></a></td><td align="center" width="25%"><a href="https://kyverno.io/docs/"><img src="assets/tool-kyverno.svg" alt="Kyverno" width="100" height="40"/><br/><strong>Kyverno</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://cert-manager.io/docs/"><img src="assets/tool-cert-manager.svg" alt="cert-manager" width="100" height="40"/><br/><strong>cert-manager</strong></a></td><td></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Supply chain and runtime security</th></tr>
+<tr><td align="center" width="25%"><a href="https://trivy.dev/latest/docs/"><img src="assets/tool-trivy.svg" alt="Trivy" width="40" height="40"/><br/><strong>Trivy</strong></a></td><td align="center" width="25%"><a href="https://oss.anchore.com/docs/guides/vulnerability/"><img src="assets/tool-grype.svg" alt="Grype" width="100" height="40"/><br/><strong>Grype</strong></a></td><td align="center" width="25%"><a href="https://oss.anchore.com/docs/guides/sbom/"><img src="assets/tool-syft.svg" alt="Syft" width="100" height="40"/><br/><strong>Syft</strong></a></td><td align="center" width="25%"><a href="https://falco.org/docs/"><img src="assets/tool-falco.svg" alt="Falco" width="40" height="40"/><br/><strong>Falco</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://www.checkov.io/1.Welcome/Quick%20Start.html"><img src="assets/tool-checkov.svg" alt="Checkov" width="100" height="40"/><br/><strong>Checkov</strong></a></td><td align="center" width="25%"><a href="https://semgrep.dev/docs/"><img src="assets/tool-semgrep.svg" alt="Semgrep" width="100" height="40"/><br/><strong>Semgrep</strong></a></td><td align="center" width="25%"><a href="https://docs.sonarsource.com/sonarqube-server/"><img src="assets/tool-sonarqube.svg" alt="SonarQube" width="40" height="40"/><br/><strong>SonarQube</strong></a></td><td align="center" width="25%"><a href="https://www.zaproxy.org/docs/"><img src="assets/tool-zap.svg" alt="ZAP" width="40" height="40"/><br/><strong>ZAP</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.snyk.io/"><img src="assets/tool-snyk.svg" alt="Snyk" width="40" height="40"/><br/><strong>Snyk</strong></a></td><td align="center" width="25%"><a href="https://goharbor.io/docs/"><img src="assets/tool-harbor.svg" alt="Harbor" width="40" height="40"/><br/><strong>Harbor</strong></a></td><td align="center" width="25%"><a href="https://docs.sigstore.dev/cosign/"><img src="assets/tool-cosign.svg" alt="Cosign" width="100" height="40"/><br/><strong>Cosign</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Databases and messaging</th></tr>
+<tr><td align="center" width="25%"><a href="https://www.postgresql.org/docs/current/tutorial.html"><img src="assets/tool-postgresql.svg" alt="PostgreSQL" width="40" height="40"/><br/><strong>PostgreSQL</strong></a></td><td align="center" width="25%"><a href="https://dev.mysql.com/doc/"><img src="assets/tool-mysql.svg" alt="MySQL" width="40" height="40"/><br/><strong>MySQL</strong></a></td><td align="center" width="25%"><a href="https://redis.io/docs/latest/"><img src="assets/tool-redis.svg" alt="Redis" width="40" height="40"/><br/><strong>Redis</strong></a></td><td align="center" width="25%"><a href="https://valkey.io/topics/"><img src="assets/tool-valkey.svg" alt="Valkey" width="100" height="40"/><br/><strong>Valkey</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://www.mongodb.com/docs/"><img src="assets/tool-mongodb.svg" alt="MongoDB" width="40" height="40"/><br/><strong>MongoDB</strong></a></td><td align="center" width="25%"><a href="https://kafka.apache.org/documentation/"><img src="assets/tool-kafka.svg" alt="Apache Kafka" width="40" height="40"/><br/><strong>Apache Kafka</strong></a></td><td align="center" width="25%"><a href="https://www.rabbitmq.com/docs"><img src="assets/tool-rabbitmq.svg" alt="RabbitMQ" width="40" height="40"/><br/><strong>RabbitMQ</strong></a></td><td align="center" width="25%"><a href="https://etcd.io/docs/"><img src="assets/tool-etcd.svg" alt="etcd" width="40" height="40"/><br/><strong>etcd</strong></a></td></tr>
+<tr><th colspan="4" align="left">Storage and recovery</th></tr>
+<tr><td align="center" width="25%"><a href="https://docs.ceph.com/en/latest/"><img src="assets/tool-ceph.svg" alt="Ceph" width="40" height="40"/><br/><strong>Ceph</strong></a></td><td align="center" width="25%"><a href="https://docs.min.io/aistor/"><img src="assets/tool-minio.svg" alt="MinIO" width="40" height="40"/><br/><strong>MinIO</strong></a></td><td align="center" width="25%"><a href="https://velero.io/docs/"><img src="assets/tool-velero.svg" alt="Velero" width="100" height="40"/><br/><strong>Velero</strong></a></td><td align="center" width="25%"><a href="https://restic.readthedocs.io/en/stable/"><img src="assets/tool-restic.svg" alt="restic" width="100" height="40"/><br/><strong>restic</strong></a></td></tr>
+<tr><th colspan="4" align="left">Virtualization and private cloud</th></tr>
+<tr><td align="center" width="25%"><a href="https://pve.proxmox.com/pve-docs/"><img src="assets/tool-proxmox.svg" alt="Proxmox VE" width="40" height="40"/><br/><strong>Proxmox VE</strong></a></td><td align="center" width="25%"><a href="https://www.qemu.org/documentation/"><img src="assets/tool-qemu.svg" alt="QEMU" width="40" height="40"/><br/><strong>QEMU</strong></a></td><td align="center" width="25%"><a href="https://linux-kvm.org/page/Documents"><img src="assets/tool-kvm.svg" alt="KVM" width="100" height="40"/><br/><strong>KVM</strong></a></td><td align="center" width="25%"><a href="https://libvirt.org/docs.html"><img src="assets/tool-libvirt.svg" alt="libvirt" width="100" height="40"/><br/><strong>libvirt</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.openstack.org/"><img src="assets/tool-openstack.svg" alt="OpenStack" width="40" height="40"/><br/><strong>OpenStack</strong></a></td><td></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Performance and failure testing</th></tr>
+<tr><td align="center" width="25%"><a href="https://grafana.com/docs/k6/latest/"><img src="assets/tool-k6.svg" alt="k6" width="40" height="40"/><br/><strong>k6</strong></a></td><td align="center" width="25%"><a href="https://docs.locust.io/en/stable/"><img src="assets/tool-locust.svg" alt="Locust" width="100" height="40"/><br/><strong>Locust</strong></a></td><td align="center" width="25%"><a href="https://jmeter.apache.org/usermanual/index.html"><img src="assets/tool-jmeter.svg" alt="Apache JMeter" width="40" height="40"/><br/><strong>Apache JMeter</strong></a></td><td align="center" width="25%"><a href="https://chaos-mesh.org/docs/"><img src="assets/tool-chaos-mesh.svg" alt="Chaos Mesh" width="100" height="40"/><br/><strong>Chaos Mesh</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.litmuschaos.io/"><img src="assets/tool-litmuschaos.svg" alt="LitmusChaos" width="100" height="40"/><br/><strong>LitmusChaos</strong></a></td><td align="center" width="25%"><a href="https://github.com/Shopify/toxiproxy"><img src="assets/tool-toxiproxy.svg" alt="Toxiproxy" width="100" height="40"/><br/><strong>Toxiproxy</strong></a></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Developer platforms</th></tr>
+<tr><td align="center" width="25%"><a href="https://backstage.io/docs/"><img src="assets/tool-backstage.svg" alt="Backstage" width="40" height="40"/><br/><strong>Backstage</strong></a></td><td></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Cloud command lines and templates</th></tr>
+<tr><td align="center" width="25%"><a href="https://docs.aws.amazon.com/cli/latest/userguide/"><img src="assets/tool-aws-cli.svg" alt="AWS CLI" width="100" height="40"/><br/><strong>AWS CLI</strong></a></td><td align="center" width="25%"><a href="https://learn.microsoft.com/en-us/cli/azure/"><img src="assets/tool-azure-cli.svg" alt="Azure CLI" width="100" height="40"/><br/><strong>Azure CLI</strong></a></td><td align="center" width="25%"><a href="https://docs.cloud.google.com/sdk/docs"><img src="assets/tool-gcloud.svg" alt="gcloud CLI" width="40" height="40"/><br/><strong>gcloud CLI</strong></a></td><td align="center" width="25%"><a href="https://docs.aws.amazon.com/cloudformation/"><img src="assets/tool-cloudformation.svg" alt="AWS CloudFormation" width="100" height="40"/><br/><strong>AWS CloudFormation</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/"><img src="assets/tool-bicep.svg" alt="Bicep" width="100" height="40"/><br/><strong>Bicep</strong></a></td><td align="center" width="25%"><a href="https://terragrunt.gruntwork.io/docs/"><img src="assets/tool-terragrunt.svg" alt="Terragrunt" width="100" height="40"/><br/><strong>Terragrunt</strong></a></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Windows administration</th></tr>
+<tr><td align="center" width="25%"><a href="https://learn.microsoft.com/en-us/windows-server/"><img src="assets/tool-windows-server.svg" alt="Windows Server" width="100" height="40"/><br/><strong>Windows Server</strong></a></td><td align="center" width="25%"><a href="https://learn.microsoft.com/en-us/training/paths/active-directory-domain-services/"><img src="assets/tool-active-directory.svg" alt="Active Directory" width="100" height="40"/><br/><strong>Active Directory</strong></a></td><td align="center" width="25%"><a href="https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/"><img src="assets/tool-hyper-v.svg" alt="Hyper-V" width="100" height="40"/><br/><strong>Hyper-V</strong></a></td><td></td></tr>
+<tr><th colspan="4" align="left">Network platforms and inventory</th></tr>
+<tr><td align="center" width="25%"><a href="https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-xe/index.html"><img src="assets/tool-cisco-ios-xe.svg" alt="Cisco IOS XE" width="40" height="40"/><br/><strong>Cisco IOS XE</strong></a></td><td align="center" width="25%"><a href="https://www.juniper.net/documentation/product/us/en/junos-os/"><img src="assets/tool-junos.svg" alt="Junos OS" width="40" height="40"/><br/><strong>Junos OS</strong></a></td><td align="center" width="25%"><a href="https://help.mikrotik.com/docs/"><img src="assets/tool-mikrotik-routeros.svg" alt="MikroTik RouterOS" width="40" height="40"/><br/><strong>MikroTik RouterOS</strong></a></td><td align="center" width="25%"><a href="https://docs.netgate.com/pfsense/en/latest/"><img src="assets/tool-pfsense.svg" alt="pfSense" width="40" height="40"/><br/><strong>pfSense</strong></a></td></tr>
+<tr><td align="center" width="25%"><a href="https://docs.opnsense.org/"><img src="assets/tool-opnsense.svg" alt="OPNsense" width="40" height="40"/><br/><strong>OPNsense</strong></a></td><td align="center" width="25%"><a href="https://netboxlabs.com/docs/netbox/"><img src="assets/tool-netbox.svg" alt="NetBox" width="100" height="40"/><br/><strong>NetBox</strong></a></td><td></td><td></td></tr>
+<tr><th colspan="4" align="left">Service connectivity</th></tr>
+<tr><td align="center" width="25%"><a href="https://istio.io/latest/docs/"><img src="assets/tool-istio.svg" alt="Istio" width="40" height="40"/><br/><strong>Istio</strong></a></td><td align="center" width="25%"><a href="https://linkerd.io/2/overview/"><img src="assets/tool-linkerd.svg" alt="Linkerd" width="40" height="40"/><br/><strong>Linkerd</strong></a></td><td></td><td></td></tr>
 </table>
 
-[Choose a career](careers/) · [Find a tool](tools/) · [Solve a problem](troubleshooting/)
+## Find something beyond the manual
 
-## Where do you want to go?
-
-| Your next step | Open the collection |
+| You are looking for… | Open |
 | --- | --- |
-| Find a starting point | [Start here →](start-here/) |
-| Explore a role or change direction | [Career paths →](careers/) |
-| Understand a subject | [Engineering topics →](topics/) |
-| Work with a technology | [Tools →](tools/) |
-| Focus on a cloud provider | [Cloud platforms →](cloud/) |
-| Build something or test your skills | [Labs, projects, and practice →](practice/) |
-| Investigate a failure | [Troubleshooting →](troubleshooting/) |
-| Choose a book, course, or certification resource | [Learning library →](learning/) |
+| Packet-analysis teachers and conference case studies | [Wireshark discoveries](04-tools-and-technologies/wireshark.md) |
+| Somewhere to practise troubleshooting | [Hands-on practice](06-hands-on-practice/) |
+| What engineers learned from real failures | [Engineering in the wild](07-engineering-in-the-wild/) |
+| A learning website or book you can return to | [Learning libraries](08-learning-libraries/) |
 
-## Pick your direction
+## Help someone discover a worthwhile resource
 
-[**DevOps**](careers/devops.md) · [**SRE**](careers/sre.md) · [**Platform Engineering**](careers/platform-engineering.md) · [**Cloud Engineering**](careers/cloud-engineering.md)
+Found a clear explanation, an overlooked talk, or a useful lab? [Suggest it](CONTRIBUTING.md) with a direct link and a sentence explaining its value.
 
-[Linux & Systems](careers/linux-systems.md) · [Kubernetes Engineering](careers/kubernetes-engineering.md) · [DevSecOps](careers/devsecops.md) · [Cloud Security](careers/cloud-security.md) · [Observability](careers/observability.md) · [Network Engineering](careers/network-engineering.md)
-
-## Find your technology
-
-Choose a logo or name to open its resource page.
-
-<table>
-<tr>
-<td align="center" width="25%"><a href="tools/git.md"><img src="assets/logos/git.svg" width="56" height="56" alt="Git"/><br/><strong>Git</strong></a></td>
-<td align="center" width="25%"><a href="tools/docker.md"><img src="assets/logos/docker.svg" width="56" height="56" alt="Docker"/><br/><strong>Docker</strong></a></td>
-<td align="center" width="25%"><a href="tools/kubernetes.md"><img src="assets/logos/kubernetes.svg" width="56" height="56" alt="Kubernetes"/><br/><strong>Kubernetes</strong></a></td>
-<td align="center" width="25%"><a href="tools/terraform.md"><img src="assets/logos/terraform.svg" width="56" height="56" alt="Terraform"/><br/><strong>Terraform</strong></a></td>
-</tr>
-<tr>
-<td align="center" width="25%"><a href="tools/opentofu.md"><img src="assets/logos/opentofu.svg" width="56" height="56" alt="OpenTofu"/><br/><strong>OpenTofu</strong></a></td>
-<td align="center" width="25%"><a href="tools/ansible.md"><img src="assets/logos/ansible.svg" width="56" height="56" alt="Ansible"/><br/><strong>Ansible</strong></a></td>
-<td align="center" width="25%"><a href="tools/github-actions.md"><img src="assets/logos/githubactions.svg" width="56" height="56" alt="GitHub Actions"/><br/><strong>GitHub Actions</strong></a></td>
-<td align="center" width="25%"><a href="tools/jenkins.md"><img src="assets/logos/jenkins.svg" width="56" height="56" alt="Jenkins"/><br/><strong>Jenkins</strong></a></td>
-</tr>
-<tr>
-<td align="center" width="25%"><a href="tools/helm.md"><img src="assets/logos/helm.svg" width="56" height="56" alt="Helm"/><br/><strong>Helm</strong></a></td>
-<td align="center" width="25%"><a href="tools/argo-cd.md"><img src="assets/logos/argo.svg" width="56" height="56" alt="Argo CD"/><br/><strong>Argo CD</strong></a></td>
-<td align="center" width="25%"><a href="tools/prometheus.md"><img src="assets/logos/prometheus.svg" width="56" height="56" alt="Prometheus"/><br/><strong>Prometheus</strong></a></td>
-<td align="center" width="25%"><a href="tools/grafana.md"><img src="assets/logos/grafana.svg" width="56" height="56" alt="Grafana"/><br/><strong>Grafana</strong></a></td>
-</tr>
-<tr>
-<td align="center" width="25%"><a href="tools/opentelemetry.md"><img src="assets/logos/opentelemetry.svg" width="56" height="56" alt="OpenTelemetry"/><br/><strong>OpenTelemetry</strong></a></td>
-<td align="center" colspan="3"><a href="tools/"><strong>Explore the tool directory →</strong></a><br/>Documentation, tutorials, practice, and troubleshooting</td>
-</tr>
-</table>
-
-## Follow the subject
-
-| Foundations | Build and deliver | Operate and protect |
-| --- | --- | --- |
-| [Linux](topics/linux.md) | [Containers](topics/containers.md) | [Observability](topics/observability.md) |
-| [Networking](topics/networking.md) | [Kubernetes](topics/kubernetes.md) | [Reliability](topics/reliability.md) |
-| [Scripting](topics/scripting.md) | [Infrastructure as Code](topics/infrastructure-as-code.md) | [Security](topics/security.md) |
-| [Databases](topics/databases.md) | [CI/CD](topics/cicd.md) · [GitOps](topics/gitops.md) | [Troubleshooting](troubleshooting/) |
-
-## Work in your cloud
-
-[**AWS →**](cloud/aws.md) &nbsp; [**Microsoft Azure →**](cloud/azure.md) &nbsp; [**Google Cloud →**](cloud/google-cloud.md)
-
-## Start with the problem
-
-| What you are facing | Where to look |
-| --- | --- |
-| A service will not start, or a host is under pressure | [Linux troubleshooting](troubleshooting/linux.md) |
-| A name resolves, but the connection fails | [Networking troubleshooting](troubleshooting/networking.md) |
-| A container exits or behaves differently | [Container troubleshooting](troubleshooting/containers.md) |
-| A Pod keeps restarting or traffic cannot reach it | [Kubernetes troubleshooting](troubleshooting/kubernetes.md) |
-| A pipeline fails or a release does not behave as expected | [Pipeline troubleshooting](troubleshooting/pipelines.md) |
-| Cloud access, connectivity, or resources fail | [Cloud troubleshooting](troubleshooting/cloud.md) |
-| Queries slow down, connections grow, or replication falls behind | [Database troubleshooting](troubleshooting/databases.md) |
-
-## Put it into practice
-
-[**Labs**](practice/labs.md) for a focused skill · [**Projects**](practice/projects.md) for a complete result · [**Playgrounds**](practice/playgrounds.md) for exploration · [**Challenges**](practice/challenges.md) to test your reasoning
-
-<p align="center"><img src="assets/diagrams/how-to-explore.svg" alt="Your question leads to the right collection and then to reading, practice, or investigation." width="100%"/></p>
-
-## Keep learning
-
-[Books](learning/books.md) · [Courses](learning/courses.md) · [Certification resources](learning/certifications.md) · [Engineering blogs](learning/engineering-blogs.md)
-
-Choose a resource that fits your question and current knowledge. Check prerequisites, access conditions, and the version you use. You do not need to learn every tool or follow every career path.
-
-## Help make the directory better
-
-Found a broken link or a resource worth including? [Open an issue](https://github.com/VERIQTA-WORLD/veriqta-engineering-resource-directory/issues) with the page, link, and a short explanation of what would help you.
-
----
-
-**VERIQTA · Build • Automate • Scale**  
-[Explore VERIQTA WORLD](https://github.com/VERIQTA-WORLD) · [Visual assets](assets/)
-
-Tool names and logos belong to their respective owners. Inclusion does not imply affiliation or endorsement. [Icon sources](assets/logos/SOURCES.md).
+[Complete file map](FILE-MAP.md) · [Writing and curation standard](WRITING-STANDARD.md) · [Graphic attribution](assets/ATTRIBUTION.md)
