@@ -1,92 +1,113 @@
-<div align="center">
-
-![VERIQTA Engineering Resource Directory](assets/images/directory-overview.svg)
+<p align="center">
+  <img src="assets/navigation/directory-header.svg" alt="VERIQTA — Find what you need. Build what comes next." width="100%"/>
+</p>
 
 # VERIQTA Engineering Resource Directory
 
-**Explore engineering careers, technical subjects, tools and production resources.**
+Find your next useful resource in DevOps, cloud, SRE, platform engineering, Linux, and infrastructure. Start with what you want to learn, the technology you use, or the problem you need to solve.
 
-[Start here](00-start-here) · [Explore careers](01-career-paths) · [Browse domains](02-engineering-domains) · [Find tools](03-tools-and-ecosystems) · [Investigate production problems](05-production-problems)
+<table>
+<tr>
+<td width="33%"><a href="careers/"><img src="assets/navigation/choose-a-career.svg" alt="Choose a career — find resources for your direction" width="100%"/></a></td>
+<td width="33%"><a href="tools/"><img src="assets/navigation/find-a-tool.svg" alt="Find a tool — documentation, tutorials, and practice" width="100%"/></a></td>
+<td width="33%"><a href="troubleshooting/"><img src="assets/navigation/solve-a-problem.svg" alt="Solve a problem — explore troubleshooting resources" width="100%"/></a></td>
+</tr>
+</table>
 
-</div>
+[Choose a career](careers/) · [Find a tool](tools/) · [Solve a problem](troubleshooting/)
 
-The VERIQTA Engineering Resource Directory connects engineering learning with practical work. Explore official documentation, learning materials, tools, labs, projects, architecture references and public incident reports across DevOps, SRE, platform engineering, cloud, infrastructure, security and related disciplines.
+## Where do you want to go?
 
-## Explore the directory
-
-| Collection | What you can explore |
+| Your next step | Open the collection |
 | --- | --- |
-| [Start here](00-start-here) | Find your starting point and navigate engineering resources. |
-| [Career paths](01-career-paths) | Explore engineering roles, skills and operational responsibilities. |
-| [Engineering domains](02-engineering-domains) | Browse foundations and specialised engineering subjects. |
-| [Tools and ecosystems](03-tools-and-ecosystems) | Explore tools, related technologies and official references. |
-| [Cloud and infrastructure](04-cloud-and-infrastructure) | Find resources for cloud platforms, compute, networking and storage. |
-| [Production problems](05-production-problems) | Find resources for investigating failures and verifying recovery. |
-| [Learning and practice](06-learning-and-practice) | Discover books, courses, labs, projects and assessments. |
-| [Architecture and reliability](07-architecture-and-reliability) | Explore system design, resilience and lessons from public incidents. |
-| [Standards and documentation](08-standards-and-documentation) | Navigate authoritative documentation, specifications and frameworks. |
-| [Resource indexes](09-resource-indexes) | Browse resources by role, experience, technology and format. |
-| [Contributing and maintenance](10-contributing-and-maintenance) | Submit, review and maintain useful engineering resources. |
+| Find a starting point | [Start here →](start-here/) |
+| Explore a role or change direction | [Career paths →](careers/) |
+| Understand a subject | [Engineering topics →](topics/) |
+| Work with a technology | [Tools →](tools/) |
+| Focus on a cloud provider | [Cloud platforms →](cloud/) |
+| Build something or test your skills | [Labs, projects, and practice →](practice/) |
+| Investigate a failure | [Troubleshooting →](troubleshooting/) |
+| Choose a book, course, or certification resource | [Learning library →](learning/) |
 
-## Choose your starting point
+## Pick your direction
 
-![Browse engineering resources](assets/images/browse-resources.svg)
+[**DevOps**](careers/devops.md) · [**SRE**](careers/sre.md) · [**Platform Engineering**](careers/platform-engineering.md) · [**Cloud Engineering**](careers/cloud-engineering.md)
 
-- **Exploring a career:** review role responsibilities, skills and learning resources in the career paths.
-- **Learning a subject:** browse the engineering domains for fundamentals and more specialised references.
-- **Working with a technology:** find tools, ecosystems, cloud platforms and infrastructure resources.
-- **Practising a skill:** explore labs, projects and assessment resources.
-- **Investigating a failure:** use the production problem collections to focus your research and evidence gathering.
-- **Designing a system:** explore architecture, reliability, standards and public incident lessons.
+[Linux & Systems](careers/linux-systems.md) · [Kubernetes Engineering](careers/kubernetes-engineering.md) · [DevSecOps](careers/devsecops.md) · [Cloud Security](careers/cloud-security.md) · [Observability](careers/observability.md) · [Network Engineering](careers/network-engineering.md)
 
-## Engineering career paths
+## Find your technology
 
-![Engineering paths](assets/images/engineering-paths.svg)
+Choose a logo or name to open its resource page.
 
-Explore roles across software delivery, SRE, platform engineering, cloud, infrastructure, systems administration, networking, security, data systems, storage, incident response, AI infrastructure and architecture. Each role collection connects responsibilities with relevant skills, tools and learning opportunities.
+<table>
+<tr>
+<td align="center" width="25%"><a href="tools/git.md"><img src="assets/logos/git.svg" width="56" height="56" alt="Git"/><br/><strong>Git</strong></a></td>
+<td align="center" width="25%"><a href="tools/docker.md"><img src="assets/logos/docker.svg" width="56" height="56" alt="Docker"/><br/><strong>Docker</strong></a></td>
+<td align="center" width="25%"><a href="tools/kubernetes.md"><img src="assets/logos/kubernetes.svg" width="56" height="56" alt="Kubernetes"/><br/><strong>Kubernetes</strong></a></td>
+<td align="center" width="25%"><a href="tools/terraform.md"><img src="assets/logos/terraform.svg" width="56" height="56" alt="Terraform"/><br/><strong>Terraform</strong></a></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="tools/opentofu.md"><img src="assets/logos/opentofu.svg" width="56" height="56" alt="OpenTofu"/><br/><strong>OpenTofu</strong></a></td>
+<td align="center" width="25%"><a href="tools/ansible.md"><img src="assets/logos/ansible.svg" width="56" height="56" alt="Ansible"/><br/><strong>Ansible</strong></a></td>
+<td align="center" width="25%"><a href="tools/github-actions.md"><img src="assets/logos/githubactions.svg" width="56" height="56" alt="GitHub Actions"/><br/><strong>GitHub Actions</strong></a></td>
+<td align="center" width="25%"><a href="tools/jenkins.md"><img src="assets/logos/jenkins.svg" width="56" height="56" alt="Jenkins"/><br/><strong>Jenkins</strong></a></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="tools/helm.md"><img src="assets/logos/helm.svg" width="56" height="56" alt="Helm"/><br/><strong>Helm</strong></a></td>
+<td align="center" width="25%"><a href="tools/argo-cd.md"><img src="assets/logos/argo.svg" width="56" height="56" alt="Argo CD"/><br/><strong>Argo CD</strong></a></td>
+<td align="center" width="25%"><a href="tools/prometheus.md"><img src="assets/logos/prometheus.svg" width="56" height="56" alt="Prometheus"/><br/><strong>Prometheus</strong></a></td>
+<td align="center" width="25%"><a href="tools/grafana.md"><img src="assets/logos/grafana.svg" width="56" height="56" alt="Grafana"/><br/><strong>Grafana</strong></a></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="tools/opentelemetry.md"><img src="assets/logos/opentelemetry.svg" width="56" height="56" alt="OpenTelemetry"/><br/><strong>OpenTelemetry</strong></a></td>
+<td align="center" colspan="3"><a href="tools/"><strong>Explore the tool directory →</strong></a><br/>Documentation, tutorials, practice, and troubleshooting</td>
+</tr>
+</table>
 
-[Browse the career paths](01-career-paths)
+## Follow the subject
 
-## Technical depth with clear navigation
+| Foundations | Build and deliver | Operate and protect |
+| --- | --- | --- |
+| [Linux](topics/linux.md) | [Containers](topics/containers.md) | [Observability](topics/observability.md) |
+| [Networking](topics/networking.md) | [Kubernetes](topics/kubernetes.md) | [Reliability](topics/reliability.md) |
+| [Scripting](topics/scripting.md) | [Infrastructure as Code](topics/infrastructure-as-code.md) | [Security](topics/security.md) |
+| [Databases](topics/databases.md) | [CI/CD](topics/cicd.md) · [GitOps](topics/gitops.md) | [Troubleshooting](troubleshooting/) |
 
-Engineering domains bring together official documentation, fundamentals, subject-specific references, production patterns, labs, books, courses and interview resources. Kubernetes includes administration, networking, storage, security, observability and troubleshooting. Other domains use categories matched to their own engineering concerns.
+## Work in your cloud
 
-[Explore engineering domains](02-engineering-domains)
+[**AWS →**](cloud/aws.md) &nbsp; [**Microsoft Azure →**](cloud/azure.md) &nbsp; [**Google Cloud →**](cloud/google-cloud.md)
 
-## Connect learning with production work
+## Start with the problem
 
-![Production investigation](assets/images/production-investigation.svg)
+| What you are facing | Where to look |
+| --- | --- |
+| A service will not start, or a host is under pressure | [Linux troubleshooting](troubleshooting/linux.md) |
+| A name resolves, but the connection fails | [Networking troubleshooting](troubleshooting/networking.md) |
+| A container exits or behaves differently | [Container troubleshooting](troubleshooting/containers.md) |
+| A Pod keeps restarting or traffic cannot reach it | [Kubernetes troubleshooting](troubleshooting/kubernetes.md) |
+| A pipeline fails or a release does not behave as expected | [Pipeline troubleshooting](troubleshooting/pipelines.md) |
+| Cloud access, connectivity, or resources fail | [Cloud troubleshooting](troubleshooting/cloud.md) |
+| Queries slow down, connections grow, or replication falls behind | [Database troubleshooting](troubleshooting/databases.md) |
 
-Use production resources to understand failure patterns, compare investigative approaches and locate relevant references. Start with the impact and system context, collect evidence, test competing hypotheses and verify recovery. Apply recommendations within your environment’s access, review and change controls.
+## Put it into practice
 
-[Browse production problems](05-production-problems) · [Explore architecture and reliability](07-architecture-and-reliability)
+[**Labs**](practice/labs.md) for a focused skill · [**Projects**](practice/projects.md) for a complete result · [**Playgrounds**](practice/playgrounds.md) for exploration · [**Challenges**](practice/challenges.md) to test your reasoning
 
-## Learn through practice
+<p align="center"><img src="assets/diagrams/how-to-explore.svg" alt="Your question leads to the right collection and then to reading, practice, or investigation." width="100%"/></p>
 
-![Learning and practice](assets/images/learning-and-practice.svg)
+## Keep learning
 
-Combine authoritative references with guided exercises and projects. Check prerequisites, use isolated environments, understand expected outcomes and clean up resources after practice. Develop the ability to explain your decisions and verify results.
+[Books](learning/books.md) · [Courses](learning/courses.md) · [Certification resources](learning/certifications.md) · [Engineering blogs](learning/engineering-blogs.md)
 
-[Explore learning and practice](06-learning-and-practice)
+Choose a resource that fits your question and current knowledge. Check prerequisites, access conditions, and the version you use. You do not need to learn every tool or follow every career path.
 
-## Resource quality
+## Help make the directory better
 
-![Resource quality](assets/images/resource-quality.svg)
+Found a broken link or a resource worth including? [Open an issue](https://github.com/VERIQTA-WORLD/veriqta-engineering-resource-directory/issues) with the page, link, and a short explanation of what would help you.
 
-A useful resource entry explains what it covers, who it suits, its prerequisites, access requirements and practical value. Check the publisher, relevant versions and date of review. Official references and community examples serve different purposes; evaluate both against the task and environment.
+---
 
-[Find official documentation and standards](08-standards-and-documentation)
+**VERIQTA · Build • Automate • Scale**  
+[Explore VERIQTA WORLD](https://github.com/VERIQTA-WORLD) · [Visual assets](assets/)
 
-## Contribute
-
-Suggest resources, improve descriptions, correct broken links and help keep references relevant. Choose the appropriate collection and include enough context for readers to assess the resource.
-
-[Read the contribution guide](CONTRIBUTING.md) · [Use the resource entry template](10-contributing-and-maintenance/resource-entry-template.md)
-
-## About VERIQTA WORLD
-
-VERIQTA WORLD shares engineering resources that help readers connect technical understanding with practical engineering work.
-
-[Explore VERIQTA WORLD](https://github.com/VERIQTA-WORLD)
-
-Resource links may lead to third-party services with their own access requirements and terms. Names and trademarks belong to their owners; inclusion does not imply affiliation or endorsement.
+Tool names and logos belong to their respective owners. Inclusion does not imply affiliation or endorsement. [Icon sources](assets/logos/SOURCES.md).
