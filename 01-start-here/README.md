@@ -16,6 +16,6 @@ Choose what you want to discover. You can start with a subject, a tool, a teache
 
 A familiar tool can lead you to an unfamiliar teacher, a conference demonstration, or a free collection of practice material. Look for the entry that answers your question; you do not need to work through every link.
 
-Begin with [Wireshark](../04-tools-and-technologies/wireshark.md) to see videos, reading, sample captures, and case studies collected around one tool.
+Try [Git](../04-tools-and-technologies/git.md) for visual exercises, [Wireshark](../04-tools-and-technologies/wireshark.md) for capture analysis, or [Prometheus](../04-tools-and-technologies/prometheus.md) for metrics and query resources. Each collection gives you a different way into the subject.
 
 [Directory homepage](../README.md)

@@ -1,15 +1,20 @@
-# Cloud Platforms
+# Discover Cloud Resources
 
-Choose the provider you use, then follow its learning material for the service you need. A readable course page does not mean every lab or cloud resource is free.
+Choose a provider or a cross-provider engineering question. Check lab access, permissions, and infrastructure charges on the selected exercise.
 
-| Provider | Discover learning | Find implementation references |
-| --- | --- | --- |
-| AWS | [AWS Skill Builder](https://skillbuilder.aws/) | [AWS Documentation](https://docs.aws.amazon.com/) |
-| Microsoft Azure | [Azure training on Microsoft Learn](https://learn.microsoft.com/en-us/training/azure/) | [Azure documentation](https://learn.microsoft.com/en-us/azure/) |
-| Google Cloud | [Google Cloud training](https://cloud.google.com/learn/training) | [Google Cloud documentation](https://cloud.google.com/docs) |
+| Explore | What you can discover |
+| --- | --- |
+| [AWS](aws.md) | Start with one workload or service. Choose a structured lesson, a workshop, or a reference according to what you need to do next. |
+| [Microsoft Azure](azure.md) | Use the Azure service you need as the entry point rather than trying to learn the whole provider at once. |
+| [Google Cloud](google-cloud.md) | Find a provider learning path and the implementation reference for the same task. |
+| [Cloud Identity and Access](cloud-identity.md) | Choose the provider identity model before comparing permissions examples across clouds. |
+| [Cloud Networking](cloud-networking.md) | Follow a request through names, routes, access rules, and the destination workload. |
+| [Cloud Compute](cloud-compute.md) | Look for the lifecycle and responsibility model behind a virtual machine or compute service. |
+| [Cloud Containers and Managed Kubernetes](cloud-containers.md) | Choose the operating model before comparing deployment tutorials. |
+| [Cloud Storage and Databases](cloud-storage-and-databases.md) | Choose resources from the data access, persistence, and recovery needs of your application. |
+| [Cloud Observability](cloud-observability.md) | Find the signal that answers your workload question, then choose provider collection and query material. |
+| [Cloud Security References and Practice](cloud-security.md) | Use provider-specific controls alongside a clear explanation of the boundary you want to protect. |
+| [Cloud Reliability](cloud-reliability.md) | Start with a user-visible objective and examine the provider dependencies behind it. |
+| [Cloud Cost and Billing](cloud-cost-and-billing.md) | Discover resources that make an estimate’s assumptions and the workload’s ownership visible. |
 
-Check account, subscription, credit, and infrastructure requirements on the selected exercise before starting. Choose one provider first when you are learning a new service model.
-
-Provider and service discovery collections are being assembled. See the [cloud file map](../FILE-MAP.md#05-cloud-platforms).
-
-[Cloud command lines and templates](../04-tools-and-technologies/README.md#cloud-command-lines-and-templates) · [Directory homepage](../README.md)
+[Directory homepage](../README.md)

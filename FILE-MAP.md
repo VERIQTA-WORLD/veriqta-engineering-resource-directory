@@ -1,290 +1,272 @@
 # Complete File Map
 
-Browse the repository’s flat structure. **Available** entries open written pages. **Reserved** files are empty locations for future discovery collections and are not presented as finished resources.
-
-All eight numbered content folders contain files directly. The unnumbered `assets/` folder also has no subfolders.
+All content collections are directly inside the eight numbered folders. Tool graphics and their attribution are directly inside the flat `assets/` folder.
 
 ## 01-start-here
 
-| File | Availability |
-| --- | --- |
-| [README.md](01-start-here/README.md) | Available |
-| [choose-your-starting-point.md](01-start-here/choose-your-starting-point.md) | Available |
+- [README.md](01-start-here/README.md)
+- [choose-your-starting-point.md](01-start-here/choose-your-starting-point.md)
 
 ## 02-career-paths
 
-| File | Availability |
-| --- | --- |
-| [README.md](02-career-paths/README.md) | Available |
-| `devops.md` | Reserved |
-| `sre.md` | Reserved |
-| `platform-engineering.md` | Reserved |
-| `cloud-engineering.md` | Reserved |
-| `linux-systems.md` | Reserved |
-| `windows-systems.md` | Reserved |
-| `network-engineering.md` | Reserved |
-| `kubernetes-engineering.md` | Reserved |
-| `devsecops.md` | Reserved |
-| `cloud-security.md` | Reserved |
-| `observability.md` | Reserved |
-| `infrastructure-engineering.md` | Reserved |
-| `automation-engineering.md` | Reserved |
-| `database-reliability.md` | Reserved |
-| `release-engineering.md` | Reserved |
+- [README.md](02-career-paths/README.md)
+- [automation-engineering.md](02-career-paths/automation-engineering.md)
+- [cloud-engineering.md](02-career-paths/cloud-engineering.md)
+- [cloud-security.md](02-career-paths/cloud-security.md)
+- [database-reliability.md](02-career-paths/database-reliability.md)
+- [devops.md](02-career-paths/devops.md)
+- [devsecops.md](02-career-paths/devsecops.md)
+- [infrastructure-engineering.md](02-career-paths/infrastructure-engineering.md)
+- [kubernetes-engineering.md](02-career-paths/kubernetes-engineering.md)
+- [linux-systems.md](02-career-paths/linux-systems.md)
+- [network-engineering.md](02-career-paths/network-engineering.md)
+- [observability.md](02-career-paths/observability.md)
+- [platform-engineering.md](02-career-paths/platform-engineering.md)
+- [release-engineering.md](02-career-paths/release-engineering.md)
+- [sre.md](02-career-paths/sre.md)
+- [windows-systems.md](02-career-paths/windows-systems.md)
 
 ## 03-engineering-topics
 
-| File | Availability |
-| --- | --- |
-| [README.md](03-engineering-topics/README.md) | Available |
-| `linux.md` | Reserved |
-| `windows-administration.md` | Reserved |
-| `networking.md` | Reserved |
-| `dns.md` | Reserved |
-| `tcp-ip.md` | Reserved |
-| `http-and-tls.md` | Reserved |
-| `routing-and-switching.md` | Reserved |
-| `load-balancing.md` | Reserved |
-| `firewalls-and-vpns.md` | Reserved |
-| `shell-scripting.md` | Reserved |
-| `python-automation.md` | Reserved |
-| `go-for-infrastructure.md` | Reserved |
-| `version-control.md` | Reserved |
-| `cicd.md` | Reserved |
-| `containers.md` | Reserved |
-| `kubernetes.md` | Reserved |
-| `gitops.md` | Reserved |
-| `infrastructure-as-code.md` | Reserved |
-| `configuration-management.md` | Reserved |
-| `distributed-systems.md` | Reserved |
-| `databases.md` | Reserved |
-| `storage.md` | Reserved |
-| `messaging-and-streaming.md` | Reserved |
-| `observability.md` | Reserved |
-| `reliability.md` | Reserved |
-| `capacity-and-performance.md` | Reserved |
-| `incident-response.md` | Reserved |
-| `disaster-recovery.md` | Reserved |
-| `security.md` | Reserved |
-| `identity-and-access.md` | Reserved |
-| `software-supply-chain.md` | Reserved |
-| `virtualization.md` | Reserved |
-| `platform-design.md` | Reserved |
-| `cloud-cost-management.md` | Reserved |
+- [README.md](03-engineering-topics/README.md)
+- [capacity-and-performance.md](03-engineering-topics/capacity-and-performance.md)
+- [cicd.md](03-engineering-topics/cicd.md)
+- [cloud-cost-management.md](03-engineering-topics/cloud-cost-management.md)
+- [configuration-management.md](03-engineering-topics/configuration-management.md)
+- [containers.md](03-engineering-topics/containers.md)
+- [databases.md](03-engineering-topics/databases.md)
+- [disaster-recovery.md](03-engineering-topics/disaster-recovery.md)
+- [distributed-systems.md](03-engineering-topics/distributed-systems.md)
+- [dns.md](03-engineering-topics/dns.md)
+- [firewalls-and-vpns.md](03-engineering-topics/firewalls-and-vpns.md)
+- [gitops.md](03-engineering-topics/gitops.md)
+- [go-for-infrastructure.md](03-engineering-topics/go-for-infrastructure.md)
+- [http-and-tls.md](03-engineering-topics/http-and-tls.md)
+- [identity-and-access.md](03-engineering-topics/identity-and-access.md)
+- [incident-response.md](03-engineering-topics/incident-response.md)
+- [infrastructure-as-code.md](03-engineering-topics/infrastructure-as-code.md)
+- [kubernetes.md](03-engineering-topics/kubernetes.md)
+- [linux.md](03-engineering-topics/linux.md)
+- [load-balancing.md](03-engineering-topics/load-balancing.md)
+- [messaging-and-streaming.md](03-engineering-topics/messaging-and-streaming.md)
+- [networking.md](03-engineering-topics/networking.md)
+- [observability.md](03-engineering-topics/observability.md)
+- [platform-design.md](03-engineering-topics/platform-design.md)
+- [python-automation.md](03-engineering-topics/python-automation.md)
+- [reliability.md](03-engineering-topics/reliability.md)
+- [routing-and-switching.md](03-engineering-topics/routing-and-switching.md)
+- [security.md](03-engineering-topics/security.md)
+- [shell-scripting.md](03-engineering-topics/shell-scripting.md)
+- [software-supply-chain.md](03-engineering-topics/software-supply-chain.md)
+- [storage.md](03-engineering-topics/storage.md)
+- [tcp-ip.md](03-engineering-topics/tcp-ip.md)
+- [version-control.md](03-engineering-topics/version-control.md)
+- [virtualization.md](03-engineering-topics/virtualization.md)
+- [windows-administration.md](03-engineering-topics/windows-administration.md)
 
 ## 04-tools-and-technologies
 
-| File | Availability |
-| --- | --- |
-| [README.md](04-tools-and-technologies/README.md) | Available |
-| `git.md` | Reserved |
-| `github-actions.md` | Reserved |
-| `gitlab-ci.md` | Reserved |
-| `jenkins.md` | Reserved |
-| `tekton.md` | Reserved |
-| `circleci.md` | Reserved |
-| `buildkite.md` | Reserved |
-| `docker.md` | Reserved |
-| `podman.md` | Reserved |
-| `containerd.md` | Reserved |
-| `buildah.md` | Reserved |
-| `kubernetes.md` | Reserved |
-| `helm.md` | Reserved |
-| `argo-cd.md` | Reserved |
-| `flux.md` | Reserved |
-| `kustomize.md` | Reserved |
-| `kind.md` | Reserved |
-| `minikube.md` | Reserved |
-| `k9s.md` | Reserved |
-| `openshift.md` | Reserved |
-| `nomad.md` | Reserved |
-| `rancher.md` | Reserved |
-| `terraform.md` | Reserved |
-| `opentofu.md` | Reserved |
-| `pulumi.md` | Reserved |
-| `ansible.md` | Reserved |
-| `chef.md` | Reserved |
-| `puppet.md` | Reserved |
-| `salt.md` | Reserved |
-| `packer.md` | Reserved |
-| `vagrant.md` | Reserved |
-| `crossplane.md` | Reserved |
-| `linux.md` | Reserved |
-| `ubuntu.md` | Reserved |
-| `debian.md` | Reserved |
-| `rocky-linux.md` | Reserved |
-| `almalinux.md` | Reserved |
-| `alpine-linux.md` | Reserved |
-| `freebsd.md` | Reserved |
-| `systemd.md` | Reserved |
-| `bash.md` | Reserved |
-| `powershell.md` | Reserved |
-| `python.md` | Reserved |
-| `go.md` | Reserved |
-| `openssh.md` | Reserved |
-| `tmux.md` | Reserved |
-| `neovim.md` | Reserved |
-| `prometheus.md` | Reserved |
-| `grafana.md` | Reserved |
-| `thanos.md` | Reserved |
-| `victoriametrics.md` | Reserved |
-| `zabbix.md` | Reserved |
-| `nagios.md` | Reserved |
-| `icinga.md` | Reserved |
-| `netdata.md` | Reserved |
-| `datadog.md` | Reserved |
-| `new-relic.md` | Reserved |
-| `opentelemetry.md` | Reserved |
-| `jaeger.md` | Reserved |
-| `zipkin.md` | Reserved |
-| `loki.md` | Reserved |
-| `tempo.md` | Reserved |
-| `elasticsearch.md` | Reserved |
-| `kibana.md` | Reserved |
-| [wireshark.md](04-tools-and-technologies/wireshark.md) | Available |
-| `tcpdump.md` | Reserved |
-| `nmap.md` | Reserved |
-| `curl.md` | Reserved |
-| `iproute2.md` | Reserved |
-| `bind.md` | Reserved |
-| `coredns.md` | Reserved |
-| `nginx.md` | Reserved |
-| `haproxy.md` | Reserved |
-| `envoy.md` | Reserved |
-| `traefik.md` | Reserved |
-| `caddy.md` | Reserved |
-| `cilium.md` | Reserved |
-| `calico.md` | Reserved |
-| `frrouting.md` | Reserved |
-| `wireguard.md` | Reserved |
-| `openvpn.md` | Reserved |
-| `vault.md` | Reserved |
-| `openbao.md` | Reserved |
-| `open-policy-agent.md` | Reserved |
-| `kyverno.md` | Reserved |
-| `trivy.md` | Reserved |
-| `grype.md` | Reserved |
-| `syft.md` | Reserved |
-| `falco.md` | Reserved |
-| `checkov.md` | Reserved |
-| `semgrep.md` | Reserved |
-| `sonarqube.md` | Reserved |
-| `zap.md` | Reserved |
-| `snyk.md` | Reserved |
-| `postgresql.md` | Reserved |
-| `mysql.md` | Reserved |
-| `redis.md` | Reserved |
-| `valkey.md` | Reserved |
-| `mongodb.md` | Reserved |
-| `kafka.md` | Reserved |
-| `rabbitmq.md` | Reserved |
-| `etcd.md` | Reserved |
-| `ceph.md` | Reserved |
-| `minio.md` | Reserved |
-| `velero.md` | Reserved |
-| `restic.md` | Reserved |
-| `proxmox.md` | Reserved |
-| `qemu.md` | Reserved |
-| `kvm.md` | Reserved |
-| `libvirt.md` | Reserved |
-| `openstack.md` | Reserved |
-| `k6.md` | Reserved |
-| `locust.md` | Reserved |
-| `jmeter.md` | Reserved |
-| `chaos-mesh.md` | Reserved |
-| `litmuschaos.md` | Reserved |
-| `toxiproxy.md` | Reserved |
-| `backstage.md` | Reserved |
-| `aws-cli.md` | Reserved |
-| `azure-cli.md` | Reserved |
-| `gcloud.md` | Reserved |
-| `cloudformation.md` | Reserved |
-| `bicep.md` | Reserved |
-| `terragrunt.md` | Reserved |
-| `windows-server.md` | Reserved |
-| `active-directory.md` | Reserved |
-| `hyper-v.md` | Reserved |
-| `cisco-ios-xe.md` | Reserved |
-| `junos.md` | Reserved |
-| `mikrotik-routeros.md` | Reserved |
-| `pfsense.md` | Reserved |
-| `opnsense.md` | Reserved |
-| `netbox.md` | Reserved |
-| `istio.md` | Reserved |
-| `linkerd.md` | Reserved |
-| `fluent-bit.md` | Reserved |
-| `alertmanager.md` | Reserved |
-| `harbor.md` | Reserved |
-| `cosign.md` | Reserved |
-| `cert-manager.md` | Reserved |
+- [README.md](04-tools-and-technologies/README.md)
+- [active-directory.md](04-tools-and-technologies/active-directory.md)
+- [alertmanager.md](04-tools-and-technologies/alertmanager.md)
+- [almalinux.md](04-tools-and-technologies/almalinux.md)
+- [alpine-linux.md](04-tools-and-technologies/alpine-linux.md)
+- [ansible.md](04-tools-and-technologies/ansible.md)
+- [argo-cd.md](04-tools-and-technologies/argo-cd.md)
+- [aws-cli.md](04-tools-and-technologies/aws-cli.md)
+- [azure-cli.md](04-tools-and-technologies/azure-cli.md)
+- [backstage.md](04-tools-and-technologies/backstage.md)
+- [bash.md](04-tools-and-technologies/bash.md)
+- [bicep.md](04-tools-and-technologies/bicep.md)
+- [bind.md](04-tools-and-technologies/bind.md)
+- [buildah.md](04-tools-and-technologies/buildah.md)
+- [buildkite.md](04-tools-and-technologies/buildkite.md)
+- [caddy.md](04-tools-and-technologies/caddy.md)
+- [calico.md](04-tools-and-technologies/calico.md)
+- [ceph.md](04-tools-and-technologies/ceph.md)
+- [cert-manager.md](04-tools-and-technologies/cert-manager.md)
+- [chaos-mesh.md](04-tools-and-technologies/chaos-mesh.md)
+- [checkov.md](04-tools-and-technologies/checkov.md)
+- [chef.md](04-tools-and-technologies/chef.md)
+- [cilium.md](04-tools-and-technologies/cilium.md)
+- [circleci.md](04-tools-and-technologies/circleci.md)
+- [cisco-ios-xe.md](04-tools-and-technologies/cisco-ios-xe.md)
+- [cloudformation.md](04-tools-and-technologies/cloudformation.md)
+- [containerd.md](04-tools-and-technologies/containerd.md)
+- [coredns.md](04-tools-and-technologies/coredns.md)
+- [cosign.md](04-tools-and-technologies/cosign.md)
+- [crossplane.md](04-tools-and-technologies/crossplane.md)
+- [curl.md](04-tools-and-technologies/curl.md)
+- [datadog.md](04-tools-and-technologies/datadog.md)
+- [debian.md](04-tools-and-technologies/debian.md)
+- [docker.md](04-tools-and-technologies/docker.md)
+- [elasticsearch.md](04-tools-and-technologies/elasticsearch.md)
+- [envoy.md](04-tools-and-technologies/envoy.md)
+- [etcd.md](04-tools-and-technologies/etcd.md)
+- [falco.md](04-tools-and-technologies/falco.md)
+- [fluent-bit.md](04-tools-and-technologies/fluent-bit.md)
+- [flux.md](04-tools-and-technologies/flux.md)
+- [freebsd.md](04-tools-and-technologies/freebsd.md)
+- [frrouting.md](04-tools-and-technologies/frrouting.md)
+- [gcloud.md](04-tools-and-technologies/gcloud.md)
+- [git.md](04-tools-and-technologies/git.md)
+- [github-actions.md](04-tools-and-technologies/github-actions.md)
+- [gitlab-ci.md](04-tools-and-technologies/gitlab-ci.md)
+- [go.md](04-tools-and-technologies/go.md)
+- [grafana.md](04-tools-and-technologies/grafana.md)
+- [grype.md](04-tools-and-technologies/grype.md)
+- [haproxy.md](04-tools-and-technologies/haproxy.md)
+- [harbor.md](04-tools-and-technologies/harbor.md)
+- [helm.md](04-tools-and-technologies/helm.md)
+- [hyper-v.md](04-tools-and-technologies/hyper-v.md)
+- [icinga.md](04-tools-and-technologies/icinga.md)
+- [iproute2.md](04-tools-and-technologies/iproute2.md)
+- [istio.md](04-tools-and-technologies/istio.md)
+- [jaeger.md](04-tools-and-technologies/jaeger.md)
+- [jenkins.md](04-tools-and-technologies/jenkins.md)
+- [jmeter.md](04-tools-and-technologies/jmeter.md)
+- [junos.md](04-tools-and-technologies/junos.md)
+- [k6.md](04-tools-and-technologies/k6.md)
+- [k9s.md](04-tools-and-technologies/k9s.md)
+- [kafka.md](04-tools-and-technologies/kafka.md)
+- [kibana.md](04-tools-and-technologies/kibana.md)
+- [kind.md](04-tools-and-technologies/kind.md)
+- [kubernetes.md](04-tools-and-technologies/kubernetes.md)
+- [kustomize.md](04-tools-and-technologies/kustomize.md)
+- [kvm.md](04-tools-and-technologies/kvm.md)
+- [kyverno.md](04-tools-and-technologies/kyverno.md)
+- [libvirt.md](04-tools-and-technologies/libvirt.md)
+- [linkerd.md](04-tools-and-technologies/linkerd.md)
+- [linux.md](04-tools-and-technologies/linux.md)
+- [litmuschaos.md](04-tools-and-technologies/litmuschaos.md)
+- [locust.md](04-tools-and-technologies/locust.md)
+- [loki.md](04-tools-and-technologies/loki.md)
+- [mikrotik-routeros.md](04-tools-and-technologies/mikrotik-routeros.md)
+- [minikube.md](04-tools-and-technologies/minikube.md)
+- [minio.md](04-tools-and-technologies/minio.md)
+- [mongodb.md](04-tools-and-technologies/mongodb.md)
+- [mysql.md](04-tools-and-technologies/mysql.md)
+- [nagios.md](04-tools-and-technologies/nagios.md)
+- [neovim.md](04-tools-and-technologies/neovim.md)
+- [netbox.md](04-tools-and-technologies/netbox.md)
+- [netdata.md](04-tools-and-technologies/netdata.md)
+- [new-relic.md](04-tools-and-technologies/new-relic.md)
+- [nginx.md](04-tools-and-technologies/nginx.md)
+- [nmap.md](04-tools-and-technologies/nmap.md)
+- [nomad.md](04-tools-and-technologies/nomad.md)
+- [open-policy-agent.md](04-tools-and-technologies/open-policy-agent.md)
+- [openbao.md](04-tools-and-technologies/openbao.md)
+- [openshift.md](04-tools-and-technologies/openshift.md)
+- [openssh.md](04-tools-and-technologies/openssh.md)
+- [openstack.md](04-tools-and-technologies/openstack.md)
+- [opentelemetry.md](04-tools-and-technologies/opentelemetry.md)
+- [opentofu.md](04-tools-and-technologies/opentofu.md)
+- [openvpn.md](04-tools-and-technologies/openvpn.md)
+- [opnsense.md](04-tools-and-technologies/opnsense.md)
+- [packer.md](04-tools-and-technologies/packer.md)
+- [pfsense.md](04-tools-and-technologies/pfsense.md)
+- [podman.md](04-tools-and-technologies/podman.md)
+- [postgresql.md](04-tools-and-technologies/postgresql.md)
+- [powershell.md](04-tools-and-technologies/powershell.md)
+- [prometheus.md](04-tools-and-technologies/prometheus.md)
+- [proxmox.md](04-tools-and-technologies/proxmox.md)
+- [pulumi.md](04-tools-and-technologies/pulumi.md)
+- [puppet.md](04-tools-and-technologies/puppet.md)
+- [python.md](04-tools-and-technologies/python.md)
+- [qemu.md](04-tools-and-technologies/qemu.md)
+- [rabbitmq.md](04-tools-and-technologies/rabbitmq.md)
+- [rancher.md](04-tools-and-technologies/rancher.md)
+- [redis.md](04-tools-and-technologies/redis.md)
+- [restic.md](04-tools-and-technologies/restic.md)
+- [rocky-linux.md](04-tools-and-technologies/rocky-linux.md)
+- [salt.md](04-tools-and-technologies/salt.md)
+- [semgrep.md](04-tools-and-technologies/semgrep.md)
+- [snyk.md](04-tools-and-technologies/snyk.md)
+- [sonarqube.md](04-tools-and-technologies/sonarqube.md)
+- [syft.md](04-tools-and-technologies/syft.md)
+- [systemd.md](04-tools-and-technologies/systemd.md)
+- [tcpdump.md](04-tools-and-technologies/tcpdump.md)
+- [tekton.md](04-tools-and-technologies/tekton.md)
+- [tempo.md](04-tools-and-technologies/tempo.md)
+- [terraform.md](04-tools-and-technologies/terraform.md)
+- [terragrunt.md](04-tools-and-technologies/terragrunt.md)
+- [thanos.md](04-tools-and-technologies/thanos.md)
+- [tmux.md](04-tools-and-technologies/tmux.md)
+- [toxiproxy.md](04-tools-and-technologies/toxiproxy.md)
+- [traefik.md](04-tools-and-technologies/traefik.md)
+- [trivy.md](04-tools-and-technologies/trivy.md)
+- [ubuntu.md](04-tools-and-technologies/ubuntu.md)
+- [vagrant.md](04-tools-and-technologies/vagrant.md)
+- [valkey.md](04-tools-and-technologies/valkey.md)
+- [vault.md](04-tools-and-technologies/vault.md)
+- [velero.md](04-tools-and-technologies/velero.md)
+- [victoriametrics.md](04-tools-and-technologies/victoriametrics.md)
+- [windows-server.md](04-tools-and-technologies/windows-server.md)
+- [wireguard.md](04-tools-and-technologies/wireguard.md)
+- [wireshark.md](04-tools-and-technologies/wireshark.md)
+- [zabbix.md](04-tools-and-technologies/zabbix.md)
+- [zap.md](04-tools-and-technologies/zap.md)
+- [zipkin.md](04-tools-and-technologies/zipkin.md)
 
 ## 05-cloud-platforms
 
-| File | Availability |
-| --- | --- |
-| [README.md](05-cloud-platforms/README.md) | Available |
-| `aws.md` | Reserved |
-| `azure.md` | Reserved |
-| `google-cloud.md` | Reserved |
-| `cloud-identity.md` | Reserved |
-| `cloud-networking.md` | Reserved |
-| `cloud-compute.md` | Reserved |
-| `cloud-containers.md` | Reserved |
-| `cloud-storage-and-databases.md` | Reserved |
-| `cloud-observability.md` | Reserved |
-| `cloud-security.md` | Reserved |
-| `cloud-reliability.md` | Reserved |
-| `cloud-cost-and-billing.md` | Reserved |
+- [README.md](05-cloud-platforms/README.md)
+- [aws.md](05-cloud-platforms/aws.md)
+- [azure.md](05-cloud-platforms/azure.md)
+- [cloud-compute.md](05-cloud-platforms/cloud-compute.md)
+- [cloud-containers.md](05-cloud-platforms/cloud-containers.md)
+- [cloud-cost-and-billing.md](05-cloud-platforms/cloud-cost-and-billing.md)
+- [cloud-identity.md](05-cloud-platforms/cloud-identity.md)
+- [cloud-networking.md](05-cloud-platforms/cloud-networking.md)
+- [cloud-observability.md](05-cloud-platforms/cloud-observability.md)
+- [cloud-reliability.md](05-cloud-platforms/cloud-reliability.md)
+- [cloud-security.md](05-cloud-platforms/cloud-security.md)
+- [cloud-storage-and-databases.md](05-cloud-platforms/cloud-storage-and-databases.md)
+- [google-cloud.md](05-cloud-platforms/google-cloud.md)
 
 ## 06-hands-on-practice
 
-| File | Availability |
-| --- | --- |
-| [README.md](06-hands-on-practice/README.md) | Available |
-| `browser-labs.md` | Reserved |
-| `playgrounds.md` | Reserved |
-| `linux-challenges.md` | Reserved |
-| `networking-labs.md` | Reserved |
-| `container-labs.md` | Reserved |
-| `kubernetes-labs.md` | Reserved |
-| `cloud-labs.md` | Reserved |
-| `security-labs.md` | Reserved |
-| `automation-exercises.md` | Reserved |
-| `troubleshooting-challenges.md` | Reserved |
-| `project-collections.md` | Reserved |
-| `performance-and-failure-labs.md` | Reserved |
+- [README.md](06-hands-on-practice/README.md)
+- [automation-exercises.md](06-hands-on-practice/automation-exercises.md)
+- [browser-labs.md](06-hands-on-practice/browser-labs.md)
+- [cloud-labs.md](06-hands-on-practice/cloud-labs.md)
+- [container-labs.md](06-hands-on-practice/container-labs.md)
+- [kubernetes-labs.md](06-hands-on-practice/kubernetes-labs.md)
+- [linux-challenges.md](06-hands-on-practice/linux-challenges.md)
+- [networking-labs.md](06-hands-on-practice/networking-labs.md)
+- [performance-and-failure-labs.md](06-hands-on-practice/performance-and-failure-labs.md)
+- [playgrounds.md](06-hands-on-practice/playgrounds.md)
+- [project-collections.md](06-hands-on-practice/project-collections.md)
+- [security-labs.md](06-hands-on-practice/security-labs.md)
+- [troubleshooting-challenges.md](06-hands-on-practice/troubleshooting-challenges.md)
 
 ## 07-engineering-in-the-wild
 
-| File | Availability |
-| --- | --- |
-| [README.md](07-engineering-in-the-wild/README.md) | Available |
-| `incident-reports.md` | Reserved |
-| `architecture-writeups.md` | Reserved |
-| `engineering-blogs.md` | Reserved |
-| `conference-talks.md` | Reserved |
-| `scaling-stories.md` | Reserved |
-| `security-investigations.md` | Reserved |
-| `migration-stories.md` | Reserved |
-| `performance-investigations.md` | Reserved |
-| `open-source-internals.md` | Reserved |
+- [README.md](07-engineering-in-the-wild/README.md)
+- [architecture-writeups.md](07-engineering-in-the-wild/architecture-writeups.md)
+- [conference-talks.md](07-engineering-in-the-wild/conference-talks.md)
+- [engineering-blogs.md](07-engineering-in-the-wild/engineering-blogs.md)
+- [incident-reports.md](07-engineering-in-the-wild/incident-reports.md)
+- [migration-stories.md](07-engineering-in-the-wild/migration-stories.md)
+- [open-source-internals.md](07-engineering-in-the-wild/open-source-internals.md)
+- [performance-investigations.md](07-engineering-in-the-wild/performance-investigations.md)
+- [scaling-stories.md](07-engineering-in-the-wild/scaling-stories.md)
+- [security-investigations.md](07-engineering-in-the-wild/security-investigations.md)
 
 ## 08-learning-libraries
 
-| File | Availability |
-| --- | --- |
-| [README.md](08-learning-libraries/README.md) | Available |
-| `youtube-channels.md` | Reserved |
-| `video-playlists.md` | Reserved |
-| `free-learning-websites.md` | Reserved |
-| `interactive-learning-websites.md` | Reserved |
-| `open-books.md` | Reserved |
-| `paid-books.md` | Reserved |
-| `courses.md` | Reserved |
-| `university-materials.md` | Reserved |
-| `podcasts.md` | Reserved |
-| `newsletters.md` | Reserved |
-| `certification-resources.md` | Reserved |
+- [README.md](08-learning-libraries/README.md)
+- [certification-resources.md](08-learning-libraries/certification-resources.md)
+- [courses.md](08-learning-libraries/courses.md)
+- [free-learning-websites.md](08-learning-libraries/free-learning-websites.md)
+- [interactive-learning-websites.md](08-learning-libraries/interactive-learning-websites.md)
+- [newsletters.md](08-learning-libraries/newsletters.md)
+- [open-books.md](08-learning-libraries/open-books.md)
+- [paid-books.md](08-learning-libraries/paid-books.md)
+- [podcasts.md](08-learning-libraries/podcasts.md)
+- [university-materials.md](08-learning-libraries/university-materials.md)
+- [video-playlists.md](08-learning-libraries/video-playlists.md)
+- [youtube-channels.md](08-learning-libraries/youtube-channels.md)
 
 ## Root files
 
@@ -292,4 +274,4 @@ All eight numbered content folders contain files directly. The unnumbered `asset
 
 ## assets
 
-[Graphic attribution](assets/ATTRIBUTION.md) · `discovery-header.svg` · one local graphic per tool · Simple Icons license and disclaimer
+[Attribution](assets/ATTRIBUTION.md) · local tool graphics · Discovery header · Simple Icons license and disclaimer

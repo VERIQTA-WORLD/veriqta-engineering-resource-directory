@@ -1,27 +1,27 @@
 # Discover Resources by Career
 
-Choose the responsibilities you want to understand. These routes open relevant tool sources; job titles often overlap between organizations.
+Choose the work you want to understand. Each map connects its responsibilities to selected learning resources, tools, and a practical outcome.
 
-| Your direction | The work | Explore sources |
-| --- | --- | --- |
-| DevOps | Build and release applications | [Source and delivery](../04-tools-and-technologies/README.md#source-and-delivery) |
-| SRE | Connect service behavior to reliability work | [Metrics and monitoring](../04-tools-and-technologies/README.md#metrics-and-monitoring) |
-| Platform engineering | Support reusable capabilities for other engineers | [Developer platforms](../04-tools-and-technologies/README.md#developer-platforms) |
-| Cloud engineering | Work with provider resources and automation | [Cloud command lines and templates](../04-tools-and-technologies/README.md#cloud-command-lines-and-templates) |
-| Linux and systems | Understand hosts, services, and permissions | [Systems and scripting](../04-tools-and-technologies/README.md#systems-and-scripting) |
-| Windows systems | Work with Windows services and identity | [Windows administration](../04-tools-and-technologies/README.md#windows-administration) |
-| Network engineering | Follow traffic and diagnose connectivity | [Packet analysis and diagnostics](../04-tools-and-technologies/README.md#packet-analysis-and-diagnostics) |
-| Kubernetes engineering | Deploy and operate orchestrated workloads | [Orchestration and GitOps](../04-tools-and-technologies/README.md#orchestration-and-gitops) |
-| DevSecOps | Explore controls around software delivery | [Supply chain and runtime security](../04-tools-and-technologies/README.md#supply-chain-and-runtime-security) |
-| Cloud security | Explore identities, secrets, certificates, and policy | [Secrets and policy](../04-tools-and-technologies/README.md#secrets-and-policy) |
-| Observability | Understand application behavior through signals | [Logs and tracing](../04-tools-and-technologies/README.md#logs-and-tracing) |
-| Infrastructure engineering | Explore compute and infrastructure foundations | [Virtualization and private cloud](../04-tools-and-technologies/README.md#virtualization-and-private-cloud) |
-| Automation engineering | Turn understood tasks into repeatable changes | [Infrastructure and configuration](../04-tools-and-technologies/README.md#infrastructure-and-configuration) |
-| Database reliability | Explore persistence, messaging, and operating references | [Databases and messaging](../04-tools-and-technologies/README.md#databases-and-messaging) |
-| Release engineering | Explore build, artifact, and release workflows | [Source and delivery](../04-tools-and-technologies/README.md#source-and-delivery) |
+| Explore | What you can discover |
+| --- | --- |
+| [DevOps Engineering](devops.md) | Follow a change from source to a working service, and discover resources for the gaps along that path. |
+| [Site Reliability Engineering](sre.md) | Choose material around user impact, reliable operation, and reducing recurring work. |
+| [Platform Engineering](platform-engineering.md) | Discover approaches to giving other engineers a supported way to complete recurring work. |
+| [Cloud Engineering](cloud-engineering.md) | Choose a provider and follow one workload through identity, networking, compute, and monitoring. |
+| [Linux and Systems Engineering](linux-systems.md) | Learn to explain the host before automating changes to it. |
+| [Windows Systems Administration](windows-systems.md) | Choose resources for Windows services, identity, virtualization, and repeatable administration. |
+| [Network Engineering](network-engineering.md) | Discover explanations, captures, and labs that help you follow traffic through a network. |
+| [Kubernetes Engineering](kubernetes-engineering.md) | Follow the workload and its surrounding cluster services before adding more controllers. |
+| [DevSecOps Engineering](devsecops.md) | Follow the trust boundaries from a source change to a deployed artifact. |
+| [Cloud Security Engineering](cloud-security.md) | Choose provider-specific material for the identities, data, and resources you need to protect. |
+| [Observability Engineering](observability.md) | Discover ways to make a service question answerable through useful evidence. |
+| [Infrastructure Engineering](infrastructure-engineering.md) | Connect compute, networking, storage, and recovery rather than studying each platform in isolation. |
+| [Automation Engineering](automation-engineering.md) | Choose a task you can explain manually, then find the language and workflow resources that make it repeatable. |
+| [Database Reliability Engineering](database-reliability.md) | Discover resources that connect queries and data integrity with operating and recovery decisions. |
+| [Release Engineering](release-engineering.md) | Study the evidence and controls that move a build into a release you can identify and recover from. |
 
-For teachers, books, and learning websites, open [learning libraries](../08-learning-libraries/). For an investigation to try, use [hands-on practice](../06-hands-on-practice/).
+## When roles overlap
 
-Individual career discovery collections are being assembled. The [file map](../FILE-MAP.md#02-career-paths) lists their locations.
+Use DevOps for an individual delivery path and platform engineering for a supported capability used by other teams. Use SRE for reliability objectives and operating decisions, and observability for instrumentation and investigation. Choose by the work in a role description; titles vary.
 
 [Directory homepage](../README.md)

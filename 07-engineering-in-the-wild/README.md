@@ -1,16 +1,17 @@
 # Engineering in the Wild
 
-Explore the decisions, failures, and investigations behind working systems. Read each account in its own context: the workload, constraints, and publication date matter.
+Discover original accounts and recorded investigations. Keep the workload, date, and constraints beside the lesson you take from them.
 
-| Discover | Where to begin | Why open it? |
-| --- | --- | --- |
-| [Cloudflare post-mortems](https://blog.cloudflare.com/tag/post-mortem/) | Select one incident and trace the timeline, impact, recovery, and follow-up | Examine the evidence behind a failure explanation |
-| [Netflix TechBlog](https://netflixtechblog.com/) | Choose an article about a system boundary you already understand | Explore engineering approaches in a specific organization’s environment |
-| [SharkFest case studies](../04-tools-and-technologies/wireshark.md#see-it-used) | Start with a packet-analysis investigation | Connect a technical explanation to the observations used to support it |
-| [CNCF online programs](https://www.cncf.io/online-programs/) | Browse sessions for a cloud-native topic you want to explore | Discover speakers and project discussions beyond a manual |
-
-These are publication and event catalogs. Access to individual articles, recordings, or associated training can differ.
-
-Focused collections of incidents, architectures, migrations, and talks are being assembled. See their [file map](../FILE-MAP.md#07-engineering-in-the-wild).
+| Explore | What you can discover |
+| --- | --- |
+| [Public Incident Reports](incident-reports.md) | Read an incident from impact through recovery and follow-up, keeping the original organization and date in view. |
+| [Architecture Write-ups](architecture-writeups.md) | Choose a design account with constraints you can compare with your own workload. |
+| [Engineering Blogs](engineering-blogs.md) | Discover publishers whose accounts explain how a working system was built or operated. |
+| [Conference Talks and Recorded Investigations](conference-talks.md) | Choose a talk for a question or technique, then use its linked material to continue. |
+| [Scaling Stories](scaling-stories.md) | Read what changed in the workload and operating constraints before copying a scaling technique. |
+| [Security Investigations and Research](security-investigations.md) | Use primary accounts and authorized teaching targets to distinguish a claim from supporting evidence. |
+| [Migration Stories](migration-stories.md) | Look for the data path, compatibility assumptions, and cutover evidence behind a migration. |
+| [Performance Investigations](performance-investigations.md) | Choose resources that make the workload, measurement, and interpretation explicit. |
+| [Open-source Internals](open-source-internals.md) | Follow a behavior from user-facing documentation into design material and source. |
 
 [Directory homepage](../README.md)

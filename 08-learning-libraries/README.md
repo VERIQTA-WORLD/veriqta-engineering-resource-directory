@@ -1,16 +1,21 @@
 # Discover Places to Learn
 
-Find a teacher, publication, or learning website you can return to. Choose a subject first if you want a specific resource rather than an entire catalog.
+Choose a learning format, or find a teacher, publication, or website you can return to.
 
-| Discover | What makes it worth opening | Format and access |
-| --- | --- | --- |
-| [The Missing Semester](https://missing.csail.mit.edu/) | Lessons and exercises on the tools behind everyday engineering work; choose a lesson that addresses a task you struggle with | Free course material · Basic programming familiarity helpful |
-| [Pro Git](https://git-scm.com/book/en/v2) | An organized route from Git Basics into branching, collaboration, and internals | Free online book · Beginner onward |
-| [Google’s SRE books](https://sre.google/books/) | Book-length treatments of service reliability; choose a chapter around your current operating question | Free online reading · Service-operation familiarity helpful |
-| [explainShell](https://explainshell.com/) | Look up how supported shell-command arguments relate to their manual explanations | Free interactive website · Treat the explanation as reading, not a command-safety guarantee |
-| [Jeff Geerling](https://www.jeffgeerling.com/) | Discover a creator’s homelab and hardware investigations, with links to his video channel | Public blog and linked videos · Projects can require hardware |
-| [Wireshark teachers and talks](../04-tools-and-technologies/wireshark.md#watch-and-understand) | Find packet-analysis teaching and specific conference sessions together | Mixed video resources · Check each entry’s access label |
+| Explore | What you can discover |
+| --- | --- |
+| [Engineering YouTube Channels](youtube-channels.md) | Choose a teacher or publisher by the work you want to understand, then open a specific series rather than browsing indefinitely. |
+| [Video Series and Playlists](video-playlists.md) | Use a sequence when you want the examples and explanations to build on one another. |
+| [Free Engineering Learning Websites](free-learning-websites.md) | Choose a website with a clear subject and a useful first exercise or chapter. |
+| [Interactive Learning Websites](interactive-learning-websites.md) | Change an input, predict what should happen, and compare the result. |
+| [Open Books and Public Textbooks](open-books.md) | Choose a chapter for the concept you need rather than treating every book as a cover-to-cover assignment. |
+| [Books Worth Comparing](paid-books.md) | Choose a book for a specific gap, inspect its contents and sample, and check the edition before purchasing. |
+| [Courses and Structured Learning](courses.md) | Compare a course’s prerequisites, syllabus, exercises, and access terms with the task you want to accomplish. |
+| [University Course Material](university-materials.md) | Use public lectures, readings, and assignments when you want a more rigorous foundation. |
+| [Engineering Podcasts](podcasts.md) | Choose a conversation that develops a technical question you care about. |
+| [Engineering Newsletters](newsletters.md) | Choose a publication you can use to discover resources, not another feed you feel obliged to finish. |
+| [Certification Resources](certification-resources.md) | Start with the issuing body’s current exam scope, then choose learning and practice for your actual knowledge gaps. |
 
-Channel, playlist, book, and course collections are being assembled. Their files are listed in the [learning file map](../FILE-MAP.md#08-learning-libraries).
+[Prefer to start from a subject?](../03-engineering-topics/) · [Find a tool collection](../04-tools-and-technologies/)
 
-[Browse topics](../03-engineering-topics/) · [Directory homepage](../README.md)
+[Directory homepage](../README.md)
