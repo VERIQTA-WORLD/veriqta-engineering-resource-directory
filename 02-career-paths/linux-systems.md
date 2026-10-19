@@ -20,29 +20,30 @@ Track scripts and configuration examples so you can inspect changes and explain 
 
 | Task | Open |
 | --- | --- |
-| Understand files, permissions, processes, and services | [Linux](../03-topics/linux.md) |
-| Investigate listeners and connections | [Networking](../03-topics/networking.md) |
-| Repeat a known task safely | [Scripting](../03-topics/scripting.md) |
-| Find a guide for a service that will not start | [Linux troubleshooting](../07-troubleshooting/linux.md) |
+| Understand files, permissions, processes, and services | [Linux](linux-systems.md) |
+| Investigate listeners and connections | [Networking](network-engineering.md) |
+| Repeat a known task safely | [Scripting](linux-systems.md) |
+| Find a guide for a service that will not start | [Linux troubleshooting](linux-systems.md#make-a-small-investigation-repeatable) |
 
 ## Move from manual work to repeatable work
 
 <table>
 <tr>
-<td align="center"><a href="../04-tools/git.md"><img src="../assets/logos/git.svg" width="48" height="48" alt="Git"/><br/>Git</a></td>
-<td align="center"><a href="../04-tools/ansible.md"><img src="../assets/logos/ansible.svg" width="48" height="48" alt="Ansible"/><br/>Ansible</a></td>
-<td align="center"><a href="../04-tools/docker.md"><img src="../assets/logos/docker.svg" width="48" height="48" alt="Docker"/><br/>Docker</a></td>
+<td align="center"><a href="https://git-scm.com/book/en/v2"><img src="../assets/logos/git.svg" width="48" height="48" alt="Git"/><br/>Git</a></td>
+<td align="center"><a href="https://docs.ansible.com/projects/ansible/latest/getting_started/index.html"><img src="../assets/logos/ansible.svg" width="48" height="48" alt="Ansible"/><br/>Ansible</a></td>
+<td align="center"><a href="https://docs.docker.com/get-started/"><img src="../assets/logos/docker.svg" width="48" height="48" alt="Docker"/><br/>Docker</a></td>
 </tr>
 </table>
 
+Start with a task you understand manually. Use [Ansible](https://docs.ansible.com/projects/ansible/latest/getting_started/index.html) when configuration management fits, and [Docker](https://docs.docker.com/get-started/) when you want to explore application packaging. A container does not reproduce every host-administration behavior.
 
-Start with a task you understand manually. Use [Ansible](../04-tools/ansible.md) when configuration management fits, and [Docker](../04-tools/docker.md) when you want to explore application packaging. A container does not reproduce every host-administration behavior.
+## Make a small investigation repeatable
 
-## Practise with a small service
+Work through the exercises in [Missing Semester: Shell Tools and Scripting](https://missing.csail.mit.edu/2020/shell-tools/). The lesson is free; you need a suitable shell environment and basic programming familiarity. Use a disposable VM for administrative experiments.
 
-Use a dedicated VM to inspect startup, configuration, logs, permissions, and a local request. Introduce one reversible misconfiguration, then explain the observations that identify it. Restore the setting or remove the VM and its test credentials after the exercise.
+Write a small script that summarizes synthetic service logs. Check it against an empty file, a normal sample, and a malformed line. Save the input samples and explain the output so another person can reproduce your reasoning.
 
-[Linux labs →](../06-practice/labs.md) · [System challenges →](../06-practice/challenges.md)
+When you move to a service-startup exercise, identify its process, effective user, configuration, and logs before automating changes. Restore altered permissions and remove the VM when finished. Containers can help with shell practice, but they do not reproduce every host-administration behavior.
 
 Explore [DevOps](devops.md) for delivery automation or [network engineering](network-engineering.md) for deeper connectivity work.
 

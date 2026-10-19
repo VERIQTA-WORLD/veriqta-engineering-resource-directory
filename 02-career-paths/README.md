@@ -37,8 +37,18 @@ Choose the work you want to understand. Each path connects you to a few useful s
 | Integrate security into software delivery | [DevSecOps →](devsecops.md) |
 | Protect cloud access, data, and resources | [Cloud security →](cloud-security.md) |
 
+## Two paths look similar?
+
+| Compare | The useful distinction |
+| --- | --- |
+| DevOps and platform engineering | Follow an individual delivery path in DevOps; support a reusable capability for other teams in platform engineering. |
+| SRE and observability | Use SRE for reliability objectives and operating decisions; use observability for instrumentation and investigation. |
+| DevSecOps and cloud security | Follow source-to-runtime trust boundaries in DevSecOps; focus on provider identities, resources, and data in cloud security. |
+
+Job titles vary between organizations. Use the responsibilities in a job description to choose your resources.
+
 ## Not sure which path fits?
 
 Start with [your current knowledge and goal](../01-start-here/choose-your-starting-point.md). Choose one small task you would like to complete, then follow the resources that help you do it. The paths overlap; you can move between them as your work changes.
 
-[Browse topics](../03-topics/) · [Find a tool](../04-tools/) · [Choose practice](../06-practice/) · [Back to the directory](../README.md)
+[Back to the directory](../README.md)

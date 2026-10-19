@@ -10,35 +10,35 @@ Choose one provider first. Learn how an application uses identity, networking, c
 | **Microsoft Azure** | [Azure training on Microsoft Learn](https://learn.microsoft.com/en-us/training/azure/) — choose a relevant module or learning path | Reading and practical exercise access are different; inspect subscription requirements |
 | **Google Cloud** | [Google Cloud training](https://cloud.google.com/learn/training) — compare courses, learning paths, and labs | Check accounts, credits, and paid access before starting a lab |
 
-[AWS collection](../05-cloud-platforms/aws.md) · [Azure collection](../05-cloud-platforms/azure.md) · [Google Cloud collection](../05-cloud-platforms/google-cloud.md)
 
 ## Learn the boundaries together
 
 | You need to understand… | Explore |
 | --- | --- |
-| How traffic reaches the workload | [Networking](../03-topics/networking.md) |
-| How access is granted and constrained | [Security](../03-topics/security.md) |
-| How environments are defined and changed | [Infrastructure as Code](../03-topics/infrastructure-as-code.md) |
-| How you observe and recover the workload | [Observability](../03-topics/observability.md) · [Reliability](../03-topics/reliability.md) |
+| How traffic reaches the workload | [Networking](network-engineering.md) |
+| How access is granted and constrained | [Cloud security](cloud-security.md) |
+| How environments are defined and changed | [Infrastructure as Code](https://developer.hashicorp.com/terraform/tutorials) |
+| How you observe and recover the workload | [Observability](observability.md) · [Reliability](sre.md) |
 
 ## Automate once you understand the resource
 
 <table>
 <tr>
-<td align="center"><a href="../04-tools/terraform.md"><img src="../assets/logos/terraform.svg" width="48" height="48" alt="Terraform"/><br/>Terraform</a></td>
-<td align="center"><a href="../04-tools/opentofu.md"><img src="../assets/logos/opentofu.svg" width="48" height="48" alt="OpenTofu"/><br/>OpenTofu</a></td>
-<td align="center"><a href="../04-tools/ansible.md"><img src="../assets/logos/ansible.svg" width="48" height="48" alt="Ansible"/><br/>Ansible</a></td>
+<td align="center"><a href="https://developer.hashicorp.com/terraform/tutorials"><img src="../assets/logos/terraform.svg" width="48" height="48" alt="Terraform"/><br/>Terraform</a></td>
+<td align="center"><a href="https://opentofu.org/docs/"><img src="../assets/logos/opentofu.svg" width="48" height="48" alt="OpenTofu"/><br/>OpenTofu</a></td>
+<td align="center"><a href="https://docs.ansible.com/projects/ansible/latest/getting_started/index.html"><img src="../assets/logos/ansible.svg" width="48" height="48" alt="Ansible"/><br/>Ansible</a></td>
 </tr>
 </table>
 
+Use the relevant documentation after you can explain the provider resource, required permissions, and expected cost. You do not need to learn both Terraform and OpenTofu to begin.
 
-Use the relevant tool collection after you can explain the provider resource, required permissions, and expected cost. You do not need to learn both Terraform and OpenTofu to begin.
+## Choose a project you can remove
 
-## A useful first cloud project
+Pick a compute or application-deployment exercise from your provider’s learning route above. Read its account, region, subscription, and lab-access requirements before creating anything. The exercise should cover one application, its identity, its network path, and its logs.
 
-Deploy a small application in a dedicated learning scope. Verify access, connectivity, and one functional request. Inventory billable resources before creation; remove compute, storage, addresses, and temporary access according to the provider instructions afterward. Check for resources that survive the main teardown.
+Draw those dependencies and mark which resources can cost money while idle. Keep a successful request, one explained access failure, and the deletion steps with your notes. Then delete the workload and check separately for retained disks, snapshots, addresses, and logging storage.
 
-[Find cloud projects →](../06-practice/projects.md) · [Explore cloud failures →](../07-troubleshooting/cloud.md)
+For your next pass, choose one provider-specific exercise from the [Terraform tutorial catalog](https://developer.hashicorp.com/terraform/tutorials). Compare the planned changes with the resources you previously created manually. Reading is free; provisioned infrastructure can incur charges.
 
 For access and protection work, continue to [cloud security](cloud-security.md).
 

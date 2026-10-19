@@ -8,7 +8,7 @@ Start by identifying who can act, which resources they can affect, and where you
 Understand the policy types and evaluation context behind an allowed or denied AWS action.  
 **Free documentation · Intermediate · AWS identity familiarity helpful**
 
-For an AWS workload review, the **[AWS Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)** connects protection concerns across the workload. It is free to read; implementation and exercises can create charges.
+If you are new to provider identities and networks, begin with [cloud engineering](cloud-engineering.md). For this path, you should be able to explain who can act, how that authority is constrained, and which evidence supports your conclusion.
 
 ## Use the reference for your provider
 
@@ -24,21 +24,20 @@ These are publicly readable references. Follow their service-specific requiremen
 
 <table>
 <tr>
-<td align="center"><a href="../04-tools/terraform.md"><img src="../assets/logos/terraform.svg" width="48" height="48" alt="Terraform"/><br/>Terraform</a></td>
-<td align="center"><a href="../04-tools/opentofu.md"><img src="../assets/logos/opentofu.svg" width="48" height="48" alt="OpenTofu"/><br/>OpenTofu</a></td>
+<td align="center"><a href="https://developer.hashicorp.com/terraform/tutorials"><img src="../assets/logos/terraform.svg" width="48" height="48" alt="Terraform"/><br/>Terraform</a></td>
+<td align="center"><a href="https://opentofu.org/docs/"><img src="../assets/logos/opentofu.svg" width="48" height="48" alt="OpenTofu"/><br/>OpenTofu</a></td>
 </tr>
 </table>
 
-
-[Security topics](../03-topics/security.md) · [Networking](../03-topics/networking.md) · [Cloud platforms](../05-cloud-platforms/)
-
 Infrastructure definitions help you inspect intended resources. Verify effective permissions and actual configuration separately.
 
-## Practise an access boundary
+## Check a policy before granting access
 
-In a dedicated learning scope, define an identity that can perform one intended action and is denied a related action outside its scope. Use synthetic data, preserve the policy and result, and remove temporary identities, keys, and resources afterward. Inspect current costs before provisioning.
+Use [AWS’s IAM policy simulator guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html) to compare an intended action with an action that should be denied. Read its permissions requirements and simulator limitations first; account access is required.
 
-[Find labs →](../06-practice/labs.md) · [Investigate cloud failures →](../07-troubleshooting/cloud.md)
+Record the principal, action, resource, supplied context, and expected decision. Explain the statement behind each result. Simulation does not send the real service request, and its decisions can differ from your live environment.
+
+If you proceed to live verification, use synthetic data in a dedicated learning scope with an authorized identity. Confirm both the allowed and denied cases, then remove temporary policies, identities, and resources. A screenshot of an allowed request alone does not demonstrate the boundary.
 
 For build and deployment controls, continue to [DevSecOps](devsecops.md). For workload foundations, use [cloud engineering](cloud-engineering.md).
 

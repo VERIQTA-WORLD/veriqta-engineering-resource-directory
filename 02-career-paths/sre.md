@@ -12,29 +12,32 @@ Choose resources that help you understand user impact, respond to failures, and 
 
 These readings assume some familiarity with operating services. Adapt the examples to your workload and team.
 
+## What this path adds
+
+You turn service behavior into decisions about releases, response, and engineering priorities. If your immediate task is instrumentation or signal correlation, use [observability](observability.md) first. If you already collect useful data, start with the SLO and alerting chapters above.
+
 ## Know what each signal is for
 
 <table>
 <tr>
-<td align="center"><a href="../04-tools/prometheus.md"><img src="../assets/logos/prometheus.svg" width="48" height="48" alt="Prometheus"/><br/>Prometheus</a></td>
-<td align="center"><a href="../04-tools/grafana.md"><img src="../assets/logos/grafana.svg" width="48" height="48" alt="Grafana"/><br/>Grafana</a></td>
-<td align="center"><a href="../04-tools/opentelemetry.md"><img src="../assets/logos/opentelemetry.svg" width="48" height="48" alt="OpenTelemetry"/><br/>OpenTelemetry</a></td>
+<td align="center"><a href="https://prometheus.io/docs/introduction/overview/"><img src="../assets/logos/prometheus.svg" width="48" height="48" alt="Prometheus"/><br/>Prometheus</a></td>
+<td align="center"><a href="https://grafana.com/docs/grafana/latest/fundamentals/"><img src="../assets/logos/grafana.svg" width="48" height="48" alt="Grafana"/><br/>Grafana</a></td>
+<td align="center"><a href="https://opentelemetry.io/docs/concepts/signals/"><img src="../assets/logos/opentelemetry.svg" width="48" height="48" alt="OpenTelemetry"/><br/>OpenTelemetry</a></td>
 </tr>
 </table>
 
+Metrics help quantify behavior; traces and logs help investigate particular requests. Choose signals from the service question, then choose the tools that can supply them.
 
-- [Prometheus](../04-tools/prometheus.md): find metrics and alert-rule resources.
-- [Grafana](../04-tools/grafana.md): explore dashboards and investigation views.
-- [OpenTelemetry](../04-tools/opentelemetry.md): understand instrumentation and request-level signals.
+## Turn a reliability target into a decision
 
-## Practise a reliability decision
+Use [Implementing SLOs](https://sre.google/workbook/implementing-slos/) to define a successful request and a measurement window for a small service. Then follow [Prometheus Getting Started](https://prometheus.io/docs/prometheus/latest/getting_started/) to learn collection and querying. The guide needs a local Prometheus installation; reading is free.
 
-Choose one user action in a disposable application. Define success, collect an appropriate signal, and introduce a bounded misconfiguration. Explain how you detected the failure and verified recovery. Use synthetic traffic and remove temporary monitoring resources after the exercise.
+Your result should show the objective, measured good and total events, and what action you would take if reliability worsened. Explain how missing telemetry differs from a healthy service. Remove the local server and temporary data after practice.
 
-[Reliability topics](../03-topics/reliability.md) · [Challenges](../06-practice/challenges.md) · [Troubleshooting](../07-troubleshooting/)
+If you already handle incidents, skip the introductory collection work and compare your alert policy with [Alerting on SLOs](https://sre.google/workbook/alerting-on-slos/). Look for alerts that demand attention without identifying a useful response.
 
 ## Follow the next question
 
-If the measurement itself is unclear, open [observability](observability.md). If shared developer services keep failing, explore [platform engineering](platform-engineering.md). For releases and automation, use [DevOps](devops.md).
+If shared developer services keep failing, explore [platform engineering](platform-engineering.md). For releases and automation, use [DevOps](devops.md).
 
 [All career paths](README.md) · [Directory homepage](../README.md)

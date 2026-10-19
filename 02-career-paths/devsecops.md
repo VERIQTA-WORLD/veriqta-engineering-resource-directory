@@ -16,25 +16,26 @@ Provenance helps explain origin and process. You still need other evidence to as
 
 <table>
 <tr>
-<td align="center"><a href="../04-tools/git.md"><img src="../assets/logos/git.svg" width="48" height="48" alt="Git"/><br/>Git</a></td>
-<td align="center"><a href="../04-tools/github-actions.md"><img src="../assets/logos/githubactions.svg" width="48" height="48" alt="GitHub Actions"/><br/>GitHub Actions</a></td>
-<td align="center"><a href="../04-tools/docker.md"><img src="../assets/logos/docker.svg" width="48" height="48" alt="Docker"/><br/>Docker</a></td>
-<td align="center"><a href="../04-tools/kubernetes.md"><img src="../assets/logos/kubernetes.svg" width="48" height="48" alt="Kubernetes"/><br/>Kubernetes</a></td>
+<td align="center"><a href="https://git-scm.com/book/en/v2"><img src="../assets/logos/git.svg" width="48" height="48" alt="Git"/><br/>Git</a></td>
+<td align="center"><a href="https://docs.github.com/en/actions"><img src="../assets/logos/githubactions.svg" width="48" height="48" alt="GitHub Actions"/><br/>GitHub Actions</a></td>
+<td align="center"><a href="https://docs.docker.com/get-started/"><img src="../assets/logos/docker.svg" width="48" height="48" alt="Docker"/><br/>Docker</a></td>
+<td align="center"><a href="https://kubernetes.io/docs/concepts/overview/"><img src="../assets/logos/kubernetes.svg" width="48" height="48" alt="Kubernetes"/><br/>Kubernetes</a></td>
 </tr>
 </table>
 
-
 | Boundary | Explore |
 | --- | --- |
-| Source and workflow changes | [Git](../04-tools/git.md) · [CI/CD](../03-topics/cicd.md) |
-| Images and runtime configuration | [Containers](../03-topics/containers.md) · [Security](../03-topics/security.md) |
-| Cluster deployment and workload access | [Kubernetes](../03-topics/kubernetes.md) |
+| Source and workflow changes | [Git](https://git-scm.com/book/en/v2) · [CI/CD](https://dora.dev/capabilities/continuous-delivery/) |
+| Images and runtime configuration | [Containers](https://docs.docker.com/get-started/) · [Security](devsecops.md) |
+| Cluster deployment and workload access | [Kubernetes](kubernetes-engineering.md) |
 
-## Review one test workflow
+## Review a workflow’s trust boundaries
 
-Use an owned disposable repository and synthetic inputs. Identify triggers, permissions, secrets, dependencies, and deployment authority. Test a rejected input or denied operation alongside the expected successful path. Revoke test credentials and remove unused integrations afterward.
+Create a small workflow using [GitHub’s example](https://docs.github.com/en/actions/tutorials/create-an-example-workflow). With the [secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) beside it, trace who can supply input, where that input is used, and which jobs hold authority. You need repository administration permissions for some settings; runner and account conditions apply.
 
-[Find challenges →](../06-practice/challenges.md)
+Produce a short before-and-after review: the risk, the change, and the evidence that ordinary work still succeeds. Start with token permissions and third-party action dependencies. Keep secrets out of the exercise and remove temporary integrations afterward.
+
+Once that review is clear, use the SLSA specification above to examine what evidence your build produces about its origin. A successful security scan does not answer that question.
 
 Use [DevOps](devops.md) for delivery fundamentals and [cloud security](cloud-security.md) for provider access and resource protection. A scanner is one control; it does not define the whole practice.
 

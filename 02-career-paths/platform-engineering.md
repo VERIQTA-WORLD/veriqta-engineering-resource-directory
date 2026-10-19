@@ -16,30 +16,35 @@ See how scaffolding can generate components and invoke actions; examine inputs a
 Study a smaller shared capability: common workflow logic with defined inputs, outputs, permissions, and consumers.  
 **Free documentation · Intermediate · Repository access and runner conditions apply**
 
+## Decide whether a shared capability is worth building
+
+Look for a task several teams repeat and struggle to maintain. A shared workflow introduces versioning, support, and ownership work; compare that cost with the duplication it removes. Start with one consumer journey before choosing a portal.
+
 ## Pick the workflow you need to support
 
-| Consumer task | Relevant collection |
+| Consumer task | Start here |
 | --- | --- |
-| Generate a service and a delivery path | [CI/CD](../03-topics/cicd.md) |
-| Provision a supported environment | [Infrastructure as Code](../03-topics/infrastructure-as-code.md) |
-| Deploy and reconcile applications | [GitOps](../03-topics/gitops.md) |
-| Investigate the platform’s own failures | [Observability](../03-topics/observability.md) |
+| Generate a service and a delivery path | [CI/CD](https://dora.dev/capabilities/continuous-delivery/) |
+| Provision a supported environment | [Infrastructure as Code](https://developer.hashicorp.com/terraform/tutorials) |
+| Deploy and reconcile applications | [GitOps](https://argo-cd.readthedocs.io/en/stable/getting_started/) |
+| Investigate the platform’s own failures | [Observability](observability.md) |
 
 <table>
 <tr>
-<td align="center"><a href="../04-tools/github-actions.md"><img src="../assets/logos/githubactions.svg" width="48" height="48" alt="GitHub Actions"/><br/>GitHub Actions</a></td>
-<td align="center"><a href="../04-tools/terraform.md"><img src="../assets/logos/terraform.svg" width="48" height="48" alt="Terraform"/><br/>Terraform</a></td>
-<td align="center"><a href="../04-tools/argo-cd.md"><img src="../assets/logos/argo.svg" width="48" height="48" alt="Argo CD"/><br/>Argo CD</a></td>
-<td align="center"><a href="../04-tools/kubernetes.md"><img src="../assets/logos/kubernetes.svg" width="48" height="48" alt="Kubernetes"/><br/>Kubernetes</a></td>
+<td align="center"><a href="https://docs.github.com/en/actions"><img src="../assets/logos/githubactions.svg" width="48" height="48" alt="GitHub Actions"/><br/>GitHub Actions</a></td>
+<td align="center"><a href="https://developer.hashicorp.com/terraform/tutorials"><img src="../assets/logos/terraform.svg" width="48" height="48" alt="Terraform"/><br/>Terraform</a></td>
+<td align="center"><a href="https://argo-cd.readthedocs.io/en/stable/getting_started/"><img src="../assets/logos/argo.svg" width="48" height="48" alt="Argo CD"/><br/>Argo CD</a></td>
+<td align="center"><a href="https://kubernetes.io/docs/concepts/overview/"><img src="../assets/logos/kubernetes.svg" width="48" height="48" alt="Kubernetes"/><br/>Kubernetes</a></td>
 </tr>
 </table>
 
+## Make one developer task easier
 
-## Try one consumer journey
+Begin with a [reusable GitHub Actions workflow](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows) if your teams already use Actions. Define its inputs, permissions, outputs, and failure messages. Try it from two disposable repositories: can both consume it without copying the implementation?
 
-Design onboarding for a small service. State what the user supplies, what gets created, who owns it, and how partial failure is reported. Prototype only the integrations you can safely support in an owned test environment. Remove generated repositories, infrastructure, and temporary credentials when finished.
+For a scaffolding task, use [Backstage’s Writing Templates guide](https://backstage.io/docs/features/software-templates/writing-templates/) instead. It assumes a working Backstage installation and relevant integration permissions; it is a larger starting commitment.
 
-[Explore projects →](../06-practice/projects.md)
+Keep the consumer instructions, an example failure, and the supported upgrade path. Ask a colleague to attempt the task without your help. Their points of confusion tell you what to improve. Remove generated repositories, test infrastructure, and temporary integration tokens.
 
 Continue to [DevOps](devops.md) for delivery implementation or [SRE](sre.md) for shared-service reliability. A portal is optional; a supported consumer outcome is the purpose.
 
