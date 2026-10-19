@@ -1,16 +1,6 @@
 # DevOps Consultant: Role and Responsibility Resources
 
-Use these resources to connect a consulting engagement to a defensible improvement. Establish the client problem, gather evidence, test a bounded intervention, and transfer ownership.
-
-This page focuses on assessing delivery constraints, testing improvement hypotheses, and transferring usable capabilities to client teams. **Question to keep in view:** Which change addresses the demonstrated constraint, and what evidence would show it helped?
-
-## On this page
-
-- [Agree the problem and the engagement boundary](#agree-the-problem-and-the-engagement-boundary)
-- [Investigate before prescribing](#investigate-before-prescribing)
-- [Leave a capability the client can own](#leave-a-capability-the-client-can-own)
-- [Selected resources](#selected-resources)
-- [Apply the reading](#apply-the-reading)
+A request for a tool is useful evidence of a concern, but it is not yet an explanation of the delivery problem.
 
 ## Agree the problem and the engagement boundary
 
@@ -24,64 +14,20 @@ Observe a representative change and compare interviews with records. Distinguish
 
 Agree acceptance criteria, handover materials, and the operating owner before implementing. Demonstrate recovery and maintenance responsibilities. A successful presentation is not evidence that the client's team can safely use or support the proposed workflow.
 
-## Read by responsibility
+## A delivery improvement with the wrong denominator
 
-Begin with the reference that explains the outcome or boundary you need to own. Follow implementation documentation only after you can name the decision and its acceptance evidence. Use the resources to clarify responsibilities with the relevant team rather than treating the role title as a fixed job description.
+Suppose a release spends 12 minutes building and testing, four hours waiting for review, and another hour waiting for an environment repair. These are illustrative observations for one release, not an organization-wide baseline.
 
-## Selected resources
+Reducing the build from 12 to six minutes is a real local improvement. It does not address the largest observed waits. Ask whether those waits recur across representative services and whether the review or repair step protects a requirement that a proposed change must retain.
 
-The order below is a task-based selection, not a requirement to complete every source. Detailed publisher, access, and limitation notes have one maintained home in the category reference directory.
+Your recommendation should identify the constraint, the mechanism of improvement, the owner, and a pilot measurement. Report faster build execution separately from a shorter end-to-end release path. If the sample changes, revisit the conclusion rather than preserving the original sales narrative.
 
-### [DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/)
+## Resources behind these responsibilities
 
-**Use it to answer:** Which technical practice or organizational dependency prevents a change from being released safely on demand?
+- [DORA: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/): Implementing continuous delivery and common pitfalls. [Access and technical limits](../README.md#source-dora).
+- [DORA: Software delivery performance metrics](https://dora.dev/guides/dora-metrics/): Definitions and measurement boundaries. [Access and technical limits](../README.md#source-metrics).
+- [arc42](https://arc42.org/): The template overview and quality requirements. [Access and technical limits](../README.md#source-arc).
+- [NIST SP 800-218: Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final): Publication scope and the practice groups relevant to your assessment. [Access and technical limits](../README.md#source-ssdf).
+- [FinOps Framework](https://www.finops.org/framework/): Scope, allocation, ownership, and improvement capabilities. [Access and technical limits](../README.md#source-finops).
 
-- **Start with:** Implementing continuous delivery and common pitfalls.
-- **Prerequisites:** Familiarity with a software change moving through a team.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-dora) for publisher context, access conditions, and the key limitation.
-
-### [DORA: Software delivery performance metrics](https://dora.dev/guides/dora-metrics/)
-
-**Use it to answer:** Which event definitions and service boundaries make a delivery measurement interpretable?
-
-- **Start with:** Definitions and measurement boundaries.
-- **Prerequisites:** A service boundary and accessible change records.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-metrics) for publisher context, access conditions, and the key limitation.
-
-### [arc42](https://arc42.org/)
-
-**Use it to answer:** Which quality requirement, interface, or operating risk is missing from the current design explanation?
-
-- **Start with:** The template overview and quality requirements.
-- **Prerequisites:** An identifiable system boundary and stakeholders.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-arc) for publisher context, access conditions, and the key limitation.
-
-### [NIST SP 800-218: Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final)
-
-**Use it to answer:** Which secure-development responsibility needs an owner, implementation control, and evidence?
-
-- **Start with:** Publication scope and the practice groups relevant to your assessment.
-- **Prerequisites:** Software lifecycle and security responsibility awareness.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-ssdf) for publisher context, access conditions, and the key limitation.
-
-### [FinOps Framework](https://www.finops.org/framework/)
-
-**Use it to answer:** Which cost is attributable to this capability, and what value or reliability requirement justifies it?
-
-- **Start with:** Scope, allocation, ownership, and improvement capabilities.
-- **Prerequisites:** Access to relevant usage, ownership, and billing context.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-finops) for publisher context, access conditions, and the key limitation.
-
-## Apply the reading
-
-Write an engagement brief for the slow-release scenario. Include scope, evidence requests, excluded activities, decision owners, a pilot hypothesis, and a measurable handover condition.
-
-### Evidence to keep
-
-Record the question, environment or design assumptions, selected reference sections, your observations, and the reasoning behind the result. Label simulated examples and design-only work. Keep uncertainty separate from verified behavior, and remove private data from any evidence you publish.
-
-### Decide what to study next
-
-If the mechanism remains unclear, open the skills and learning pages. If the uncertainty concerns supported behavior, use official documentation. If it concerns an option or boundary, use architecture resources. If the result depends on execution evidence, choose a bounded project from the labs page rather than inferring success from reading.
-
-[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)
+[Back to DevOps Consultant resources](README.md) · [Browse this career collection](../README.md)

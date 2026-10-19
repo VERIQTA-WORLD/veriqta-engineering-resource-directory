@@ -1,18 +1,26 @@
-# Chaos engineer
+# Chaos Engineer Resource Directory
 
-Explore resources for chaos engineer, including role expectations, technical skills, practical learning and operational responsibilities.
+You work on testing explicit resilience hypotheses through bounded, observable fault experiments. The question that organizes this collection is: **Which assumption will the experiment test, what will stop it, and how will you verify recovery?**
 
-## Explore
+## Start with the work
 
-- [Chaos engineer role and responsibilities](chaos-engineer-role-and-responsibilities.md)
-- [Chaos engineer skills and prerequisites](chaos-engineer-skills-and-prerequisites.md)
-- [Chaos engineer learning resources](chaos-engineer-learning-resources.md)
-- [Chaos engineer official documentation](chaos-engineer-official-documentation.md)
-- [Chaos engineer tools and technologies](chaos-engineer-tools-and-technologies.md)
-- [Chaos engineer labs and portfolio projects](chaos-engineer-labs-and-portfolio-projects.md)
-- [Chaos engineer production practices](chaos-engineer-production-practices.md)
-- [Chaos engineer architecture resources](chaos-engineer-architecture-resources.md)
-- [Chaos engineer interview and assessment resources](chaos-engineer-interview-and-assessment-resources.md)
-- [Chaos engineer related career paths](chaos-engineer-related-career-paths.md)
+A service is described as resilient because it has several replicas. You need to test loss of a dependency while protecting unrelated workloads and preserving useful observations.
 
-[Return to the engineering directory](../../../README.md)
+## Find the page you need
+
+- [Role and Responsibility Resources](chaos-engineer-role-and-responsibilities.md)
+- [Skills and Prerequisite Resources](chaos-engineer-skills-and-prerequisites.md)
+- [Tools and Technology Resources](chaos-engineer-tools-and-technologies.md)
+- [Official Documentation](chaos-engineer-official-documentation.md)
+- [Learning Resources](chaos-engineer-learning-resources.md)
+- [Architecture Resources](chaos-engineer-architecture-resources.md)
+- [Production Practice Resources](chaos-engineer-production-practices.md)
+- [Labs and Portfolio Projects](chaos-engineer-labs-and-portfolio-projects.md)
+- [Interview and Assessment Resources](chaos-engineer-interview-and-assessment-resources.md)
+- [Related Career Paths](chaos-engineer-related-career-paths.md)
+
+## A useful first read
+
+Understand the propagation mechanism before selecting the injected fault. Add tooling only after the hypothesis, observation, stop path, and recovery check are explicit.
+
+[Browse this career collection](../README.md)

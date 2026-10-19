@@ -1,18 +1,26 @@
-# Platform reliability engineer
+# Platform Reliability Engineer Resource Directory
 
-Explore resources for platform reliability engineer, including role expectations, technical skills, practical learning and operational responsibilities.
+You work on operating shared developer capabilities with explicit tenant boundaries, consumer objectives, and recoverable workflows. The question that organizes this collection is: **Can consumers complete supported tasks when a shared controller, integration, or identity service is degraded?**
 
-## Explore
+## Start with the work
 
-- [Platform reliability engineer role and responsibilities](platform-reliability-engineer-role-and-responsibilities.md)
-- [Platform reliability engineer skills and prerequisites](platform-reliability-engineer-skills-and-prerequisites.md)
-- [Platform reliability engineer learning resources](platform-reliability-engineer-learning-resources.md)
-- [Platform reliability engineer official documentation](platform-reliability-engineer-official-documentation.md)
-- [Platform reliability engineer tools and technologies](platform-reliability-engineer-tools-and-technologies.md)
-- [Platform reliability engineer labs and portfolio projects](platform-reliability-engineer-labs-and-portfolio-projects.md)
-- [Platform reliability engineer production practices](platform-reliability-engineer-production-practices.md)
-- [Platform reliability engineer architecture resources](platform-reliability-engineer-architecture-resources.md)
-- [Platform reliability engineer interview and assessment resources](platform-reliability-engineer-interview-and-assessment-resources.md)
-- [Platform reliability engineer related career paths](platform-reliability-engineer-related-career-paths.md)
+A platform portal is healthy, but deployment requests accumulate because a shared executor cannot obtain credentials. Several teams retry and create partial external resources.
 
-[Return to the engineering directory](../../../README.md)
+## Find the page you need
+
+- [Role and Responsibility Resources](platform-reliability-engineer-role-and-responsibilities.md)
+- [Skills and Prerequisite Resources](platform-reliability-engineer-skills-and-prerequisites.md)
+- [Tools and Technology Resources](platform-reliability-engineer-tools-and-technologies.md)
+- [Official Documentation](platform-reliability-engineer-official-documentation.md)
+- [Learning Resources](platform-reliability-engineer-learning-resources.md)
+- [Architecture Resources](platform-reliability-engineer-architecture-resources.md)
+- [Production Practice Resources](platform-reliability-engineer-production-practices.md)
+- [Labs and Portfolio Projects](platform-reliability-engineer-labs-and-portfolio-projects.md)
+- [Interview and Assessment Resources](platform-reliability-engineer-interview-and-assessment-resources.md)
+- [Related Career Paths](platform-reliability-engineer-related-career-paths.md)
+
+## A useful first read
+
+Define useful consumer completion before choosing indicators. Trace permission and shared-workflow behavior next; these explain failures a portal availability check cannot see.
+
+[Browse this career collection](../README.md)

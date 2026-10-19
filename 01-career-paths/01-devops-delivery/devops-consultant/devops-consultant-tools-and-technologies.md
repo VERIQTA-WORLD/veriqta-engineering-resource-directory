@@ -1,16 +1,6 @@
 # DevOps Consultant: Tools and Technology Resources
 
-Use tools to answer assessment and implementation questions. Avoid treating adoption of a particular product as the engagement outcome.
-
-This page focuses on assessing delivery constraints, testing improvement hypotheses, and transferring usable capabilities to client teams. **Question to keep in view:** Which change addresses the demonstrated constraint, and what evidence would show it helped?
-
-## On this page
-
-- [Choose the least intrusive evidence route](#choose-the-least-intrusive-evidence-route)
-- [Compare client ownership costs](#compare-client-ownership-costs)
-- [Use prototypes to test assumptions](#use-prototypes-to-test-assumptions)
-- [Selected resources](#selected-resources)
-- [Apply the reading](#apply-the-reading)
+The right consulting tool helps answer a question the client needs resolved. Installation alone is not the engagement outcome.
 
 ## Choose the least intrusive evidence route
 
@@ -24,64 +14,23 @@ Evaluate a proposed tool against skills, support, contracts, integration effort,
 
 A disposable prototype can clarify a contested capability, such as artifact promotion or a supported workflow. State its scope and unresolved production requirements. Do not equate a prototype's successful execution with proven adoption or business improvement.
 
-## Compare tools against the same task
+## What each choice buys you
 
-For each candidate, record the responsibility it owns, its inputs and outputs, required authority, stored state, operator burden, and failure behavior. Reject options that cannot satisfy a mandatory requirement. Compare remaining options using the same workload and team assumptions; a longer feature list is not a decision criterion by itself.
+| Choice | Why you might use it | What to check |
+| --- | --- | --- |
+| Existing change and incident records | Start here when the question concerns waiting, rework, or recovery. | Sampling and missing events can make a confident conclusion premature. |
+| Additional telemetry | Add it when an important hypothesis cannot be assessed from existing evidence. | Agree collection scope, retention, client access, and who maintains it. |
+| Disposable prototype | Use it to test a contested capability before a large commitment. | State the acceptance question; a prototype does not establish adoption or ongoing operating capacity. |
 
-## Selected resources
+## Implementation and diagnostic references
 
-The order below is a task-based selection, not a requirement to complete every source. Detailed publisher, access, and limitation notes have one maintained home in the category reference directory.
+- [OpenTelemetry signals](https://opentelemetry.io/docs/concepts/signals/): Signals relevant to your diagnostic question. [Access and technical limits](../README.md#source-otel).
+- [GitHub Actions documentation](https://docs.github.com/en/actions): The relevant concepts, how-to guide, and reference for your task. [Access and technical limits](../README.md#source-actions).
 
-### [DORA: Software delivery performance metrics](https://dora.dev/guides/dora-metrics/)
+## Reading behind the tool decision
 
-**Use it to answer:** Which event definitions and service boundaries make a delivery measurement interpretable?
+- [DORA: Software delivery performance metrics](https://dora.dev/guides/dora-metrics/): Definitions and measurement boundaries. [Access and technical limits](../README.md#source-metrics).
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html): The framework overview and the pillar relevant to your review. [Access and technical limits](../README.md#source-aws).
+- [FinOps Framework](https://www.finops.org/framework/): Scope, allocation, ownership, and improvement capabilities. [Access and technical limits](../README.md#source-finops).
 
-- **Start with:** Definitions and measurement boundaries.
-- **Prerequisites:** A service boundary and accessible change records.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-metrics) for publisher context, access conditions, and the key limitation.
-
-### [OpenTelemetry signals](https://opentelemetry.io/docs/concepts/signals/)
-
-**Use it to answer:** Which signals can connect the user symptom to the dependency or operation you need to inspect?
-
-- **Start with:** Signals relevant to your diagnostic question.
-- **Prerequisites:** Basic distributed application and observability concepts.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-otel) for publisher context, access conditions, and the key limitation.
-
-### [GitHub Actions documentation](https://docs.github.com/en/actions)
-
-**Use it to answer:** What triggers the workflow, where does it execute, and which result does it actually establish?
-
-- **Start with:** The relevant concepts, how-to guide, and reference for your task.
-- **Prerequisites:** Git and repository workflow familiarity.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-actions) for publisher context, access conditions, and the key limitation.
-
-### [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
-
-**Use it to answer:** Which workload assumption needs review across reliability, security, operations, performance, cost, or sustainability?
-
-- **Start with:** The framework overview and the pillar relevant to your review.
-- **Prerequisites:** A defined workload and stakeholder requirements.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-aws) for publisher context, access conditions, and the key limitation.
-
-### [FinOps Framework](https://www.finops.org/framework/)
-
-**Use it to answer:** Which cost is attributable to this capability, and what value or reliability requirement justifies it?
-
-- **Start with:** Scope, allocation, ownership, and improvement capabilities.
-- **Prerequisites:** Access to relevant usage, ownership, and billing context.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-finops) for publisher context, access conditions, and the key limitation.
-
-## Apply the reading
-
-Build a comparison of improving the existing workflow versus introducing a new deployment platform. Include setup effort, training, operating ownership, expected benefit, and a reason to reject each option.
-
-### Evidence to keep
-
-Record the question, environment or design assumptions, selected reference sections, your observations, and the reasoning behind the result. Label simulated examples and design-only work. Keep uncertainty separate from verified behavior, and remove private data from any evidence you publish.
-
-### Decide what to study next
-
-If the mechanism remains unclear, open the skills and learning pages. If the uncertainty concerns supported behavior, use official documentation. If it concerns an option or boundary, use architecture resources. If the result depends on execution evidence, choose a bounded project from the labs page rather than inferring success from reading.
-
-[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)
+[Back to DevOps Consultant resources](README.md) · [Browse this career collection](../README.md)

@@ -1,18 +1,26 @@
-# Resilience engineer
+# Resilience Engineer Resource Directory
 
-Explore resources for resilience engineer, including role expectations, technical skills, practical learning and operational responsibilities.
+You work on designing and validating continued operation, controlled degradation, and recovery under disruption. The question that organizes this collection is: **What useful service remains during disruption, and can the system recover without unacceptable data loss?**
 
-## Explore
+## Start with the work
 
-- [Resilience engineer role and responsibilities](resilience-engineer-role-and-responsibilities.md)
-- [Resilience engineer skills and prerequisites](resilience-engineer-skills-and-prerequisites.md)
-- [Resilience engineer learning resources](resilience-engineer-learning-resources.md)
-- [Resilience engineer official documentation](resilience-engineer-official-documentation.md)
-- [Resilience engineer tools and technologies](resilience-engineer-tools-and-technologies.md)
-- [Resilience engineer labs and portfolio projects](resilience-engineer-labs-and-portfolio-projects.md)
-- [Resilience engineer production practices](resilience-engineer-production-practices.md)
-- [Resilience engineer architecture resources](resilience-engineer-architecture-resources.md)
-- [Resilience engineer interview and assessment resources](resilience-engineer-interview-and-assessment-resources.md)
-- [Resilience engineer related career paths](resilience-engineer-related-career-paths.md)
+A dependency fails, retries increase load, and the documented failover depends on the same identity service that is unavailable. The team needs a workable degradation and recovery plan.
 
-[Return to the engineering directory](../../../README.md)
+## Find the page you need
+
+- [Role and Responsibility Resources](resilience-engineer-role-and-responsibilities.md)
+- [Skills and Prerequisite Resources](resilience-engineer-skills-and-prerequisites.md)
+- [Tools and Technology Resources](resilience-engineer-tools-and-technologies.md)
+- [Official Documentation](resilience-engineer-official-documentation.md)
+- [Learning Resources](resilience-engineer-learning-resources.md)
+- [Architecture Resources](resilience-engineer-architecture-resources.md)
+- [Production Practice Resources](resilience-engineer-production-practices.md)
+- [Labs and Portfolio Projects](resilience-engineer-labs-and-portfolio-projects.md)
+- [Interview and Assessment Resources](resilience-engineer-interview-and-assessment-resources.md)
+- [Related Career Paths](resilience-engineer-related-career-paths.md)
+
+## A useful first read
+
+Specify the permitted degraded behavior before choosing a fallback. Then study propagation, bounded validation, and recovery material so continued operation does not sacrifice the required correctness.
+
+[Browse this career collection](../README.md)

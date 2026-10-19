@@ -1,16 +1,6 @@
 # DevOps Automation Engineer: Interview and Assessment Resources
 
-Practise explaining automation through inputs, side effects, concurrency, and recovery. These original prompts assess reasoning rather than recall of a particular orchestration product.
-
-This page focuses on turning repeated engineering tasks into bounded, observable workflows with explicit inputs and failure behavior. **Question to keep in view:** What happens when an operation is retried after only part of it completed?
-
-## On this page
-
-- [Prompt: timeout after creation](#prompt-timeout-after-creation)
-- [Prompt: repeated configuration changes](#prompt-repeated-configuration-changes)
-- [Prompt: reusable workflow upgrade](#prompt-reusable-workflow-upgrade)
-- [Selected resources](#selected-resources)
-- [Apply the reading](#apply-the-reading)
+These problems start where a successful demo usually ends: the caller retries, a dependency responds late, or a shared interface changes.
 
 ## Prompt: timeout after creation
 
@@ -24,72 +14,16 @@ An automation job reports changed resources on every run. Describe how you would
 
 A workflow update needs broader permissions and changes its output format. Describe versioning, consumer testing, migration, and rollback of the shared logic. Account for external effects already created by the new version.
 
-## Assess reasoning with evidence
+## What to look for in your answer
 
-Explain what you know, what remains uncertain, and which observation you need next. Compare plausible alternatives before selecting an action. Make permission, user impact, and recovery conditions explicit. Use the prompts to practise explaining your assumptions, evidence, and decisions.
+Pay particular attention to ambiguous completion. Explain how you discover existing side effects, distinguish a retry from new intent, and reconcile work when the interface cannot provide a reliable result.
 
-## Selected resources
+## References for checking the reasoning
 
-The order below is a task-based selection, not a requirement to complete every source. Detailed publisher, access, and limitation notes have one maintained home in the category reference directory.
+- [Python subprocess reference](https://docs.python.org/3/library/subprocess.html) · [Access and technical limits](../README.md#source-python)
+- [Ansible playbooks](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_intro.html) · [Access and technical limits](../README.md#source-ansible)
+- [Ansible check and diff modes](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_checkmode.html) · [Access and technical limits](../README.md#source-check)
+- [GitHub Actions: Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows) · [Access and technical limits](../README.md#source-reuse)
+- [Terraform: State locking](https://developer.hashicorp.com/terraform/language/state/locking) · [Access and technical limits](../README.md#source-locking)
 
-### [Python subprocess reference](https://docs.python.org/3/library/subprocess.html)
-
-**Use it to answer:** How does the caller handle arguments, output, exit status, timeout, and effects that may outlive it?
-
-- **Start with:** Frequently used arguments and security considerations.
-- **Prerequisites:** Basic Python and process/exit-status knowledge.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-python) for publisher context, access conditions, and the key limitation.
-
-### [Ansible playbooks](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_intro.html)
-
-**Use it to answer:** Which tasks preserve the desired result on repeated execution, and which have imperative side effects?
-
-- **Start with:** Playbook execution and desired-state task structure.
-- **Prerequisites:** Inventory, managed-host access, and configuration-management basics.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-ansible) for publisher context, access conditions, and the key limitation.
-
-### [Ansible check and diff modes](https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_checkmode.html)
-
-**Use it to answer:** Which task behavior can the preview evaluate, and which effects require another validation route?
-
-- **Start with:** Module support and the limitations of check mode.
-- **Prerequisites:** A known inventory and compatible tasks.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-check) for publisher context, access conditions, and the key limitation.
-
-### [GitHub Actions: Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
-
-**Use it to answer:** How do consumers supply inputs and authority, and what happens when the shared contract changes?
-
-- **Start with:** Inputs, secrets, permissions, and version references.
-- **Prerequisites:** Working knowledge of a basic workflow.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-reuse) for publisher context, access conditions, and the key limitation.
-
-### [Terraform: State locking](https://developer.hashicorp.com/terraform/language/state/locking)
-
-**Use it to answer:** What evidence distinguishes a currently active operation from an abandoned lock?
-
-- **Start with:** Lock behavior and force-unlock conditions.
-- **Prerequisites:** Understanding of the selected backend and active operations.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-locking) for publisher context, access conditions, and the key limitation.
-
-## Apply the reading
-
-Answer one prompt using a state-transition table, test cases, and a reconciliation plan. Include an example where automatic retry should stop and ask for operator investigation.
-
-### Evidence to keep
-
-Record the question, environment or design assumptions, selected reference sections, your observations, and the reasoning behind the result. Label simulated examples and design-only work. Keep uncertainty separate from verified behavior, and remove private data from any evidence you publish.
-
-### Review your answer
-
-| Dimension | A useful answer shows | A gap to investigate |
-| --- | --- | --- |
-| Scope | A clear affected system and constraints | A product choice before requirements |
-| Evidence | Observations that separate explanations | A guessed cause presented as fact |
-| Trade-offs | Alternatives and consequences | One unconditional best practice |
-| Authority | Appropriate ownership and access | Unreviewed changes to shared systems |
-| Recovery | Verification and persistent side effects | A retry or rollback with no conditions |
-
-Attempt the reasoning before consulting the sources. If another person reviews your answer, ask which unsupported assumption most affects the recommendation.
-
-[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)
+[Back to DevOps Automation Engineer resources](README.md) · [Browse this career collection](../README.md)

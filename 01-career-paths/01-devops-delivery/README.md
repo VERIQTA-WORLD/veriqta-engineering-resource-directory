@@ -32,7 +32,7 @@ Each role connects you to responsibility guides, technical references, architect
 
 ## Primary reference directory
 
-The annotations below provide a single maintained home for shared source descriptions, access conditions, and limitations. Role pages select relevant references and supply distinct engineering context. Sources are linked to their original publishers or maintainers. An entry labeled a specification or framework should be used within its stated scope, not as proof that a local implementation satisfies it.
+Use these references to check a resource’s subject, prerequisites, access conditions, and limitations. Follow the original publisher or maintainer for the implementation detail. An entry labeled a specification or framework should be used within its stated scope, not as proof that a local implementation satisfies it.
 
 <a id="source-dora"></a>
 

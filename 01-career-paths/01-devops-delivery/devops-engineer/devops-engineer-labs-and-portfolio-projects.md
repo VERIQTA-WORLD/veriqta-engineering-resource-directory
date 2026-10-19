@@ -1,168 +1,81 @@
 # DevOps Engineer: Labs and Portfolio Projects
 
-Use these projects to produce evidence relevant to implementing and operating the path from source changes to usable services. Each brief defines what you will build or design, the references you will use, and the evidence you should retain.
+## Build and trace a containerized service
 
-## Before you start
+Start with the Docker learning application, then document the path from source revision to an identifiable build result.
 
-Choose one project and read its full source prerequisites, permissions, access requirements, and cleanup instructions. Record versions and dedicated resource names. Use synthetic data and owned lab resources. A design-only project is valid when deployment is impractical; retain assumptions and validation plans instead of invented runtime results.
+Retain application instructions, configuration sources, artifact identity, a meaningful functional check, and source attribution.
 
-## Project 1: Build and trace a containerized service
+### Environment and access
 
-**Problem:** Start with the Docker learning application, then document the path from source revision to an identifiable build result.
+Follow the selected upstream prerequisites. Docker software, Git, and registry or repository accounts may be required.
 
-**Deliverable:** Retain application instructions, configuration sources, artifact identity, a meaningful functional check, and source attribution.
+### Challenge the result
 
-**Prerequisites and access:** Follow the selected upstream prerequisites. Docker software, Git, and registry or repository accounts may be required.
+Change a configuration input in the dedicated lab. Compare startup success with application usability and explain the observed boundary.
 
-### Build and investigate
+The upstream tutorial was reviewed as a source; this extended project brief is not a pre-executed lab.
 
-1. State the acceptance condition and record the starting state.
-2. Follow the applicable upstream instructions below for the component setup.
-3. Complete the project extension and preserve observations separately from interpretation.
-4. Investigate the bounded scenario below and verify recovery where implemented.
-5. Complete cleanup and record resources intentionally retained.
+### Cleanup
 
-**Failure or review scenario:** Change a configuration input in the dedicated lab. Compare startup success with application usability and explain the observed boundary.
-
-**Cleanup:** Use the source cleanup instructions for containers and volumes. Remove public registry artifacts and disposable credentials separately where applicable.
-
-**Scope limit:** Use the upstream tutorial for setup, then verify each extension against your application and environment.
+Use the source cleanup instructions for containers and volumes. Remove public registry artifacts and disposable credentials separately where applicable.
 
 ### Implementation resources
 
-### [Docker: Build and share a containerized application](https://docs.docker.com/get-started/tutorials/run-an-app/)
+- [Docker: Build and share a containerized application](https://docs.docker.com/get-started/tutorials/run-an-app/) · [Access and limitations](../README.md#source-docker)
+- [Pro Git, second edition](https://git-scm.com/book/en/v2) · [Access and limitations](../README.md#source-git)
+- [GitHub Actions documentation](https://docs.github.com/en/actions) · [Access and limitations](../README.md#source-actions)
 
-**Use it to answer:** How do the application image, runtime configuration, network exposure, and persistent data relate?
+## Investigate a deployed application
 
-- **Start with:** Before you start, then the application workflow.
-- **Prerequisites:** Docker software, Git, and the account requirements in the guide.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-docker) for publisher context, access conditions, and the key limitation.
+Use a disposable local cluster and a synthetic application whose request path you can inspect.
 
-### [Pro Git, second edition](https://git-scm.com/book/en/v2)
+Record client-to-service behavior, workload configuration, relevant observations, hypotheses, and the reasoning that identifies a bounded failure.
 
-**Use it to answer:** Which source changes and references explain the artifact or configuration being reviewed?
+### Environment and access
 
-- **Start with:** Git Basics, then branching and the internals relevant to your question.
-- **Prerequisites:** Basic command-line familiarity.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-git) for publisher context, access conditions, and the key limitation.
+Use version-compatible tools, a supported runtime, and adequate local capacity. Instrumentation is optional and needs its own setup.
 
-### [GitHub Actions documentation](https://docs.github.com/en/actions)
+### Challenge the result
 
-**Use it to answer:** What triggers the workflow, where does it execute, and which result does it actually establish?
+Introduce one known configuration mismatch, then verify both the platform view and a functional request after recovery.
 
-- **Start with:** The relevant concepts, how-to guide, and reference for your task.
-- **Prerequisites:** Git and repository workflow familiarity.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-actions) for publisher context, access conditions, and the key limitation.
+One controlled failure does not establish competence with every networking or cluster fault.
 
-## Project 2: Investigate a deployed application
+### Cleanup
 
-**Problem:** Use a disposable local cluster and a synthetic application whose request path you can inspect.
-
-**Deliverable:** Record client-to-service behavior, workload configuration, relevant observations, hypotheses, and the reasoning that identifies a bounded failure.
-
-**Prerequisites and access:** Use version-compatible tools, a supported runtime, and adequate local capacity. Instrumentation is optional and needs its own setup.
-
-### Build and investigate
-
-1. State the acceptance condition and record the starting state.
-2. Follow the applicable upstream instructions below for the component setup.
-3. Complete the project extension and preserve observations separately from interpretation.
-4. Investigate the bounded scenario below and verify recovery where implemented.
-5. Complete cleanup and record resources intentionally retained.
-
-**Failure or review scenario:** Introduce one known configuration mismatch, then verify both the platform view and a functional request after recovery.
-
-**Cleanup:** Remove the dedicated workload and cluster using the upstream lifecycle instructions. Remove optional telemetry storage created for the exercise.
-
-**Scope limit:** One controlled failure does not establish competence with every networking or cluster fault.
+Remove the dedicated workload and cluster using the upstream lifecycle instructions. Remove optional telemetry storage created for the exercise.
 
 ### Implementation resources
 
-### [kind quick start](https://kind.sigs.k8s.io/docs/user/quick-start/)
+- [kind quick start](https://kind.sigs.k8s.io/docs/user/quick-start/) · [Access and limitations](../README.md#source-kind)
+- [Kubernetes application troubleshooting](https://kubernetes.io/docs/tasks/debug/debug-application/) · [Access and limitations](../README.md#source-debug)
+- [OpenTelemetry signals](https://opentelemetry.io/docs/concepts/signals/) · [Access and limitations](../README.md#source-otel)
 
-**Use it to answer:** Which local cluster setup can reproduce the behavior of interest, and which production assumptions remain absent?
+## Write and rehearse a release decision
 
-- **Start with:** Installation, creating a cluster, interacting with it, and deletion.
-- **Prerequisites:** A supported container runtime, local capacity, and compatible tools.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-kind) for publisher context, access conditions, and the key limitation.
+Create a release review for a synthetic service with a meaningful user journey and a potentially incompatible dependency.
 
-### [Kubernetes application troubleshooting](https://kubernetes.io/docs/tasks/debug/debug-application/)
+Produce acceptance signals, exposure limits, stop conditions, a recovery decision table, and a communication note.
 
-**Use it to answer:** Which observable boundary separates the current symptom from the competing failure explanations?
+### Environment and access
 
-- **Start with:** The guide matching the failing application boundary.
-- **Prerequisites:** Workload, Service, and namespace familiarity.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-debug) for publisher context, access conditions, and the key limitation.
+You can perform the decision exercise without deployment. An optional implementation requires an authorized lab and synthetic data.
 
-### [OpenTelemetry signals](https://opentelemetry.io/docs/concepts/signals/)
+### Challenge the result
 
-**Use it to answer:** Which signals can connect the user symptom to the dependency or operation you need to inspect?
+Assume low traffic hides a failing path. Explain what evidence is missing and whether to continue, pause, or add an appropriate test.
 
-- **Start with:** Signals relevant to your diagnostic question.
-- **Prerequisites:** Basic distributed application and observability concepts.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-otel) for publisher context, access conditions, and the key limitation.
+A design-only canary exercise cannot provide measured confidence or real traffic outcomes.
 
-## Project 3: Write and rehearse a release decision
+### Cleanup
 
-**Problem:** Create a release review for a synthetic service with a meaningful user journey and a potentially incompatible dependency.
-
-**Deliverable:** Produce acceptance signals, exposure limits, stop conditions, a recovery decision table, and a communication note.
-
-**Prerequisites and access:** You can perform the decision exercise without deployment. An optional implementation requires an authorized lab and synthetic data.
-
-### Build and investigate
-
-1. State the acceptance condition and record the starting state.
-2. Follow the applicable upstream instructions below for the component setup.
-3. Complete the project extension and preserve observations separately from interpretation.
-4. Investigate the bounded scenario below and verify recovery where implemented.
-5. Complete cleanup and record resources intentionally retained.
-
-**Failure or review scenario:** Assume low traffic hides a failing path. Explain what evidence is missing and whether to continue, pause, or add an appropriate test.
-
-**Cleanup:** Remove any optional deployment and retain sanitized observations. Label simulated outcomes separately from executed checks.
-
-**Scope limit:** A design-only canary exercise cannot provide measured confidence or real traffic outcomes.
+Remove any optional deployment and retain sanitized observations. Label simulated outcomes separately from executed checks.
 
 ### Implementation resources
 
-### [Canarying Releases](https://sre.google/workbook/canarying-releases/)
+- [Canarying Releases](https://sre.google/workbook/canarying-releases/) · [Access and limitations](../README.md#source-canary)
+- [Implementing SLOs](https://sre.google/workbook/implementing-slos/) · [Access and limitations](../README.md#source-slo)
+- [Incident Response](https://sre.google/workbook/incident-response/) · [Access and limitations](../README.md#source-incident)
 
-**Use it to answer:** Does the release comparison have enough relevant exposure and signal to support continuing?
-
-- **Start with:** Canary design, comparison signals, and decision criteria.
-- **Prerequisites:** Deployment and service-observability familiarity.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-canary) for publisher context, access conditions, and the key limitation.
-
-### [Implementing SLOs](https://sre.google/workbook/implementing-slos/)
-
-**Use it to answer:** Which user behavior should be measured, what target matters, and how will the result inform a decision?
-
-- **Start with:** Selecting indicators, targets, and the improvement process.
-- **Prerequisites:** Understanding of user-visible service behavior.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-slo) for publisher context, access conditions, and the key limitation.
-
-### [Incident Response](https://sre.google/workbook/incident-response/)
-
-**Use it to answer:** Who coordinates response, preserves the timeline, and verifies that the affected service has recovered?
-
-- **Start with:** Coordination, roles, communication, and follow-up.
-- **Prerequisites:** Understanding of service ownership and operational impact.
-- **Access and limits:** See the [maintained source annotation](../README.md#source-incident) for publisher context, access conditions, and the key limitation.
-
-## Portfolio evidence and acceptance
-
-| Item | What to include |
-| --- | --- |
-| Goal | The engineering problem and the user or operator it affects |
-| Architecture | Components, dependencies, trust boundaries, and ownership |
-| Reproduction | Source instructions, your additions, versions, and access needs |
-| Observation | Expected and actual results with relevant context |
-| Failure | The bounded fault or design challenge and your reasoning |
-| Verification | Evidence that the stated outcome was achieved, or a clear untested status |
-| Cleanup | Removed resources, retained resources, credentials, and outstanding costs |
-| Attribution | Which implementation material came from external sources |
-
-A passing demonstration supports the stated exercise outcome. Broader security, performance, resilience, and production-readiness claims need their own defined criteria and evidence. If a second person cannot reproduce the result, identify missing prerequisites before expanding scope.
-
-[Role resource directory](README.md) · [DevOps delivery collection](../README.md) · [All career paths](../../README.md)
+[Back to DevOps Engineer resources](README.md) · [Browse this career collection](../README.md)
